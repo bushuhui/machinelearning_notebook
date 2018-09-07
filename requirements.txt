@@ -1,0 +1,16 @@
+numpy
+matplotlib
+sklearn
+statsmodels
+pandas
+ipython
+jupyter
+
+fire
+torchvision
+visdom
+jieba
+ipdb
+tqdm
+PIL
+
