@@ -1,3 +1,33 @@
+# -*- coding: utf-8 -*-
+# ---
+# jupyter:
+#   jupytext_format_version: '1.2'
+#   jupytext_formats: ipynb,py
+#   kernelspec:
+#     display_name: Python 3
+#     language: python
+#     name: python3
+#   language_info:
+#     codemirror_mode:
+#       name: ipython
+#       version: 3
+#     file_extension: .py
+#     mimetype: text/x-python
+#     name: python
+#     nbconvert_exporter: python
+#     pygments_lexer: ipython3
+#     version: 3.5.2
+# ---
+
+# # k-means demo
+
+# +
+# This line configures matplotlib to show figures embedded in the notebook, 
+# instead of opening a new window for each figure. More about that later. 
+# If you are using an old version of IPython, try using '%pylab inline' instead.
+# %matplotlib inline
+
+# import librarys
 from numpy import *
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -7,12 +37,36 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = pd.read_csv("iris.csv", header=0, index_col=0)
 dataset.head()
 
+# -
+
 #对类别进行编码，3个类别分别赋值0，1，2
 dataset['class'][dataset['class']=='Iris-setosa']=0
 dataset['class'][dataset['class']=='Iris-versicolor']=1
 dataset['class'][dataset['class']=='Iris-virginica']=2
 
 
+def originalDatashow(dataSet):
+    #绘制原始的样本点
+    num,dim=shape(dataSet)
+    marksamples=['ob'] #样本图形标记
+    for i in range(num):
+        plt.plot(datamat.iat[i,0],datamat.iat[i,1],marksamples[0],markersize=5)
+    plt.title('original dataset')
+    plt.xlabel('sepal length')
+    plt.ylabel('sepal width') 
+    plt.show()
+    
+
+# + {"scrolled": true}
+#获取样本数据
+datamat = dataset.loc[:, ['sepal-length', 'sepal-width']]
+# 真实的标签
+labels = dataset.loc[:, ['class']]
+#原始数据显示
+originalDatashow(datamat)
+
+
+# -
 
 def randChosenCent(dataSet,k):
     """初始化聚类中心：通过在区间范围随机产生的值作为新的中心点"""
@@ -33,6 +87,8 @@ def randChosenCent(dataSet,k):
     #根据索引获取样本
     centroids = dataSet.iloc[centroidsIndex]
     return mat(centroids)
+
+# +
 
 def distEclud(vecA, vecB):
     """算距离, 两个向量间欧式距离"""
@@ -91,9 +147,13 @@ def kMeans(dataSet, k):
             centroids[cent, :] = mean(ptsInClust, axis=0)
     return centroids, clusterAssment
 
+# -
 
+# 进行k-means聚类
+k = 3  # 用户定义聚类数
+mycentroids, clusterAssment = kMeans(datamat, k)
 
-# 2维数据聚类效果显示
+# +
 def datashow(dataSet, k, centroids, clusterAssment):  # 二维空间显示聚类结果
     from matplotlib import pyplot as plt
     num, dim = shape(dataSet)  # 样本数num ,维数dim
@@ -123,8 +183,8 @@ def datashow(dataSet, k, centroids, clusterAssment):  # 二维空间显示聚类
 
     plt.title('k-means cluster result')  # 标题
     plt.show()
-
-
+    
+    
 # 画出实际图像
 def trgartshow(dataSet, k, labels):
     from matplotlib import pyplot as plt
@@ -139,48 +199,17 @@ def trgartshow(dataSet, k, labels):
         plt.plot(datamat.iat[i, 0], datamat.iat[i, 1], marksamples[int(labels.iat[i, 0])], markersize=6,
                  label=label[int(labels.iat[i, 0])])
     plt.legend(loc='upper left')
+    
     # 添加轴标签和标题
-
     plt.xlabel('sepal length')
     plt.ylabel('sepal width')
-
     plt.title('iris true result')  # 标题
 
     # 显示图形
     plt.show()
     # label=labels.iat[i,0]
+# -
 
-
-def originalDatashow(dataSet):
-    """聚类前，绘制原始的样本点"""
-    
-    #样本的个数和特征维数
-    num,dim=shape(dataSet)
-    marksamples=['ob'] #样本图形标记
-    for i in range(num):
-        plt.plot(datamat.iat[i,0],datamat.iat[i,1],marksamples[0],markersize=5)
-    plt.title('original dataset')
-    plt.xlabel('sepal length')
-    plt.ylabel('sepal width') #标题
-    plt.show()
-
-
-if __name__ == '__main__':
-    # 获取样本数据
-    datamat = dataset.loc[:, ['sepal-length', 'sepal-width']]
-    # 真实的标签
-    labels = dataset.loc[:, ['class']]
-    # 原始数据显示
-    originalDatashow(datamat)
-
-    # kmeans聚类
-    k = 3  # 用户定义聚类数
-    mycentroids, clusterAssment = kMeans(datamat, k)
-
-    # 绘图显示
-    datashow(datamat, k, mycentroids, clusterAssment)
-    trgartshow(datamat, 3, labels)
-    # plt.show()
-
-
-
+# 绘图显示
+datashow(datamat, k, mycentroids, clusterAssment)
+trgartshow(datamat, 3, labels)
