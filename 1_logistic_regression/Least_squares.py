@@ -113,6 +113,78 @@ plt.legend()
 plt.show()
 # -
 
+# ## How to use iterative method to estimate parameters?
+#
+
+# +
+n_epoch = 3000          # epoch size
+a, b = 1, 1             # initial parameters
+epsilon = 0.001         # learning rate
+
+for i in range(n_epoch):
+    for j in range(N):
+        a = a + epsilon*2*(Y[j] - a*X[j] - b)*X[j]
+        b = b + epsilon*2*(Y[j] - a*X[j] - b)
+
+    L = 0
+    for j in range(N):
+        L = L + (Y[j]-a*X[j]-b)**2
+    print("epoch %4d: loss = %f, a = %f, b = %f" % (i, L, a, b))
+    
+x_min = np.min(X)
+x_max = np.max(X)
+y_min = a * x_min + b
+y_max = a * x_max + b
+
+plt.scatter(X, Y, label='original data')
+plt.plot([x_min, x_max], [y_min, y_max], 'r', label='model')
+plt.legend()
+plt.show()
+# -
+
+# ## How to show the iterative process
+
+# +
+# %matplotlib nbagg
+
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+
+n_epoch = 3000          # epoch size
+a, b = 1, 1             # initial parameters
+epsilon = 0.001         # learning rate
+
+fig = plt.figure()
+imgs = []
+
+for i in range(n_epoch):
+    for j in range(N):
+        a = a + epsilon*2*(Y[j] - a*X[j] - b)*X[j]
+        b = b + epsilon*2*(Y[j] - a*X[j] - b)
+
+    L = 0
+    for j in range(N):
+        L = L + (Y[j]-a*X[j]-b)**2
+    #print("epoch %4d: loss = %f, a = %f, b = %f" % (i, L, a, b))
+    
+    if i % 50 == 0:
+        x_min = np.min(X)
+        x_max = np.max(X)
+        y_min = a * x_min + b
+        y_max = a * x_max + b
+
+        img = plt.scatter(X, Y, label='original data')
+        img = plt.plot([x_min, x_max], [y_min, y_max], 'r', label='model')
+        imgs.append(img)
+        
+ani = animation.ArtistAnimation(fig, imgs)
+plt.show()
+# -
+
+# ## How to use batch update method?
+#
+# If some data is outliear, then the 
+
 # ## How to fit polynomial function?
 #
 # If we observe a missle at some time, then how to estimate the trajectory? Acoording the physical theory, the trajectory can be formulated as:
@@ -217,8 +289,9 @@ Y_est = regr.predict(X_test)
 print("Y_est  = ", Y_est)
 print("Y_test = ", Y_test)
 err = (Y_est - Y_test)**2
+err2 = sklearn.metrics.mean_squared_error(Y_test, Y_est)
 score = regr.score(X_test, Y_test)
-print("err = %f, score = %f" % (np.sqrt(np.sum(err))/N_test, score))
+print("err = %f (%f), score = %f" % (np.sqrt(np.sum(err))/N_test, np.sqrt(err2), score))
 
 
 # plot data
