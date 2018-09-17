@@ -56,6 +56,20 @@
 #
 #
 
+# +
+# %matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure()
+plt.axis([-10,10,0,1])
+plt.grid(True)
+X=np.arange(-10,10,0.1)
+y=1/(1+np.e**(-X))
+plt.plot(X,y,'b-')
+plt.title("Logistic function")
+# -
+
 # 逻辑回归本质上是线性回归，只是在特征到结果的映射中加入了一层函数映射，即先把特征线性求和，然后使用函数$g(z)$将最为假设函数来预测。$g(z)$可以将连续值映射到0到1之间。线性回归模型的表达式带入$g(z)$，就得到逻辑回归的表达式:
 #
 # $$
@@ -103,6 +117,8 @@
 # $$
 #
 #
+
+# ## Program
 
 # +
 # %matplotlib inline
@@ -191,6 +207,108 @@ class Logistic(object):
 logistic = Logistic(data, label)
 logistic.train(200)
 plot_decision_boundary(lambda x: logistic.predict(x), data, label)
+
+# ## How to use sklearn to resolve the problem
+#
+
+# +
+from sklearn.linear_model.logistic import LogisticRegression
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+import matplotlib.pyplot as plt
+
+# calculate train/test data number
+N = len(data)
+N_train = int(N*0.8)
+N_test = N - N_train
+
+# split train/test data
+x_train = data[:N_train, :]
+y_train = label[:N_train]
+x_test  = data[N_train:, :]
+y_test  = label[N_train:]
+
+# do logistic regression
+lr=LogisticRegression()
+lr.fit(x_train,y_train)
+
+pred_train = lr.predict(x_train)
+pred_test  = lr.predict(x_test)
+
+# calculate train/test accuracy
+acc_train = accuracy_score(y_train, pred_train)
+acc_test = accuracy_score(y_test, pred_test)
+print("accuracy train = %f" % acc_train)
+print("accuracy test = %f" % acc_test)
+
+# plot confusion matrix
+cm = confusion_matrix(y_test,pred_test)
+
+plt.matshow(cm)
+plt.title(u'Confusion Matrix')
+plt.colorbar()
+plt.ylabel(u'Groundtruth')
+plt.xlabel(u'Predict')
+plt.show()
+# -
+
+# ## Multi-class recognition
+
+# +
+from sklearn.datasets import load_digits
+import matplotlib.pyplot as plt 
+
+# load digital data
+digits, dig_label = load_digits(return_X_y=True)
+print(digits.shape)
+
+# draw one digital
+plt.gray() 
+plt.matshow(digits[0].reshape([8, 8])) 
+plt.show() 
+
+# calculate train/test data number
+N = len(digits)
+N_train = int(N*0.8)
+N_test = N - N_train
+
+# split train/test data
+x_train = digits[:N_train, :]
+y_train = dig_label[:N_train]
+x_test  = digits[N_train:, :]
+y_test  = dig_label[N_train:]
+
+# do logistic regression
+lr=LogisticRegression()
+lr.fit(x_train,y_train)
+
+pred_train = lr.predict(x_train)
+pred_test  = lr.predict(x_test)
+
+# calculate train/test accuracy
+acc_train = accuracy_score(y_train, pred_train)
+acc_test = accuracy_score(y_test, pred_test)
+print("accuracy train = %f, accuracy_test = %f" % (acc_train, acc_test)
+
+score_train = lr.score(x_train, y_train)
+score_test  = lr.score(x_test, y_test)
+print("score_train = %f, score_test = %f" % (score_train, score_test))
+
+# plot confusion matrix
+cm = confusion_matrix(y_test,pred_test)
+
+plt.matshow(cm)
+plt.title(u'Confusion Matrix')
+plt.colorbar()
+plt.ylabel(u'Groundtruth')
+plt.xlabel(u'Predict')
+plt.show()
+# -
+
+# ## Exercise - How to draw mis-classfied data?
+#
+# 1. How to obtain the mis-classified index?
+# 2. How to draw them?
 
 # ## References
 #
