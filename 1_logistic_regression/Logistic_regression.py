@@ -254,18 +254,71 @@ plt.show()
 
 # ## Multi-class recognition
 
+# ### Load & show the data
+
+# +
+import matplotlib.pyplot as plt 
+from sklearn.datasets import load_digits
+
+# load data
+digits = load_digits()
+
+# copied from notebook 02_sklearn_data.ipynb
+fig = plt.figure(figsize=(6, 6))  # figure size in inches
+fig.subplots_adjust(left=0, right=1, bottom=0, top=1, hspace=0.05, wspace=0.05)
+
+# plot the digits: each image is 8x8 pixels
+for i in range(64):
+    ax = fig.add_subplot(8, 8, i + 1, xticks=[], yticks=[])
+    ax.imshow(digits.images[i], cmap=plt.cm.binary)
+    
+    # label the image with the target value
+    ax.text(0, 7, str(digits.target[i]))
+# -
+
+# ### Visualizing the Data
+#
+# A good first-step for many problems is to visualize the data using one of the Dimensionality Reduction techniques we saw earlier. We'll start with the most straightforward one, Principal Component Analysis (PCA).
+#
+# PCA seeks orthogonal linear combinations of the features which show the greatest variance, and as such, can help give you a good idea of the structure of the data set. Here we'll use RandomizedPCA, because it's faster for large N.
+
+# +
+from sklearn.decomposition import PCA
+pca = PCA(n_components=2, svd_solver="randomized")
+proj = pca.fit_transform(digits.data)
+
+plt.scatter(proj[:, 0], proj[:, 1], c=digits.target)
+plt.colorbar()
+# -
+
+# A weakness of PCA is that it produces a linear dimensionality reduction:
+# this may miss some interesting relationships in the data.  If we want to
+# see a nonlinear mapping  of the data, we can use one of the several
+# methods in the `manifold` module.  Here we'll use [Isomap](https://blog.csdn.net/VictoriaW/article/details/78497316) (a concatenation
+# of Isometric Mapping) which is a manifold learning method based on
+# graph theory:
+
+# +
+from sklearn.manifold import Isomap
+iso = Isomap(n_neighbors=5, n_components=2)
+proj = iso.fit_transform(digits.data)
+
+plt.scatter(proj[:, 0], proj[:, 1], c=digits.target)
+plt.colorbar()
+# -
+
+# ## Program
+
 # +
 from sklearn.datasets import load_digits
+from sklearn.linear_model.logistic import LogisticRegression
+from sklearn.metrics import accuracy_score
+
 import matplotlib.pyplot as plt 
 
 # load digital data
 digits, dig_label = load_digits(return_X_y=True)
 print(digits.shape)
-
-# draw one digital
-plt.gray() 
-plt.matshow(digits[0].reshape([8, 8])) 
-plt.show() 
 
 # calculate train/test data number
 N = len(digits)
@@ -288,11 +341,16 @@ pred_test  = lr.predict(x_test)
 # calculate train/test accuracy
 acc_train = accuracy_score(y_train, pred_train)
 acc_test = accuracy_score(y_test, pred_test)
-print("accuracy train = %f, accuracy_test = %f" % (acc_train, acc_test)
+print("accuracy train = %f, accuracy_test = %f" % (acc_train, acc_test))
 
 score_train = lr.score(x_train, y_train)
 score_test  = lr.score(x_test, y_test)
 print("score_train = %f, score_test = %f" % (score_train, score_test))
+
+
+
+# +
+from sklearn.metrics import confusion_matrix
 
 # plot confusion matrix
 cm = confusion_matrix(y_test,pred_test)
