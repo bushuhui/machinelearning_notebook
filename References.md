@@ -1,5 +1,6 @@
 # References
-更多的学习资料，可以自行在下属列表找找到适合自己的学习资料。
+可以自行在下属列表找找到适合自己的学习资料，虽然罗列的比较多，但是个人最好选择一个深入阅读、练习。当练习到一定程度，可以再看看其他的资料，这样弥补单一学习资料可能存在的欠缺。
+
 
 ## Python & IPython
 * [Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
@@ -8,7 +9,6 @@
 * [IPython tutorials](https://nbviewer.jupyter.org/github/ipython/ipython/blob/master/examples/IPython%20Kernel/Index.ipynb)
 * [Examples from the IPython mini-book](https://github.com/rossant/ipython-minibook)
 * [Code of the IPython Cookbook, Second Edition (2018)](https://github.com/ipython-books/cookbook-2nd-code)
-* [scientific-python-lectures](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/tree/master/)
 
 
 ## Libs
@@ -24,6 +24,8 @@
 * [ipython-notebooks: A collection of IPython notebooks covering various topics](https://github.com/jdwittenauer/ipython-notebooks)
 * [Learn Data Science](http://learnds.com/)
 * [AM207 2016](https://github.com/AM207/2016/tree/master)
+* [Python机器学习](https://ljalphabeta.gitbooks.io/python-/content/)
+* [scientific-python-lectures](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/tree/master/)
 
 
 ## Awesome series

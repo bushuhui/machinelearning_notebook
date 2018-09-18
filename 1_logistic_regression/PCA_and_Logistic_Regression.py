@@ -135,7 +135,33 @@ acc_train = accuracy_score(y_train, pred_train)
 acc_test = accuracy_score(y_test, pred_test)
 print("accuracy train = %f, accuracy_test = %f" % (acc_train, acc_test))
 
+
+# +
+# do kernel PCA
+#   Ref: http://scikit-learn.org/stable/auto_examples/decomposition/plot_kernel_pca.html
+
+from sklearn.decomposition import PCA, KernelPCA
+
+kpca = KernelPCA(n_components=45, kernel="rbf", fit_inverse_transform=True, gamma=10)
+kpca.fit(x_train)
+
+x_train_pca = kpca.transform(x_train)
+x_test_pca = kpca.transform(x_test)
+
+# do logistic regression
+lr=LogisticRegression()
+lr.fit(x_train_pca,y_train)
+
+pred_train = lr.predict(x_train_pca)
+pred_test  = lr.predict(x_test_pca)
+
+# calculate train/test accuracy
+acc_train = accuracy_score(y_train, pred_train)
+acc_test = accuracy_score(y_test, pred_test)
+print("accuracy train = %f, accuracy_test = %f" % (acc_train, acc_test))
+
 # -
 
 # ## References
 # * [Pipelining: chaining a PCA and a logistic regression](http://scikit-learn.org/stable/auto_examples/plot_digits_pipe.html)
+# * [PCA进行无监督降维](https://ljalphabeta.gitbooks.io/python-/content/pca.html)
