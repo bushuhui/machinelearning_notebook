@@ -2,6 +2,9 @@
 
 本notebook教程包含了一些使用Python来学习机器学习的教程，通过本教程能够引导学习Python的基础知识和机器学习的背景和实际编程。
 
+由于本课程需要大量的编程练习才能取得比较好的学习效果，因此需要认真把作业和报告完成。作业的地址是：https://gitee.com/machinelearning2018/pr_homework 请按照里面的说明进行操作。
+
+
 ## 内容
 1. [Python基础](0_python/)
 2. [numpy & matplotlib](0_numpy_matplotlib_scipy_sympy/)
@@ -13,6 +16,6 @@
 8. PyTorch
 
 ## 其他参考
-* [安装Python环境](InstallPython.md)
+* [安装Python环境](tips/InstallPython.md)
 * [参考资料等](References.md)
-* [confusion matrix](metric/confusion_matrix.ipynb)
+* [confusion matrix](tips/confusion_matrix.ipynb)
