@@ -302,8 +302,7 @@ def forward(n, X):
 
 # use random weight to perdict
 forward(nn, X)
-y_pred = np.zeros(nn.z2.shape[0])
-y_pred[np.where(nn.z2[:,0]<nn.z2[:,1])] = 1
+y_pred = np.argmax(nn.z2, axis=1)
 
 # plot data
 plt.scatter(X[:, 0], X[:, 1], c=y_pred, cmap=plt.cm.Spectral)
@@ -323,8 +322,7 @@ def backpropagation(n, X, y):
         # print loss, accuracy
         L = np.sum((n.z2 - y)**2)
         
-        y_pred = np.zeros(nn.z2.shape[0])
-        y_pred[np.where(nn.z2[:,0]<nn.z2[:,1])] = 1
+        y_pred = np.argmax(nn.z2, axis=1)
         acc = accuracy_score(y_true, y_pred)
         
         print("epoch [%4d] L = %f, acc = %f" % (i, L, acc))
@@ -345,8 +343,7 @@ backpropagation(nn, X, t)
 
 # +
 # plot data
-y_pred = np.zeros(nn.z2.shape[0])
-y_pred[np.where(nn.z2[:,0]<nn.z2[:,1])] = 1
+y_pred = np.argmax(nn.z2, axis=1)
 
 plt.scatter(X[:, 0], X[:, 1], c=nn.y, cmap=plt.cm.Spectral)
 plt.title("ground truth")
@@ -361,14 +358,13 @@ plt.show()
 # ## 如何使用类的方法封装多层神经网络?
 
 # +
-% matplotlib inline
-
 import numpy as np
 from sklearn import datasets, linear_model
+from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
 
-# defin sigmod & its derivate function
+# define sigmod
 def sigmod(X):
     return 1.0/(1+np.exp(-X))
 
@@ -409,6 +405,7 @@ class NN_Model:
             Z.append(z)
         
         self.Z = Z
+        return Z[-1]
         
     # back-propagation
     def backpropagation(self, X, y, n_epoch=None, epsilon=None):
@@ -421,6 +418,8 @@ class NN_Model:
         for i in range(n_epoch):
             # forward to calculate each node's output
             self.forward(X)
+
+            self.evaluate()
             
             # calc weights update
             W = self.W
@@ -437,7 +436,7 @@ class NN_Model:
                 if j == n_layer - 1:
                     d = z*(1-z)*(d0 - z)
                 else:
-                    d = z*(1-z)*np.dot(d0, W[jj].T)
+                    d = z*(1-z)*np.dot(d0, W[j].T)
                     
                 d0 = d
                 D.insert(0, d)
@@ -453,21 +452,20 @@ class NN_Model:
                     
                 B[jj] += epsilon * np.sum(D[jj], axis=0)
         
-    def evaulate(self):
+    def evaluate(self):
         z = self.Z[-1]
         
         # print loss, accuracy
         L = np.sum((z - self.Y)**2)
             
-        y_pred = np.argmax(z)
-        y_true = np.argmax(self.Y)
+        y_pred = np.argmax(z, axis=1)
+        y_true = np.argmax(self.Y, axis=1)
         acc = accuracy_score(y_true, y_pred)
         
         print("L = %f, acc = %f" % (L, acc))
         
 
-
-
+# +
 # generate sample data
 np.random.seed(0)
 X, y = datasets.make_moons(200, noise=0.20)
@@ -481,17 +479,94 @@ t[np.where(y==1), 1] = 1
 plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Spectral)
 plt.show()
 
-
-nn = NN_Model([2, 4, 2])
+# +
+# use the NN model and training
+nn = NN_Model([2, 6, 2])
 nn.init_weight()
-nn.backpropagation(X, t)
+nn.backpropagation(X, t, 2000)
 
-nn.evaluate()
 
+
+# +
+# predict results & plot results
+y_res  = nn.forward(X)
+y_pred = np.argmax(y_res, axis=1)
+
+# plot data
+plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Spectral)
+plt.title("ground truth")
+plt.show()
+
+plt.scatter(X[:, 0], X[:, 1], c=y_pred, cmap=plt.cm.Spectral)
+plt.title("predicted")
+plt.show()
 # -
 
+# ## 深入分析
+
+# +
+# print some results
+
+print(y_res[1:10, :])
+# -
+
+# **问题**
+# 1. 我们希望得到的每个类别的概率
+# 2. 如何做多分类问题？
+# 3. 如何能让神经网络更快的训练好？
+# 4. 如何抽象，让神经网络的类支持更多的类型的层
+
+# ## Softmax & 交叉熵代价函数
+#
+# softmax经常被添加在分类任务的神经网络中的输出层，神经网络的反向传播中关键的步骤就是求导，从这个过程也可以更深刻地理解反向传播的过程，还可以对梯度传播的问题有更多的思考。
+#
+# ### softmax 函数
+#
+# softmax(柔性最大值)函数，一般在神经网络中， softmax可以作为分类任务的输出层。其实可以认为softmax输出的是几个类别选择的概率，比如我有一个分类任务，要分为三个类，softmax函数可以根据它们相对的大小，输出三个类别选取的概率，并且概率和为1。
+#
+# softmax函数的公式是这种形式：
+# ![softmax](images/softmax.png)
+#
+# * $S_i$是经过softmax的类别概率输出
+# * $z_k$是神经元的输出
+#
+# 更形象的如下图表示：
+# ![softmax_demo](images/softmax_demo.png)
+# softmax直白来说就是将原来输出是3,1,-3通过softmax函数一作用，就映射成为(0,1)的值，而这些值的累和为1（满足概率的性质），那么我们就可以将它理解成概率，在最后选取输出结点的时候，我们就可以选取概率最大（也就是值对应最大的）结点，作为我们的预测目标！
+#
+#
+#
+# 首先是神经元的输出，一个神经元如下图：
+# ![softmax_neuron](images/softmax_neuron.png)
+#
+# 神经元的输出设为：
+# ![softmax_neuron_output_eqn.png](images/softmax_neuron_output_eqn.png)
+# 其中$W_{ij}$是第$i$个神经元的第$j$个权重，$b$是偏置。$z_i$表示该网络的第$i$个输出。
+#
+# 给这个输出加上一个softmax函数，那就变成了这样：
+# ![softmax_neuron_output2_eqn.png](images/softmax_neuron_output2_eqn.png)
+# $a_i$代表softmax的第$i$个输出值，右侧套用了softmax函数。
+#
+#
+# ### 损失函数 loss function
+#
+# 在神经网络反向传播中，要求一个损失函数，这个损失函数其实表示的是真实值与网络的估计值的误差，知道误差了，才能知道怎样去修改网络中的权重。
+#
+# 损失函数可以有很多形式，这里用的是交叉熵函数，主要是由于这个求导结果比较简单，易于计算，并且交叉熵解决某些损失函数学习缓慢的问题。交叉熵的函数是这样的：
+#
+# ![cross_entropy_loss](images/cross_entropy_loss.png)
+#
+# 其中$y_i$表示真实的分类结果。
+#
+#
+
 # ## References
-# * [零基础入门深度学习(3) - 神经网络和反向传播算法](https://www.zybuluo.com/hanbingtao/note/476663)
-# * [Neural Network Using Python and Numpy](https://www.python-course.eu/neural_networks_with_python_numpy.php)
-# * http://www.cedar.buffalo.edu/%7Esrihari/CSE574/Chap5/Chap5.3-BackProp.pdf
-# * https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+# * 反向传播算法
+#   * [零基础入门深度学习(3) - 神经网络和反向传播算法](https://www.zybuluo.com/hanbingtao/note/476663)
+#   * [Neural Network Using Python and Numpy](https://www.python-course.eu/neural_networks_with_python_numpy.php)
+#   * http://www.cedar.buffalo.edu/%7Esrihari/CSE574/Chap5/Chap5.3-BackProp.pdf
+#   * https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+# * Softmax & 交叉熵
+#   * [交叉熵代价函数（作用及公式推导）](https://blog.csdn.net/u014313009/article/details/51043064)
+#   * [手打例子一步一步带你看懂softmax函数以及相关求导过程](https://www.jianshu.com/p/ffa51250ba2e)
+#   * [简单易懂的softmax交叉熵损失函数求导](https://www.jianshu.com/p/c02a1fbffad6)

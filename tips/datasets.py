@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # ---
 # jupyter:
 #   jupytext_format_version: '1.2'
@@ -74,3 +75,73 @@ for i in range(64):
     
     # label the image with the target value
     ax.text(0, 7, str(digits.target[i]))
+# -
+
+# ## Iris
+#
+# This data sets consists of 3 different types of irises’ (Setosa, Versicolour, and Virginica) petal and sepal length, stored in a 150x4 numpy.ndarray
+#
+# The rows being the samples and the columns being: Sepal Length, Sepal Width, Petal Length and Petal Width.
+#
+
+# +
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from sklearn import datasets
+from sklearn.decomposition import PCA
+
+# import some data to play with
+iris = datasets.load_iris()
+X = iris.data[:, :]  
+y = iris.target
+
+# Plot the samples
+plt.figure(figsize=(15, 5))
+plt.subplots_adjust(bottom=.05, top=.9, left=.05, right=.95)
+
+plt.subplot(121)
+plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Set1,
+            edgecolor='k')
+plt.xlabel('Sepal length')
+plt.ylabel('Sepal width')
+
+plt.subplot(122)
+plt.scatter(X[:, 2], X[:, 3], c=y, cmap=plt.cm.Set1,
+            edgecolor='k')
+plt.xlabel('Petal Length')
+plt.ylabel('Petal Width')
+plt.show()
+
+# +
+from sklearn.manifold import Isomap
+iso = Isomap(n_neighbors=5, n_components=2)
+proj = iso.fit_transform(X)
+
+plt.figure(figsize=(15, 9))
+plt.scatter(proj[:, 0], proj[:, 1], c=y)
+plt.colorbar()
+plt.show()
+# -
+
+# ## blobs
+#
+
+# +
+import matplotlib.pyplot as plt
+from sklearn.datasets import make_blobs
+
+
+
+# Generate 3 blobs with 2 classes where the second blob contains
+# half positive samples and half negative samples. Probability in this
+# blob is therefore 0.5.
+centers = [(-5, -5), (0, 0), (5, 5)]
+n_samples = 500
+
+X, y = make_blobs(n_samples=n_samples, n_features=2, cluster_std=1.0,
+                  centers=centers, shuffle=False, random_state=42)
+
+plt.figure(figsize=(15, 9))
+plt.scatter(X[:, 0], X[:, 1], c=y)
+plt.colorbar()
+plt.show()

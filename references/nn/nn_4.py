@@ -2,10 +2,11 @@
 
 import numpy as np
 from sklearn import datasets, linear_model
+from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
 
-# define sigmod & its derivate function
+# define sigmod
 def sigmod(X):
     return 1.0/(1+np.exp(-X))
 
@@ -58,6 +59,8 @@ class NN_Model:
         for i in range(n_epoch):
             # forward to calculate each node's output
             self.forward(X)
+
+            self.evaluate()
             
             # calc weights update
             W = self.W
@@ -74,7 +77,7 @@ class NN_Model:
                 if j == n_layer - 1:
                     d = z*(1-z)*(d0 - z)
                 else:
-                    d = z*(1-z)*np.dot(d0, W[jj].T)
+                    d = z*(1-z)*np.dot(d0, W[j].T)
                     
                 d0 = d
                 D.insert(0, d)
@@ -90,14 +93,14 @@ class NN_Model:
                     
                 B[jj] += epsilon * np.sum(D[jj], axis=0)
         
-    def evaulate(self):
+    def evaluate(self):
         z = self.Z[-1]
         
         # print loss, accuracy
         L = np.sum((z - self.Y)**2)
             
-        y_pred = np.argmax(z)
-        y_true = np.argmax(self.Y)
+        y_pred = np.argmax(z, axis=1)
+        y_true = np.argmax(self.Y, axis=1)
         acc = accuracy_score(y_true, y_pred)
         
         print("L = %f, acc = %f" % (L, acc))
@@ -114,12 +117,11 @@ t[np.where(y==0), 0] = 1
 t[np.where(y==1), 1] = 1
 
 # plot data
-plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Spectral)
-plt.show()
+#plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Spectral)
+#plt.show()
 
 
-nn = NN_Model([2, 4, 2])
+nn = NN_Model([2, 3, 2])
 nn.init_weight()
 nn.backpropagation(X, t)
 
-nn.evaluate()
