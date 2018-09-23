@@ -20,3 +20,4 @@
 * [安装Python环境](tips/InstallPython.md)
 * [confusion matrix](tips/confusion_matrix.ipynb)
 * [一些速查手册](tips/cheatsheet)
+* [Python tips](tips/python)

@@ -119,5 +119,7 @@ plt.hist(lum_img.ravel(), bins=256, range=(0.0, 1.0), fc='k', ec='k')
 
 # ## References
 #
+#
 # * [Pyplot tutorial](https://matplotlib.org/users/pyplot_tutorial.html)
 # * [Image tutorial](https://matplotlib.org/users/image_tutorial.html)
+# * [手把手教你用Python做数据可视化](https://mp.weixin.qq.com/s/3Gwdjw8trwTR5uyr4G7EOg)
