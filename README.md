@@ -16,6 +16,7 @@
 8. PyTorch
 
 ## 其他参考
+* [学习参考资料等](References.md)
 * [安装Python环境](tips/InstallPython.md)
-* [参考资料等](References.md)
 * [confusion matrix](tips/confusion_matrix.ipynb)
+* [一些速查手册](tips/cheatsheet)

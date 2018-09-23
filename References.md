@@ -9,7 +9,8 @@
 * [IPython tutorials](https://nbviewer.jupyter.org/github/ipython/ipython/blob/master/examples/IPython%20Kernel/Index.ipynb)
 * [Examples from the IPython mini-book](https://github.com/rossant/ipython-minibook)
 * [Code of the IPython Cookbook, Second Edition (2018)](https://github.com/ipython-books/cookbook-2nd-code)
-
+* [Essential Cheat Sheets for deep learning and machine learning researchers](https://github.com/kailashahirwar/cheatsheets-ai)
+* [手把手教你用Python做数据可视化](https://mp.weixin.qq.com/s/3Gwdjw8trwTR5uyr4G7EOg)
 
 ## Libs
 * [numpy](http://www.numpy.org/)
