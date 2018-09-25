@@ -21,6 +21,36 @@
 #
 #
 
+from IPython.core.display import HTML
+HTML("""
+<style>
+
+div.cell { /* Tunes the space between cells */
+margin-top:1em;
+margin-bottom:1em;
+}
+
+div.text_cell_render h1 { /* Main titles bigger, centered */
+font-size: 2.2em;
+line-height:1.4em;
+text-align:center;
+}
+
+div.text_cell_render h2 { /*  Parts names nearer from text */
+margin-bottom: -0.4em;
+}
+
+
+div.text_cell_render { /* Customize text cells */
+font-family: 'Times New Roman';
+font-size:1.5em;
+line-height:1.4em;
+padding-left:3em;
+padding-right:3em;
+}
+</style>
+""")
+
 from IPython.display import Latex
 Latex(r"""\begin{eqnarray}
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\
@@ -36,6 +66,29 @@ Latex(r"""\begin{eqnarray}
 \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
 \nabla \cdot \vec{\mathbf{B}} & = 0
 \end{align}
+
+# \begin{align}
+# \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\
+# \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+# \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+# \nabla \cdot \vec{\mathbf{B}} & = 0
+# \end{align}
+#
+# \begin{equation}
+# E = F \cdot s 
+# \end{equation}
+#
+# \begin{eqnarray}
+# F & = & sin(x) \\
+# G & = & cos(x)
+# \end{eqnarray}
+#
+# \begin{align}
+#     g &= \int_a^b f(x)dx \label{eq1} \\
+#     a &= b + c \label{eq2}
+# \end{align}
+#
+# See (\ref{eq1})
 
 # ## Audio
 #
@@ -62,6 +115,34 @@ Audio(data=signal, rate=rate)
 from IPython.display import IFrame
 IFrame('https://jupyter.org', width='100%', height=350)
 # -
+
+# ## JupyterLab
+
+# +
+import numpy as np
+from pprint import pprint
+
+pp = pprint
+a = np.array([1, 2, 3])
+pp(a)
+
+# -
+
+# ### [jupyter-matplotlib](https://github.com/matplotlib/jupyter-matplotlib)
+#
+#
+# ```
+# # Installing Node.js 5.x on Ubuntu / Debian
+# curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+# sudo apt-get install -y nodejs
+#
+# pip install ipympl
+#
+# # If using JupyterLab
+# # Install nodejs: https://nodejs.org/en/download/
+# jupyter labextension install @jupyter-widgets/jupyterlab-manager
+# jupyter labextension install jupyter-matplotlib
+# ```
 
 # ## References
 #

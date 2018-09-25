@@ -44,3 +44,13 @@ http://localhost:8889/notebooks/machineLearning/notebooks/01%20-%20Model%20Selec
 * https://medium.com/@UdacityINDIA/how-to-build-your-first-neural-network-with-python-6819c7f65dbf
 * https://enlight.nyc/projects/neural-network/
 * https://www.python-course.eu/neural_networks_with_python_numpy.php
+
+
+## k-Means
+* [如何使用 Keras 实现无监督聚类](http://m.sohu.com/a/236221126_717210)
+
+## AutoEncoder (自编码/非监督学习)
+* https://morvanzhou.github.io/tutorials/machine-learning/torch/4-04-autoencoder/
+* https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/404_autoencoder.py
+* pytorch AutoEncoder 自编码 https://www.jianshu.com/p/f0929f427d03
+* Adversarial Autoencoders (with Pytorch) https://blog.paperspace.com/adversarial-autoencoders-with-pytorch/

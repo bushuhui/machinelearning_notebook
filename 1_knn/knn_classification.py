@@ -48,6 +48,114 @@
 # ## Program
 
 # +
+import numpy as np
+import operator
+
+class KNN(object):
+
+    def __init__(self, k=3):
+        self.k = k
+
+    def fit(self, x, y):
+        self.x = x
+        self.y = y
+
+    def _square_distance(self, v1, v2):
+        return np.sum(np.square(v1-v2))
+
+    def _vote(self, ys):
+        ys_unique = np.unique(ys)
+        vote_dict = {}
+        for y in ys:
+            if y not in vote_dict.keys():
+                vote_dict[y] = 1
+            else:
+                vote_dict[y] += 1
+        sorted_vote_dict = sorted(vote_dict.items(), key=operator.itemgetter(1), reverse=True)
+        return sorted_vote_dict[0][0]
+
+    def predict(self, x):
+        y_pred = []
+        for i in range(len(x)):
+            dist_arr = [self._square_distance(x[i], self.x[j]) for j in range(len(self.x))]
+            sorted_index = np.argsort(dist_arr)
+            top_k_index = sorted_index[:self.k]
+            y_pred.append(self._vote(ys=self.y[top_k_index]))
+        return np.array(y_pred)
+
+    def score(self, y_true=None, y_pred=None):
+        if y_true is None and y_pred is None:
+            y_pred = self.predict(self.x)
+            y_true = self.y
+        score = 0.0
+        for i in range(len(y_true)):
+            if y_true[i] == y_pred[i]:
+                score += 1
+        score /= len(y_true)
+        return score
+
+# +
+# %matplotlib inline
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# data generation
+np.random.seed(314)
+data_size_1 = 300
+x1_1 = np.random.normal(loc=5.0, scale=1.0, size=data_size_1)
+x2_1 = np.random.normal(loc=4.0, scale=1.0, size=data_size_1)
+y_1 = [0 for _ in range(data_size_1)]
+
+data_size_2 = 400
+x1_2 = np.random.normal(loc=10.0, scale=2.0, size=data_size_2)
+x2_2 = np.random.normal(loc=8.0, scale=2.0, size=data_size_2)
+y_2 = [1 for _ in range(data_size_2)]
+
+x1 = np.concatenate((x1_1, x1_2), axis=0)
+x2 = np.concatenate((x2_1, x2_2), axis=0)
+x = np.hstack((x1.reshape(-1,1), x2.reshape(-1,1)))
+y = np.concatenate((y_1, y_2), axis=0)
+
+data_size_all = data_size_1+data_size_2
+shuffled_index = np.random.permutation(data_size_all)
+x = x[shuffled_index]
+y = y[shuffled_index]
+
+split_index = int(data_size_all*0.7)
+x_train = x[:split_index]
+y_train = y[:split_index]
+x_test = x[split_index:]
+y_test = y[split_index:]
+
+# visualize data
+plt.scatter(x_train[:,0], x_train[:,1], c=y_train, marker='.')
+plt.title("train data")
+plt.show()
+plt.scatter(x_test[:,0], x_test[:,1], c=y_test, marker='.')
+plt.title("test data")
+plt.show()
+
+
+
+# +
+# data preprocessing
+x_train = (x_train - np.min(x_train, axis=0)) / (np.max(x_train, axis=0) - np.min(x_train, axis=0))
+x_test = (x_test - np.min(x_test, axis=0)) / (np.max(x_test, axis=0) - np.min(x_test, axis=0))
+
+# knn classifier
+clf = KNN(k=3)
+clf.fit(x_train, y_train)
+
+print('train accuracy: {:.3}'.format(clf.score()))
+
+y_test_pred = clf.predict(x_test)
+print('test accuracy: {:.3}'.format(clf.score(y_test, y_test_pred)))
+# -
+
+# ## sklearn program
+
+# +
 % matplotlib inline
 
 import matplotlib.pyplot as plt
@@ -95,4 +203,4 @@ print('LogisticRegression score: %f' % logistic.fit(X_train, y_train).score(X_te
 
 # ## References
 # * [Digits Classification Exercise](http://scikit-learn.org/stable/auto_examples/exercises/plot_digits_classification_exercise.html)
-#
+# * [knn算法的原理与实现](https://zhuanlan.zhihu.com/p/36549000)

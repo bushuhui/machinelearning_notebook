@@ -128,9 +128,7 @@ plt.show()
 
 # +
 import matplotlib.pyplot as plt
-from sklearn.datasets import make_blobs
-
-
+from sklearn.datasets import make_blobsb
 
 # Generate 3 blobs with 2 classes where the second blob contains
 # half positive samples and half negative samples. Probability in this
@@ -145,3 +143,34 @@ plt.figure(figsize=(15, 9))
 plt.scatter(X[:, 0], X[:, 1], c=y)
 plt.colorbar()
 plt.show()
+# -
+
+# ## Circles
+
+# +
+# %matplotlib inline
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+n = 200
+
+t1 = (np.random.rand(n, 1)*2-1)*np.pi
+r1 = 10 + (np.random.rand(n, 1)*2-1)*4
+x_1 = np.concatenate((r1 * np.cos(t1), r1 * np.sin(t1)), axis=1)
+y_1 = [0 for _ in range(n)]
+
+t2 = (np.random.rand(n, 1)*2-1)*np.pi
+r2 = 20 + (np.random.rand(n, 1)*2-1)*4
+x_2 = np.concatenate((r2 * np.cos(t2), r2 * np.sin(t2)), axis=1)
+y_2 = [1 for _ in range(n)]
+
+x = np.concatenate((x_1, x_2), axis=0)
+y = np.concatenate((y_1, y_2), axis=0)
+
+plt.scatter(x[:, 0], x[:,1], c=y)
+plt.show()
+
+yy = y.reshape(-1, 1)
+data = np.concatenate((x, yy), axis=1)
+np.savetxt("dataset_circles.csv", data, delimiter=",")
