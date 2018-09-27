@@ -2,6 +2,8 @@
 
 
 ## References
+* [code of book "Learn Deep Learning with PyTorch"](https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch)
+* [PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation](https://github.com/chenyuntc/pytorch-book)
 * [Awesome-Pytorch-list](https://github.com/bharathgs/Awesome-pytorch-list)
 * [PyTorch Tutorial for Deep Learning Researchers](https://github.com/yunjey/pytorch-tutorial)
 * [The Incredible PyTorch: a curated list of tutorials, papers, projects, communities and more relating to PyTorch.](https://github.com/ritchieng/the-incredible-pytorch)
