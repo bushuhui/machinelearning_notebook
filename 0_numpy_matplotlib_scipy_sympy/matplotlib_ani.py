@@ -17,8 +17,10 @@
 #     version: 3.5.2
 # ---
 
-# ## Animation
+# ## Matplotlib Animation
 #
+
+# ## Method 1
 
 # +
 # %matplotlib inline
@@ -61,3 +63,25 @@ anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=100, interval=20, blit=True)
 
 HTML(anim.to_html5_video())
+# -
+
+# ## Method 2
+
+# +
+# %matplotlib nbagg
+
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+
+fig = plt.figure()
+x = np.arange(0, 10, 0.1)
+
+ims = []
+for a in range(50):
+    y = np.sin(x - a)
+    im = plt.plot(x, y, "r")
+    ims.append(im)
+
+ani = animation.ArtistAnimation(fig, ims)
+plt.show()
