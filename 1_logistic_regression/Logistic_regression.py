@@ -34,10 +34,22 @@
 #
 # 逻辑回归就是一种减小预测范围，将预测值限定为$[0,1]$间的一种回归模型，其回归方程与回归曲线如图2所示。逻辑曲线在$z=0$时，十分敏感，在$z>>0$或$z<<0$处，都不敏感，将预测值限定为$(0,1)$。
 #
-# FIXME: this figure is wrong
-# ![LogisticFunction](images/fig2.gif)
 #
-#
+
+# +
+# %matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure()
+plt.axis([-10,10,0,1])
+plt.grid(True)
+X=np.arange(-10,10,0.1)
+y=1/(1+np.e**(-X))
+plt.plot(X,y,'b-')
+plt.title("Logistic function")
+plt.show()
+# -
 
 # ### 逻辑回归表达式
 #
@@ -69,6 +81,7 @@ X=np.arange(-10,10,0.1)
 y=1/(1+np.e**(-X))
 plt.plot(X,y,'b-')
 plt.title("Logistic function")
+plt.show()
 # -
 
 # 逻辑回归本质上是线性回归，只是在特征到结果的映射中加入了一层函数映射，即先把特征线性求和，然后使用函数$g(z)$将最为假设函数来预测。$g(z)$可以将连续值映射到0到1之间。线性回归模型的表达式带入$g(z)$，就得到逻辑回归的表达式:
