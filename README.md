@@ -1,19 +1,62 @@
-# Python和机器学习的notebook
+# Python与机器学习
 
-本notebook教程包含了一些使用Python来学习机器学习的教程，通过本教程能够引导学习Python的基础知识和机器学习的背景和实际编程。
+本教程包含了一些使用Python来学习机器学习的notebook，通过本教程能够引导学习Python的基础知识和机器学习的理论知识和实际编程，并学习如何解决实际问题。
 
-由于本课程需要大量的编程练习才能取得比较好的学习效果，因此需要认真把作业和报告完成。作业的地址是：https://gitee.com/machinelearning2018/pr_homework 请按照里面的说明进行操作。
+由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真把作业和报告完成。作业的地址是：https://gitee.com/machinelearning2018/pr_homework 请按照里面的说明进行操作。
 
 
 ## 内容
-1. [Python基础](0_python/)
+1. [Python](0_python/)
+   - [Introduction](0_python/0_Introduction.ipynb)
+   - [Python Basics](0_python/1_Basics.ipynb)
+   - [Print Statement](0_python/2_Print_Statement.ipynb)
+   - [Data Structure 1](0_python/3_Data_Structure_1.ipynb)
+   - [Data Structure 2](0_python/4_Data_Structure_2.ipynb)
+   - [Control Flow](0_python/5_Control_Flow.ipynb)
+   - [Function](0_python/6_Function.ipynb)
+   - [Class](0_python/7_Class.ipynb)
 2. [numpy & matplotlib](0_numpy_matplotlib_scipy_sympy/)
-3. [kMenas](1_kmeans/)
-4. [knn](1_knn/)
+   - [numpy](0_numpy_matplotlib_scipy_sympy/numpy_tutorial.ipynb)
+   - [matplotlib](0_numpy_matplotlib_scipy_sympy/matplotlib_simple_tutorial.ipynb)
+3. [knn](1_knn/knn_classification.ipynb)
+4. [kMenas](1_kmeans/knn_classification.ipynb)
 5. [Logistic Regression](1_logistic_regression/)
-6. [Neural Network](nn/)
-7. CNN
-8. PyTorch
+   - [Least squares](1_logistic_regression/Least_squares.ipynb)
+   - [Logistic regression](1_logistic_regression/Logistic_regression.ipynb)
+6. [Neural Network](1_nn/)
+   - [Perceptron](1_nn/Perceptron.ipynb)
+   - [Multi-layer Perceptron & BP](1_nn/mlp_bp.ipynb)
+   - [Softmax & cross-entroy](1_nn/softmax_ce.ipynb)
+7. [PyTorch](2_pytorch/)
+   - [short tutorial](PyTorch快速入门.ipynb)
+   - [basic/Tensor-and-Variable](2_pytorch/0_basic/Tensor-and-Variable.ipynb)
+   - [basic/autograd](2_pytorch/0_basic/autograd.ipynb)
+   - [basic/dynamic-graph](2_pytorch/0_basic/dynamic-graph.ipynb)
+   - [nn/linear-regression-gradient-descend](2_pytorch/1_NN/linear-regression-gradient-descend.ipynb)
+   - [nn/logistic-regression](2_pytorch/1_NN/logistic-regression.ipynb)
+   - [nn/nn-sequential-module](2_pytorch/1_NN/nn-sequential-module.ipynb)
+   - [nn/bp](2_pytorch/1_NN/bp.ipynb)
+   - [nn/deep-nn](2_pytorch/1_NN/deep-nn.ipynb)
+   - [nn/param_initialize](2_pytorch/1_NN/param_initialize.ipynb)
+   - [optim/sgd](2_pytorch/1_NN/optimizer/sgd.ipynb)
+   - [optim/adam](2_pytorch/1_NN/optimizer/adam.ipynb)
+   - [optim/adam](2_pytorch/1_NN/optimizer/adam.ipynb)
+   - [cnn/basic_conv](2_pytorch/2_CNN/basic_conv.ipynb)
+   - [cnn/batch-normalization](2_pytorch/2_CNN/batch-normalization.ipynb)
+   - [cnn/regularization](2_pytorch/2_CNN/regularization.ipynb)
+   - [cnn/lr-decay](2_pytorch/2_CNN/lr-decay.ipynb)
+   - [cnn/vgg](2_pytorch/2_CNN/vgg.ipynb)
+   - [cnn/googlenet](2_pytorch/2_CNN/googlenet.ipynb)
+   - [cnn/densenet](2_pytorch/2_CNN/densenet.ipynb)
+   - [cnn/resnet](2_pytorch/2_CNN/resnet.ipynb)
+   - [rnn/pytorch-rnn](2_pytorch/3_RNN/pytorch-rnn.ipynb)
+   - [rnn/rnn-for-image](2_pytorch/3_RNN/rnn-for-image.ipynb)
+   - [rnn/lstm-time-series](2_pytorch/3_RNN/time-series/lstm-time-series.ipynb)
+   - [gan/autoencoder](2_pytorch/4_GNN/autoencoder.ipynb)
+   - [gan/vae](2_pytorch/4_GNN/vae.ipynb)
+   - [gan/gan](2_pytorch/4_GNN/gan.ipynb)
+
+
 
 ## 其他参考
 * [学习参考资料等](References.md)

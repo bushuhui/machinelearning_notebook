@@ -239,6 +239,9 @@ plt.show()
 # $$
 # The we need at least three data to compute the parameters $a, b, c$.
 #
+# $$
+# L = \sum_{i=1}^N (y_i - at^2 - bt - c)^2
+# $$
 #
 
 # +
@@ -255,6 +258,18 @@ y = pa*t**2 + pb*t + pc
 plt.scatter(t, y)
 plt.show()
 # -
+
+# ### How to get the update items?
+#
+# $$
+# L = \sum_{i=1}^N (y_i - at^2 - bt - c)^2
+# $$
+#
+# \begin{eqnarray}
+# \frac{\partial L}{\partial a} & = & - 2\sum_{i=1}^N (y_i - at^2 - bt -c) t^2 \\
+# \frac{\partial L}{\partial b} & = & - 2\sum_{i=1}^N (y_i - at^2 - bt -c) t \\
+# \frac{\partial L}{\partial c} & = & - 2\sum_{i=1}^N (y_i - at^2 - bt -c)
+# \end{eqnarray}
 
 # ## How to use sklearn to solve linear problem?
 #
