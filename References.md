@@ -1,22 +1,3 @@
----
-jupyter:
-  jupytext_format_version: '1.0'
-  kernelspec:
-    display_name: Python 3
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.5.2
----
-
 # References
 可以自行在下属列表找找到适合自己的学习资料，虽然罗列的比较多，但是个人最好选择一个深入阅读、练习。当练习到一定程度，可以再看看其他的资料，这样弥补单一学习资料可能存在的欠缺。
 
