@@ -154,6 +154,7 @@ def perceptron_train(train_data, eta=0.5, n_iter=100):
     train_num = n_iter  # 迭代次数
 
     for i in range(train_num):
+        #FIXME: the random chose sample is to slow
         train = random.choice(train_data)
         x1, x2, y = train
         predict = sign(weight[0] * x1 + weight[1] * x2 + bias)  # 输出
