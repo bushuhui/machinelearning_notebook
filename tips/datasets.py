@@ -174,3 +174,55 @@ plt.show()
 yy = y.reshape(-1, 1)
 data = np.concatenate((x, yy), axis=1)
 np.savetxt("dataset_circles.csv", data, delimiter=",")
+# -
+
+# ## CIFAR-10数据
+#
+# CIFAR-10[^3]是一个常用的彩色图片数据集，它有10个类别: 'airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'。每张图片都是$3\times32\times32$，也即3-通道彩色图片，分辨率为$32\times32$。
+#
+# [^3]: http://www.cs.toronto.edu/~kriz/cifar.html
+
+import torchvision as tv
+import torchvision.transforms as transforms
+from torchvision.transforms import ToPILImage
+show = ToPILImage() # 可以把Tensor转成Image，方便可视化
+
+# +
+# 第一次运行程序torchvision会自动下载CIFAR-10数据集，
+# 大约100M，需花费一定的时间，
+# 如果已经下载有CIFAR-10，可通过root参数指定
+
+# 定义对数据的预处理
+transform = transforms.Compose([
+        transforms.ToTensor(), # 转为Tensor
+        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)), # 归一化
+                             ])
+
+# 训练集
+trainset = tv.datasets.CIFAR10(
+                    root='../data/', 
+                    train=True, 
+                    download=True,
+                    transform=transform)
+
+trainloader = t.utils.data.DataLoader(
+                    trainset, 
+                    batch_size=4,
+                    shuffle=True, 
+                    num_workers=2)
+
+# 测试集
+testset = tv.datasets.CIFAR10(
+                    '../data/',
+                    train=False, 
+                    download=True, 
+                    transform=transform)
+
+testloader = t.utils.data.DataLoader(
+                    testset,
+                    batch_size=4, 
+                    shuffle=False,
+                    num_workers=2)
+
+classes = ('plane', 'car', 'bird', 'cat', 'deer', 
+           'dog', 'frog', 'horse', 'ship', 'truck')
