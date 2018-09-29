@@ -1,4 +1,4 @@
 .ipynb_checkpoints
 .idea
-.tar.gz
-.pth
+*.tar.gz
+*.pth
