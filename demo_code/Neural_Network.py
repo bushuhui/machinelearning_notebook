@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -58,7 +56,8 @@ optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.5)
 
 
 def train(epoch):
-    #model.train()
+    model.train()
+
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = Variable(data), Variable(target)
         optimizer.zero_grad()
@@ -66,30 +65,33 @@ def train(epoch):
         loss = criterion(output, target)
         loss.backward()
         optimizer.step()
-        if batch_idx % 10 == 0:
-            print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
+        if batch_idx % 100 == 0:
+            print("Train epoch: %6d [%6d/%6d (%.0f %%)] \t Loss: %.6f" % (
                 epoch, batch_idx * len(data), len(train_loader.dataset),
-                100. * batch_idx / len(train_loader), loss.data[0]))
+                100. * batch_idx / len(train_loader), loss.data[0]) )
 
 
 def test():
     model.eval()
-    test_loss = 0
-    correct = 0
+
+    test_loss = 0.0
+    correct = 0.0
     for data, target in test_loader:
-        data, target = Variable(data, volatile=True), Variable(target)
+        data, target = Variable(data), Variable(target)
         output = model(data)
+
         # sum up batch loss
         test_loss += criterion(output, target).data[0]
+
         # get the index of the max
         pred = output.data.max(1, keepdim=True)[1]
-        correct += pred.eq(target.data.view_as(pred)).cpu().sum()
+        correct += float(pred.eq(target.data.view_as(pred)).cpu().sum())
 
     test_loss /= len(test_loader.dataset)
-    print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
-        test_loss, correct, len(test_loader.dataset),
-        100. * correct / len(test_loader.dataset)))
-
+    print("\nTest set: Average loss: %.4f, Accuracy: %6d/%6d (%4.2f %%)\n" %
+          (test_loss,
+           correct, len(test_loader.dataset),
+           100.0*correct / len(test_loader.dataset)) )
 
 for epoch in range(1, 10):
     train(epoch)

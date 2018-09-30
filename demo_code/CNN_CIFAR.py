@@ -34,7 +34,7 @@ trainloader = t.utils.data.DataLoader(
 
 # 测试集
 testset = tv.datasets.CIFAR10(
-                    dataset_path, train=False, download=True, transform=transform)
+                    root=dataset_path, train=False, download=True, transform=transform)
 
 testloader = t.utils.data.DataLoader(
                     testset,
@@ -69,7 +69,7 @@ class Net(nn.Module):
 net = Net()
 print(net)
 
-criterion = nn.CrossEntropyLoss() # 交叉熵损失函数
+criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
 t.set_num_threads(8)
