@@ -49,8 +49,9 @@ def get_loss(y_pred, y):
 
 # upgrade parameters
 eta = 1e-2
+n_epoch = 100
 
-for i in range(100):
+for i in range(n_epoch):
     y_pred = linear_model(x_train)
 
     loss = get_loss(y_pred, y_train)
