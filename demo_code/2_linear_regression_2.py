@@ -1,17 +1,31 @@
 
-import torch as t
+import torch
 from torch import nn, optim
 from torch.autograd import Variable
 import numpy as np
 import matplotlib.pyplot as plt
 
-# create numpy data
-x_train = np.linspace(0, 10, 100)
-y_train = 10*x_train + 4.5
 
-# convert to tensor (need to change nx1, float32 dtype)
-x_train = t.from_numpy(x_train.reshape(-1, 1).astype("float32"))
-y_train = t.from_numpy(y_train.reshape(-1, 1).astype("float32"))
+torch.manual_seed(2018)
+
+# model's real-parameters
+w_target = 3
+b_target = 10
+
+# generate data
+n_data = 100
+x_train = np.random.rand(n_data, 1)*20 - 10
+y_train = w_target*x_train + b_target + (np.random.randn(n_data, 1)*10-5.0)
+
+# draw the data
+plt.plot(x_train, y_train, 'bo')
+plt.show()
+
+
+# convert to tensor
+x_train = torch.from_numpy(x_train).float()
+y_train = torch.from_numpy(y_train).float()
+
 
 
 # Linear Regression Model
@@ -50,15 +64,14 @@ for epoch in range(num_epochs):
         print('Epoch[{}/{}], loss: {:.6f}'
               .format(epoch+1, num_epochs, loss.data[0]))
 
+
+# do evaluation & plot
 model.eval()
 predict = model(Variable(x_train))
 predict = predict.data.numpy()
-plt.plot(x_train.numpy(), y_train.numpy(), 'ro', label='Original data')
-plt.plot(x_train.numpy(), predict, label='Fitting Line')
+plt.plot(x_train.numpy(), y_train.numpy(), 'bo', label='Real')
+plt.plot(x_train.numpy(), predict, 'ro', label='Estimated')
 
-# 显示图例
-plt.legend() 
+plt.legend()
 plt.show()
 
-# 保存模型
-t.save(model.state_dict(), './model_LinearRegression.pth')
