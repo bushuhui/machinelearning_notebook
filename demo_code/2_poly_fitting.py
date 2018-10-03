@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 """
-Polynomial fitting by pytorch
+    Polynomial fitting by pytorch
 """
 
 # define the real model's parameters
