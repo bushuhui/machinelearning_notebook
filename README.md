@@ -1,8 +1,8 @@
 # Python与机器学习
 
-本教程包含了一些使用Python来学习机器学习的notebook，通过本教程能够引导学习Python的基础知识和机器学习的理论知识和实际编程，并学习如何解决实际问题。
+本教程包含了一些使用Python来学习机器学习的notebook，通过本教程能够引导学习Python的基础知识、机器学习的理论知识与实际编程，并学习如何解决实际问题。
 
-由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真把作业和报告完成。作业的地址是：https://gitee.com/machinelearning2018/pr_homework 请按照里面的说明进行操作。
+由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真把作业和报告完成。作业的地址是：https://gitee.com/machinelearning2018/pr_homework 请按照里面的说明进行操作，并提交作业。
 
 
 ## 内容
@@ -28,7 +28,7 @@
    - [Multi-layer Perceptron & BP](1_nn/mlp_bp.ipynb)
    - [Softmax & cross-entroy](1_nn/softmax_ce.ipynb)
 7. [PyTorch](2_pytorch/)
-   - [short tutorial](PyTorch快速入门.ipynb)
+   - [short tutorial](2_pytorch/PyTorch_quick_intro.ipynb)
    - [basic/Tensor-and-Variable](2_pytorch/0_basic/Tensor-and-Variable.ipynb)
    - [basic/autograd](2_pytorch/0_basic/autograd.ipynb)
    - [basic/dynamic-graph](2_pytorch/0_basic/dynamic-graph.ipynb)
@@ -39,7 +39,6 @@
    - [nn/deep-nn](2_pytorch/1_NN/deep-nn.ipynb)
    - [nn/param_initialize](2_pytorch/1_NN/param_initialize.ipynb)
    - [optim/sgd](2_pytorch/1_NN/optimizer/sgd.ipynb)
-   - [optim/adam](2_pytorch/1_NN/optimizer/adam.ipynb)
    - [optim/adam](2_pytorch/1_NN/optimizer/adam.ipynb)
    - [cnn/basic_conv](2_pytorch/2_CNN/basic_conv.ipynb)
    - [cnn/batch-normalization](2_pytorch/2_CNN/batch-normalization.ipynb)

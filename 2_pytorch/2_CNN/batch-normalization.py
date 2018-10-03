@@ -110,8 +110,8 @@ from torch.autograd import Variable
 
 # +
 # 使用内置函数下载 mnist 数据集
-train_set = mnist.MNIST('./data', train=True)
-test_set = mnist.MNIST('./data', train=False)
+train_set = mnist.MNIST('../../data/mnist', train=True)
+test_set = mnist.MNIST('../../data/mnist', train=False)
 
 def data_tf(x):
     x = np.array(x, dtype='float32') / 255
@@ -120,8 +120,8 @@ def data_tf(x):
     x = torch.from_numpy(x)
     return x
 
-train_set = mnist.MNIST('./data', train=True, transform=data_tf, download=True) # 重新载入数据集，申明定义的数据变换
-test_set = mnist.MNIST('./data', train=False, transform=data_tf, download=True)
+train_set = mnist.MNIST('../../data/mnist', train=True, transform=data_tf, download=True) # 重新载入数据集，申明定义的数据变换
+test_set = mnist.MNIST('../../data/mnist', train=False, transform=data_tf, download=True)
 train_data = DataLoader(train_set, batch_size=64, shuffle=True)
 test_data = DataLoader(test_set, batch_size=128, shuffle=False)
 # -
@@ -193,8 +193,8 @@ def data_tf(x):
     x = x.unsqueeze(0)
     return x
 
-train_set = mnist.MNIST('./data', train=True, transform=data_tf, download=True) # 重新载入数据集，申明定义的数据变换
-test_set = mnist.MNIST('./data', train=False, transform=data_tf, download=True)
+train_set = mnist.MNIST('../../data/mnist', train=True, transform=data_tf, download=True) # 重新载入数据集，申明定义的数据变换
+test_set = mnist.MNIST('../../data/mnist', train=False, transform=data_tf, download=True)
 train_data = DataLoader(train_set, batch_size=64, shuffle=True)
 test_data = DataLoader(test_set, batch_size=128, shuffle=False)
 

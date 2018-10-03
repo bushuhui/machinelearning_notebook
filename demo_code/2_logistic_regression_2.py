@@ -1,19 +1,24 @@
+import time
 
 import torch as t
 from torch import nn, optim
-import torch.nn.functional as F
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
 from torchvision import transforms
 from torchvision import datasets
-import time
 
-# 定义超参数
+"""
+    Use pytorch nn.Module to implement logistic regression
+    
+"""
+
+
+# define hyper parameters
 batch_size = 32
 learning_rate = 1e-3
 num_epoches = 100
 
-# 下载训练集 MNIST 手写数字训练集
+# download/load MNIST dataset
 dataset_path = "../data/mnist"
 
 train_dataset = datasets.MNIST(
@@ -26,7 +31,7 @@ train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 test_loader  = DataLoader(test_dataset,  batch_size=batch_size, shuffle=False)
 
 
-# 定义 Logistic Regression 模型
+# define Logistic Regression model
 class Logstic_Regression(nn.Module):
     def __init__(self, in_dim, n_class):
         super(Logstic_Regression, self).__init__()
@@ -37,18 +42,17 @@ class Logstic_Regression(nn.Module):
         return out
 
 
-model = Logstic_Regression(28 * 28, 10)  # 图片大小是28x28
-use_gpu = t.cuda.is_available()  # 判断是否有GPU加速
-if use_gpu:
-    model = model.cuda()
+model = Logstic_Regression(28 * 28, 10)     # model's input/output node size
+use_gpu = t.cuda.is_available()             # GPU use or not
+if use_gpu: model = model.cuda()
 
-# 定义loss和optimizer
+# define loss & optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=learning_rate)
 
-# 开始训练
+# training
 for epoch in range(num_epoches):
-    print('*' * 10)
+    print('-' * 40)
     print('epoch {}'.format(epoch + 1))
 
     since = time.time()
@@ -56,7 +60,7 @@ for epoch in range(num_epoches):
     running_acc = 0.0
     for i, data in enumerate(train_loader, 1):
         img, label = data
-        img = img.view(img.size(0), -1)  # 将图片展开成 28x28
+        img = img.view(img.size(0), -1)  # convert input image to dimensions of (n, 28x28)
         if use_gpu:
             img = Variable(img).cuda()
             label = Variable(label).cuda()
@@ -64,15 +68,15 @@ for epoch in range(num_epoches):
             img = Variable(img)
             label = Variable(label)
 
-        # 向前传播
+        # forward calculation
         out = model(img)
         loss = criterion(out, label)
         running_loss += loss.data[0] * label.size(0)
         _, pred = t.max(out, 1)
         num_correct = (pred == label).sum()
-        running_acc += num_correct.data[0]
+        running_acc += float(num_correct.data[0])
 
-        # 向后传播
+        # bp
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
@@ -104,12 +108,13 @@ for epoch in range(num_epoches):
         eval_loss += loss.data[0] * label.size(0)
         _, pred = t.max(out, 1)
         num_correct = (pred == label).sum()
-        eval_acc += num_correct.data[0]
+        eval_acc += float(num_correct.data[0])
 
-    print('Test Loss: {:.6f}, Acc: {:.6f}'.format(eval_loss / (len(
-        test_dataset)), eval_acc / (len(test_dataset))))
+    print('Test Loss: {:.6f}, Acc: {:.6f}'.format(
+        eval_loss / (len(test_dataset)),
+        eval_acc / (len(test_dataset))))
     print('Time:{:.1f} s'.format(time.time() - since))
     print()
 
-# 保存模型
-t.save(model.state_dict(), './model_LogsticRegression.pth')
+# save model's parameters
+#t.save(model.state_dict(), './model_LogsticRegression.pth')

@@ -31,9 +31,9 @@ test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
 
 
 # define Network
-class Net(nn.Module):
+class NN_FC1(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super(NN_FC1, self).__init__()
         self.l1 = nn.Linear(784, 520)
         self.l2 = nn.Linear(520, 320)
         self.l3 = nn.Linear(320, 240)
@@ -48,8 +48,30 @@ class Net(nn.Module):
         x = F.relu(self.l4(x))
         return self.l5(x)
 
+# Define the network
+class NN_FC2(nn.Module):
+    def __init__(self):
+        super(NN_FC2, self).__init__()
 
-model = Net()
+        in_dim      = 28*28
+        n_hidden_1  = 300
+        n_hidden_2  = 100
+        out_dim     = 10
+
+        self.layer1 = nn.Linear(in_dim, n_hidden_1)
+        self.layer2 = nn.Linear(n_hidden_1, n_hidden_2)
+        self.layer3 = nn.Linear(n_hidden_2, out_dim)
+
+    def forward(self, x):
+        x = x.view(-1, 784)
+        x = F.relu(self.layer1(x))
+        x = F.relu(self.layer2(x))
+        x = self.layer3(x)
+        return x
+
+
+# create the NN object
+model = NN_FC2()
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.5)

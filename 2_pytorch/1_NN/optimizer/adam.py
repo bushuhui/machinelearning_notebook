@@ -79,8 +79,8 @@ def data_tf(x):
     x = torch.from_numpy(x)
     return x
 
-train_set = MNIST('./data', train=True, transform=data_tf, download=True) # 载入数据集，申明定义的数据变换
-test_set = MNIST('./data', train=False, transform=data_tf, download=True)
+train_set = MNIST('../../../data/mnist', train=True, transform=data_tf, download=True) # 载入数据集，申明定义的数据变换
+test_set  = MNIST('../../../data/mnist', train=False, transform=data_tf, download=True)
 
 # 定义 loss 函数
 criterion = nn.CrossEntropyLoss()
