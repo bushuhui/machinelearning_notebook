@@ -64,6 +64,8 @@ train_Y = data_Y[:train_size]
 test_X = data_X[train_size:]
 test_Y = data_Y[train_size:]
 
+train_Y.shape
+
 # 最后，我们需要将数据改变一下形状，因为 RNN 读入的数据维度是 (seq, batch, feature)，所以要重新改变一下数据的维度，这里只有一个序列，所以 batch 是 1，而输入的 feature 就是我们希望依据的几个月份，这里我们定的是两个月份，所以 feature 就是 2.
 
 # +
