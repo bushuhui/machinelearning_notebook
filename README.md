@@ -76,7 +76,7 @@
   * [Python tips](tips/python)
 
 * 机器学习方面
-  * [Confusion Matrix](tips/confusion matrix.ipynb)
+  * [Confusion Matrix](tips/confusion_matrix.ipynb)
   * [Datasets](tips/datasets.ipynb)
   * [构建深度神经网络的一些实战建议](tips/构建深度神经网络的一些实战建议.md)
 
