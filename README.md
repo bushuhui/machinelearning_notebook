@@ -21,6 +21,7 @@
 2. [numpy & matplotlib](1_numpy_matplotlib_scipy_sympy/)
    - [numpy](1_numpy_matplotlib_scipy_sympy/numpy_tutorial.ipynb)
    - [matplotlib](1_numpy_matplotlib_scipy_sympy/matplotlib_simple_tutorial.ipynb)
+   - [ipython & notebook](1_numpy_matplotlib_scipy_sympy/ipython_notebook.ipynb)
 3. [knn](2_knn/knn_classification.ipynb)
 4. [kMenas](3_kmeans/knn_classification.ipynb)
 5. [Logistic Regression](4_logistic_regression/)
@@ -61,9 +62,16 @@
 
 
 ## 其他参考
-* [相关学习参考资料等](References.md)
-* [安装Python环境](tips/InstallPython.md)
-* [confusion matrix](tips/confusion_matrix.ipynb)
-* [一些速查手册](tips/cheatsheet)
-* [Python tips](tips/python)
+* 资料速查
+  * [相关学习参考资料等](References.md)
+  * [一些速查手册](tips/cheatsheet)
+
+* Python
+  * [安装Python环境](tips/InstallPython.md)
+  * [Python tips](tips/python)
+
+* 机器学习方面
+  * [Confusion Matrix](tips/confusion matrix.ipynb)
+  * [Datasets](tips/datasets.ipynb)
+  * [构建深度神经网络的一些实战建议](tips/构建深度神经网络的一些实战建议.md)
 
