@@ -1,6 +1,8 @@
 # Installing Python environments
 
-这章，讲解如何安装Python的环境
+由于Python的库比较多，并且依赖关系比较复杂，所以请仔细阅读下面的说明，使用下面的说明来安装能够减少问题的可能。
+
+
 
 ## 1. Windows
 
@@ -25,6 +27,7 @@ pip3 install torchvision
 ```
 
 
+
 ## 2. Linux
 
 ### 安装pip
@@ -32,12 +35,18 @@ pip3 install torchvision
 sudo apt-get install python3-pip
 ```
 
+
+
 ### 设置PIP源
+
 ```
 pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
 ```
 
+
+
 ### 安装常用的包
+
 ```
 pip install -r requirements.txt
 ```
@@ -53,11 +62,22 @@ sudo pip install ipython
 sudo pip install jupyter
 ```
 
+
+
 ### 安装pytorch
+
 到[pytorch 官网](https://pytorch.org)，根据自己的操作系统、CUDA版本，选择合适的安装命令。
 
 例如Linux, Python3.5, CUDA 9.0：
 ```
 pip3 install torch torchvision
 ```
+
+
+
+## 3. [Python技巧](python/)
+
+- [pip的安装、使用等](pip.md)
+- [virtualenv的安装、使用](virtualenv.md)
+- [virtualenv便捷管理工具：virtualenv_wrapper](virtualenv_wrapper.md)
 
