@@ -47,6 +47,7 @@
       - [optim/sgd](6_pytorch/1_NN/optimizer/sgd.ipynb)
       - [optim/adam](6_pytorch/1_NN/optimizer/adam.ipynb)
    - CNN
+      - 加一个基本的用法介绍
       - [cnn/basic_conv](6_pytorch/2_CNN/basic_conv.ipynb)
       - [cnn/batch-normalization](6_pytorch/2_CNN/batch-normalization.ipynb)
       - [cnn/regularization](6_pytorch/2_CNN/regularization.ipynb)
@@ -79,4 +80,5 @@
   * [Confusion Matrix](tips/confusion_matrix.ipynb)
   * [Datasets](tips/datasets.ipynb)
   * [构建深度神经网络的一些实战建议](tips/构建深度神经网络的一些实战建议.md)
+  * [Intro to Deep Learning](./tips/Intro_to_Deep_Learning.pdf)
 

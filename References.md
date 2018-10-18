@@ -2,7 +2,9 @@
 可以自行在下属列表找找到适合自己的学习资料，虽然罗列的比较多，但是个人最好选择一个深入阅读、练习。当练习到一定程度，可以再看看其他的资料，这样弥补单一学习资料可能存在的欠缺。
 
 
+
 ## Python & IPython
+
 * [Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
 * [Python-Lectures](https://github.com/rajathkmp/Python-Lectures)
 * [A gallery of interesting Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
@@ -12,12 +14,17 @@
 * [Essential Cheat Sheets for deep learning and machine learning researchers](https://github.com/kailashahirwar/cheatsheets-ai)
 * [手把手教你用Python做数据可视化](https://mp.weixin.qq.com/s/3Gwdjw8trwTR5uyr4G7EOg)
 
+
+
 ## Libs
+
 * [numpy](http://www.numpy.org/)
 * [matplotlib - 2D and 3D plotting in Python](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
 * [scipy](https://www.scipy.org/)
 * [pytorch](https://pytorch.org/)
 * [tensorflow](https://www.tensorflow.org/)
+* [keras](https://keras.io/)
+
 
 
 ## Machine learning
@@ -29,14 +36,22 @@
 * [scientific-python-lectures](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/tree/master/)
 
 
-## Awesome series
+
+## Awesome series & Collections
+
 * [Awesome Cmputer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
 * [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
 * [Awesome - Most Cited Deep Learning Papers](https://github.com/terryum/awesome-deep-learning-papers)
 * [Awesome Deep Vision](https://github.com/kjw0612/awesome-deep-vision)
 * [Awesome 3D Reconstruction](https://github.com/openMVG/awesome_3DReconstruction_list)
+* [awesome-algorithm](https://github.com/apachecn/awesome-algorithm)
+
+* [Papers with code. Sorted by stars. Updated weekly.](https://github.com/zziz/pwc)
+
+
 
 ## Lectures
+
 * [Machine Learning](https://www.coursera.org/learn/machine-learning)
 * [CS229: Machine Learning](http://cs229.stanford.edu/)
 * [CS 20: Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/index.html)
@@ -53,3 +68,4 @@
 * [Deep Learning for Self-Driving Cars](https://selfdrivingcars.mit.edu/)
 * [史上最全TensorFlow学习资源汇总](https://www.toutiao.com/a6543679835670053380/)
 * [Oxford Deep NLP 2017 course](https://github.com/oxford-cs-deepnlp-2017/lectures) 
+
