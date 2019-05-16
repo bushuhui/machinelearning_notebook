@@ -53,6 +53,8 @@
 ## Lectures
 
 * [MIT 6.S094: Deep Learning for Self-Driving Cars](https://selfdrivingcars.mit.edu/)
+* [Deep Reinforcement Learning and Control](https://katefvision.github.io/)
+* [MIT Deep Learning](https://github.com/lexfridman/mit-deep-learning)
 * [Machine Learning](https://www.coursera.org/learn/machine-learning)
 * [CS229: Machine Learning](http://cs229.stanford.edu/)
 * [CS 20: Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/index.html)
