@@ -1,8 +1,8 @@
-# Python与机器学习
+# 机器学习
 
 本教程包含了一些使用Python来学习机器学习的notebook，通过本教程的引导来快速学习Python、Python的常用库、机器学习的理论知识与实际编程，并学习如何解决实际问题。
 
-由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真把作业和报告完成，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
+由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真把[作业和报告](https://gitee.com/bushuhui/machinelearning_homework)完成，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
 
 
 
@@ -47,15 +47,15 @@
       - [optim/sgd](6_pytorch/1_NN/optimizer/sgd.ipynb)
       - [optim/adam](6_pytorch/1_NN/optimizer/adam.ipynb)
    - CNN
-      - 加一个基本的用法介绍
       - [cnn/basic_conv](6_pytorch/2_CNN/basic_conv.ipynb)
+      - [cnn/minist (demo code)](./demo_code/3_CNN_MNIST.py)
       - [cnn/batch-normalization](6_pytorch/2_CNN/batch-normalization.ipynb)
       - [cnn/regularization](6_pytorch/2_CNN/regularization.ipynb)
       - [cnn/lr-decay](6_pytorch/2_CNN/lr-decay.ipynb)
       - [cnn/vgg](6_pytorch/2_CNN/vgg.ipynb)
       - [cnn/googlenet](6_pytorch/2_CNN/googlenet.ipynb)
-      - [cnn/densenet](6_pytorch/2_CNN/densenet.ipynb)
       - [cnn/resnet](6_pytorch/2_CNN/resnet.ipynb)
+      - [cnn/densenet](6_pytorch/2_CNN/densenet.ipynb)
    - RNN
       - [rnn/pytorch-rnn](6_pytorch/3_RNN/pytorch-rnn.ipynb)
       - [rnn/rnn-for-image](6_pytorch/3_RNN/rnn-for-image.ipynb)

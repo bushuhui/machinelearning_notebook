@@ -24,6 +24,7 @@
 * [pytorch](https://pytorch.org/)
 * [tensorflow](https://www.tensorflow.org/)
 * [keras](https://keras.io/)
+* [bokeh](https://bokeh.pydata.org/)
 
 
 
