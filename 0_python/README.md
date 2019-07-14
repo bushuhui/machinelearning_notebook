@@ -1,92 +1,37 @@
 
-# Python-Lectures  
+# 简明Python教程 （90分钟学会Python）
+
+Python 是一门上手简单、功能强大、通用型的脚本编程语言。Python 类库极其丰富，这使得 Python 几乎无所不能，网站开发、软件开发、大数据分析、网络爬虫、机器学习等都不在话下。Python最主要的优点是使用人类的思考方式来完成大部分的工作，大多数时候使用封装好的库快速完成给定的任务，虽然可能执行的效率不一定很高，但是极大的缩短了程序设计、编写、调试的时间，因此非常适合快速试错。
+
+本教程来自[IPython Notebooks to learn Python](https://github.com/rajathkmp/Python-Lectures)，将其中部分示例代码转化成Python3。关于Python的按照可以自行去网络上查找相关的资料，或者参考[安装Python环境](../tips/InstallPython.md)。
+
+## 内容
+0. [Introduction](0_Introduction.ipynb)
+    - Install ipython
+1. [Basics](1_Basics.ipynb)
+    - Why Python, Zen of Python
+    - Variables, Operators, Built-in functions
+2. [Print statement](2_Print_Statement.ipynb)
+    - Tips of print
+3. [Data structure - 1](3_Data_Structure_1.ipynb)
+    - Lists, Tuples, Sets
+4. [Data structure - 2](4_Data_Structure_2.ipynb)
+    - Strings, Dictionaries
+5. [Control flow](5_Control_Flow.ipynb)
+    - if, else, elif, for, while, break, continue
+6. [Functions](6_Function.ipynb)
+    - Function define, return, arguments
+    - Gloabl and local variables
+    - Lambda functions
+7. [Class](7_Class.ipynb)
+    - Class define
+    - Inheritance
 
 
+## References
+* [安装Python环境](../tips/InstallPython.md)
+* [IPython Notebooks to learn Python](https://github.com/rajathkmp/Python-Lectures)
+* [廖雪峰的Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
+* [智能系统实验室入门教程-Python](https://gitee.com/pi-lab/SummerCamp/tree/master/python)
+* [Python tips](../tips/python)
 
-
-Note: [Andreas Ernst](http://users.monash.edu/~andrease/) has improvised and updated the repo to python 3, [Link](https://gitlab.erc.monash.edu.au/andrease/Python4Maths/tree/master)
-
-## Introduction
-
-Python is a modern, robust, high level programming language. It is very easy to pick up even if you are completely new to programming.
-
-## Installation
-
-Mac OS X and Linux comes pre installed with python. Windows users can download python from https://www.python.org/downloads/ .
-
-To install IPython run,
-
-    $ pip install ipython[all]
-    
-This will install all the necessary dependencies for the notebook, qtconsole, tests etc.
-
-### Installation from unofficial distributions
-
-Installing all the necessary libraries might prove troublesome. Anaconda and Canopy comes pre packaged with all the necessary python libraries and also IPython.
-
-#### Anaconda
-
-Download Anaconda from https://www.continuum.io/downloads
-
-Anaconda is completely free and includes more than 300 python packages. Both python 2.7 and 3.4 options are available.
-
-#### Canopy
-
-Download Canopy from https://store.enthought.com/downloads/#default
-
-Canopy has a premium version which offers 300+ python packages. But the free version works just fine. Canopy as of now supports only 2.7 but it comes with its own text editor and IPython environment.
-
-## Launching IPython Notebook
-
-From the terminal
-
-    ipython notebook
-
-In Canopy and Anaconda, Open the respective terminals and execute the above.
-
-## How to learn from this resource?
-
-You can download the pdf copy from here : [Get Started with Python](https://github.com/rajathkumarmp/Python-Lectures/blob/master/Python.pdf)
-
-It is better to download all the ipython notebooks from this repository https://github.com/rajathkumarmp/Python-Lectures and learn it on the notebook itself rather than having to refer to a pdf.
-
-Launch ipython notebook from the folder which contains the notebooks. Open each one of them
-
-    Cell > All Output > Clear
-    
-This will clear all the outputs and now you can understand each statement and learn interactively.
-
-## Table of contents
-
-
-
-[00 - Introduction and Installation](http://nbviewer.ipython.org/github/rajathkumarmp/Python-Lectures/blob/master/00.ipynb)
-
-
-[01 - Variable, Operators and Built-in Functions](http://nbviewer.ipython.org/github/rajathkumarmp/Python-Lectures/blob/master/01.ipynb)
-
-
-[02 - Print Statement, Precision and FieldWidth](http://nbviewer.ipython.org/github/rajathkumarmp/Python-Lectures/blob/master/02.ipynb)
-
-
-[03 - Lists, Tuples and Sets](http://nbviewer.ipython.org/github/rajathkumarmp/Python-Lectures/blob/master/03.ipynb)
-
-
-[04 - Strings and Dictionaries](http://nbviewer.ipython.org/github/rajathkumarmp/Python-Lectures/blob/master/04.ipynb)
-
-
-[05 - Control Flow Statements](http://nbviewer.ipython.org/github/rajathkumarmp/Python-Lectures/blob/master/05.ipynb)
-
-
-[06 - Functions](http://nbviewer.ipython.org/github/rajathkumarmp/Python-Lectures/blob/master/06.ipynb)
-
-
-[07 - Classes](http://nbviewer.ipython.org/github/rajathkumarmp/Python-Lectures/blob/master/07.ipynb)
-
-
-
-These are online read-only versions.
-
-## License
-
-This work is licensed under the Creative Commons Attribution 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/

@@ -77,7 +77,7 @@ pip3 install torch torchvision
 
 ## 3. [Python技巧](python/)
 
-- [pip的安装、使用等](pip.md)
-- [virtualenv的安装、使用](virtualenv.md)
-- [virtualenv便捷管理工具：virtualenv_wrapper](virtualenv_wrapper.md)
+- [pip的安装、使用等](python/pip.md)
+- [virtualenv的安装、使用](python/virtualenv.md)
+- [virtualenv便捷管理工具：virtualenv_wrapper](python/virtualenv_wrapper.md)
 
