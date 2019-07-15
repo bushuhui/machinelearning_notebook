@@ -1,13 +1,12 @@
 # 机器学习
 
-本教程包含了一些使用Python来学习机器学习的notebook，通过本教程的引导来快速学习Python、Python的常用库、机器学习的理论知识与实际编程，并学习如何解决实际问题。
+本教程主要讲解机器学习的基本原理与实现，通过本教程的引导来快速学习Python、Python的常用库、机器学习的理论知识与实际编程，并学习如何解决实际问题。
 
-由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真把[作业和报告](https://gitee.com/bushuhui/machinelearning_homework)完成，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
-
-
+由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真去做[作业和报告](https://gitee.com/pi-lab/machinelearning_homework)，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
 
 
-## 内容
+
+## 1. 内容
 1. [Python](0_python/)
    - [Install Python](tips/InstallPython.md)
    - [Introduction](0_python/0_Introduction.ipynb)
@@ -47,6 +46,7 @@
       - [optim/sgd](6_pytorch/1_NN/optimizer/sgd.ipynb)
       - [optim/adam](6_pytorch/1_NN/optimizer/adam.ipynb)
    - CNN
+      - [CNN simple demo](demo_code/3_CNN_MNIST.py)
       - [cnn/basic_conv](6_pytorch/2_CNN/basic_conv.ipynb)
       - [cnn/minist (demo code)](./demo_code/3_CNN_MNIST.py)
       - [cnn/batch-normalization](6_pytorch/2_CNN/batch-normalization.ipynb)
@@ -67,7 +67,7 @@
 
 
 
-## 其他参考
+## 2. 其他参考
 * 资料速查
   * [相关学习参考资料等](References.md)
   * [一些速查手册](tips/cheatsheet)
@@ -80,5 +80,5 @@
   * [Confusion Matrix](tips/confusion_matrix.ipynb)
   * [Datasets](tips/datasets.ipynb)
   * [构建深度神经网络的一些实战建议](tips/构建深度神经网络的一些实战建议.md)
-  * [Intro to Deep Learning](./tips/Intro_to_Deep_Learning.pdf)
+  * [Intro to Deep Learning](tips/Intro_to_Deep_Learning.pdf)
 
