@@ -6,8 +6,6 @@ Python 是一门上手简单、功能强大、通用型的脚本编程语言。P
 本教程来自[IPython Notebooks to learn Python](https://github.com/rajathkmp/Python-Lectures)，将其中部分示例代码转化成Python3。关于Python的按照可以自行去网络上查找相关的资料，或者参考[安装Python环境](../tips/InstallPython.md)。
 
 ## 内容
-0. [Introduction](0_Introduction.ipynb)
-    - Install ipython
 1. [Basics](1_Basics.ipynb)
     - Why Python, Zen of Python
     - Variables, Operators, Built-in functions
