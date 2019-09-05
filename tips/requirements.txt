@@ -1,0 +1,55 @@
+#
+# pre-requirements (use python3.5 for better compability)
+#   sudo apt-get install python3.5 python3.5-dev 
+#   sudo apt-get install python3-tk
+#
+
+#
+# pip
+#   sudo apt-get install python-pip python3-pip
+#   pip install pip -U
+#   pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
+#
+
+#
+# Install virtualenv
+#   pip install setuptools
+#   pip install virtualenv
+#   pip install virtualenvwrapper
+#   pip install virtualenvwrapper-win　　#Windows使用该命令
+#
+# Add following lines to `~/.bashrc`
+#   # virtualenv
+#   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+#   export WORKON_HOME=/home/bushuhui/virtualenv
+#   source /usr/local/bin/virtualenvwrapper.sh　
+#
+# Usage:
+#   # create virtual env
+#   mkvirtualenv --python=/usr/local/python3.5.3/bin/python venv
+#
+#   # active virtual env
+#   workon venv
+#
+
+#
+# Install this list packages:
+#   pip install -r requirements.txt
+#
+
+
+numpy
+matplotlib==3.0.3
+sklearn
+statsmodels
+pandas==0.24.2
+ipython
+jupyter
+
+fire
+torchvision
+visdom
+jieba
+ipdb
+tqdm
+
