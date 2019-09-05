@@ -72,13 +72,22 @@
   * [相关学习参考资料等](References.md)
   * [一些速查手册](tips/cheatsheet)
 
-* Python
-  * [安装Python环境](tips/InstallPython.md)
-  * [Python tips](tips/python)
-
 * 机器学习方面
   * [Confusion Matrix](tips/confusion_matrix.ipynb)
   * [Datasets](tips/datasets.ipynb)
   * [构建深度神经网络的一些实战建议](tips/构建深度神经网络的一些实战建议.md)
   * [Intro to Deep Learning](tips/Intro_to_Deep_Learning.pdf)
+
+* Python
+  * [安装Python环境](tips/InstallPython.md)
+  * [Python tips](tips/python)
+
+* Git
+  * [Git快速入门 - Git初体验](https://my.oschina.net/dxqr/blog/134811)
+  * [在win7系统下使用TortoiseGit(乌龟git)简单操作Git](https://my.oschina.net/longxuu/blog/141699)
+  * [Git系统学习 - 廖雪峰的Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+
+* Markdown
+  * [Markdown——入门指南](https://www.jianshu.com/p/1e402922ee32)
+
 
