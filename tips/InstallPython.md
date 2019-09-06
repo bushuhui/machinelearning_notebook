@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ### 安装Anaconda
 
-由于Anaconda集成了大部分的python包，因此能够很方便的开始使用。由于网络下载速度较慢，因此推荐使用镜像来提高下载的速度。
+由于Anaconda集成了大部分的python包，因此能够很方便的开始使用。由于网络下载速度较慢，因此推荐使用镜像来提高下载的速度。镜像的使用方法可以参考[Anaconda镜像的说明文档](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda)
 
 在这里找到适合自己的安装文件，然后下载
 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
