@@ -62,7 +62,7 @@
 * [CS 294: Deep Reinforcement Learning, UC Berkeley](http://rll.berkeley.edu/deeprlcourse/)
 * [Deep Learning Book](https://github.com/exacity/deeplearningbook-chinese)
 * [Machine Learning Crash Course with TensorFlow APIs](https://developers.google.cn/machine-learning/crash-course/)
-* [ Nvidia DLI](https://www.nvidia.com/zh-cn/deep-learning-ai/education/)
+* [Nvidia DLI](https://www.nvidia.com/zh-cn/deep-learning-ai/education/)
 * [Introduction to Machine Learning](https://webdocs.cs.ualberta.ca/~nray1/CMPUT466_551.htm)
 * [Computer Vision @ ETHZ](http://cvg.ethz.ch/teaching/compvis/)
 * [SFMedu: A Structure from Motion System for Education](http://robots.princeton.edu/courses/SFMedu/)
