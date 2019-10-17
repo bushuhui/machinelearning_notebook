@@ -1,13 +1,14 @@
 # 机器学习
 
-本教程主要讲解机器学习的基本原理与实现，通过本教程的引导来快速学习Python、Python的常用库、机器学习的理论知识与实际编程，并学习如何解决实际问题。
+本教程主要讲解机器学习的基本原理与实现，通过本教程的引导来快速学习Python、Python常用库、机器学习的理论知识与实际编程，并学习如何解决实际问题。
 
-由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真去做[作业和报告](https://gitee.com/pi-lab/machinelearning_homework)，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
+由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真去完成[作业和报告](https://gitee.com/pi-lab/machinelearning_homework)，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
 
 
 
 ## 1. 内容
-1. [Python](0_python/)
+1. [课程简介](CourseIntroduction.pdf)
+2. [Python](0_python/)
    - [Install Python](tips/InstallPython.md)
    - [Introduction](0_python/0_Introduction.ipynb)
    - [Python Basics](0_python/1_Basics.ipynb)
@@ -17,20 +18,20 @@
    - [Control Flow](0_python/5_Control_Flow.ipynb)
    - [Function](0_python/6_Function.ipynb)
    - [Class](0_python/7_Class.ipynb)
-2. [numpy & matplotlib](1_numpy_matplotlib_scipy_sympy/)
+3. [numpy & matplotlib](1_numpy_matplotlib_scipy_sympy/)
    - [numpy](1_numpy_matplotlib_scipy_sympy/numpy_tutorial.ipynb)
    - [matplotlib](1_numpy_matplotlib_scipy_sympy/matplotlib_simple_tutorial.ipynb)
    - [ipython & notebook](1_numpy_matplotlib_scipy_sympy/ipython_notebook.ipynb)
-3. [knn](2_knn/knn_classification.ipynb)
-4. [kMenas](3_kmeans/k-means.ipynb)
-5. [Logistic Regression](4_logistic_regression/)
+4. [knn](2_knn/knn_classification.ipynb)
+5. [kMenas](3_kmeans/k-means.ipynb)
+6. [Logistic Regression](4_logistic_regression/)
    - [Least squares](4_logistic_regression/Least_squares.ipynb)
    - [Logistic regression](4_logistic_regression/Logistic_regression.ipynb)
-6. [Neural Network](5_nn/)
+7. [Neural Network](5_nn/)
    - [Perceptron](5_nn/Perceptron.ipynb)
    - [Multi-layer Perceptron & BP](5_nn/mlp_bp.ipynb)
    - [Softmax & cross-entroy](5_nn/softmax_ce.ipynb)
-7. [PyTorch](6_pytorch/)
+8. [PyTorch](6_pytorch/)
    - Basic 
       - [short tutorial](6_pytorch/PyTorch_quick_intro.ipynb)
       - [basic/Tensor-and-Variable](6_pytorch/0_basic/Tensor-and-Variable.ipynb)
@@ -67,18 +68,18 @@
 
 
 
-## 2. 其他参考
+## 2. 其他参考资料
 * 资料速查
-  * [相关学习参考资料等](References.md)
+  * [相关学习参考资料汇总](References.md)
   * [一些速查手册](tips/cheatsheet)
 
-* 机器学习方面
+* 机器学习方面技巧等
   * [Confusion Matrix](tips/confusion_matrix.ipynb)
   * [Datasets](tips/datasets.ipynb)
   * [构建深度神经网络的一些实战建议](tips/构建深度神经网络的一些实战建议.md)
   * [Intro to Deep Learning](tips/Intro_to_Deep_Learning.pdf)
 
-* Python
+* Python技巧等
   * [安装Python环境](tips/InstallPython.md)
   * [Python tips](tips/python)
 
@@ -89,5 +90,4 @@
 
 * Markdown
   * [Markdown——入门指南](https://www.jianshu.com/p/1e402922ee32)
-
 

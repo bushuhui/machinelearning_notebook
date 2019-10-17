@@ -5,6 +5,7 @@
 
 ## Python & IPython
 
+* [Python Numpy Tutorial - 简明Python, Numpy, Matplotlib教程](http://cs231n.github.io/python-numpy-tutorial/)
 * [Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
 * [Python-Lectures](https://github.com/rajathkmp/Python-Lectures)
 * [A gallery of interesting Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
@@ -28,8 +29,9 @@
 
 
 
-## Machine learning
+## Notebook, Book, Tutorial
 
+* [Machine Learning Yearning 中文版 - 《机器学习训练秘籍》](https://github.com/deeplearning-ai/machine-learning-yearning-cn) ([在线阅读](https://deeplearning-ai.github.io/machine-learning-yearning-cn/))
 * [ipython-notebooks: A collection of IPython notebooks covering various topics](https://github.com/jdwittenauer/ipython-notebooks)
 * [Learn Data Science](http://learnds.com/)
 * [AM207 2016](https://github.com/AM207/2016/tree/master)
