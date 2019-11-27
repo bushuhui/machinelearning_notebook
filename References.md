@@ -3,6 +3,16 @@
 
 
 
+## Notebook, Book, Tutorial
+* [Deep Learning with PyTorch](https://pytorch.org/deep-learning-with-pytorch-thank-you)
+* [Machine Learning Yearning 中文版 - 《机器学习训练秘籍》](https://github.com/deeplearning-ai/machine-learning-yearning-cn) ([在线阅读](https://deeplearning-ai.github.io/machine-learning-yearning-cn/))
+* [ipython-notebooks: A collection of IPython notebooks covering various topics](https://github.com/jdwittenauer/ipython-notebooks)
+* [Learn Data Science](http://learnds.com/)
+* [AM207 2016](https://github.com/AM207/2016/tree/master)
+* [Python机器学习](https://ljalphabeta.gitbooks.io/python-/content/)
+* [scientific-python-lectures](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/tree/master/)
+
+
 ## Python & IPython
 
 * [Python Numpy Tutorial - 简明Python, Numpy, Matplotlib教程](http://cs231n.github.io/python-numpy-tutorial/)
@@ -29,16 +39,6 @@
 
 
 
-## Notebook, Book, Tutorial
-
-* [Machine Learning Yearning 中文版 - 《机器学习训练秘籍》](https://github.com/deeplearning-ai/machine-learning-yearning-cn) ([在线阅读](https://deeplearning-ai.github.io/machine-learning-yearning-cn/))
-* [ipython-notebooks: A collection of IPython notebooks covering various topics](https://github.com/jdwittenauer/ipython-notebooks)
-* [Learn Data Science](http://learnds.com/)
-* [AM207 2016](https://github.com/AM207/2016/tree/master)
-* [Python机器学习](https://ljalphabeta.gitbooks.io/python-/content/)
-* [scientific-python-lectures](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/tree/master/)
-
-
 
 ## Awesome series & Collections
 
@@ -48,7 +48,6 @@
 * [Awesome Deep Vision](https://github.com/kjw0612/awesome-deep-vision)
 * [Awesome 3D Reconstruction](https://github.com/openMVG/awesome_3DReconstruction_list)
 * [awesome-algorithm](https://github.com/apachecn/awesome-algorithm)
-
 * [Papers with code. Sorted by stars. Updated weekly.](https://github.com/zziz/pwc)
 
 

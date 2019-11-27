@@ -8,11 +8,23 @@
 # pip
 #   sudo apt-get install python-pip python3-pip
 #   pip install pip -U
+#   pip config set global.index-url 'https://mirrors.aliyun.com/pypi/simple/'
 #   pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
 #
 
 #
-# Install virtualenv
+# Install virtualenv by apt-get
+#   sudo apt-get install virtualenvwrapper
+#
+# Add following lines to `~/.bashrc`
+#   # virtualenv
+#   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+#   export WORKON_HOME=/home/bushuhui/virtualenv
+#   source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+#
+
+
+# Install virtualenv by pip
 #   pip install setuptools
 #   pip install virtualenv
 #   pip install virtualenvwrapper
@@ -23,6 +35,8 @@
 #   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 #   export WORKON_HOME=/home/bushuhui/virtualenv
 #   source /usr/local/bin/virtualenvwrapper.sh　
+#
+
 #
 # Usage:
 #   # create virtual env
@@ -35,7 +49,8 @@
 #
 # Install this list packages:
 #   pip install -r requirements.txt
-#
+# Save package list
+#   pip freeze >> requirements.txt
 
 
 attrs==19.1.0
