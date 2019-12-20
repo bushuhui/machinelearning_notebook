@@ -9,7 +9,11 @@
 #   sudo apt-get install python-pip python3-pip
 #   pip install pip -U
 #   pip config set global.index-url 'https://mirrors.aliyun.com/pypi/simple/'
-#   pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
+#   
+#   or write following to '~/.config/pip/pip.conf'
+#       [global]
+#       timeout = 6000
+#       index-url = https://mirrors.aliyun.com/pypi/simple/
 #
 
 #

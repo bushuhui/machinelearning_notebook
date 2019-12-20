@@ -4,6 +4,7 @@
 
 
 ## Notebook, Book, Tutorial
+
 * [Deep Learning with PyTorch](https://pytorch.org/deep-learning-with-pytorch-thank-you)
 * [Machine Learning Yearning 中文版 - 《机器学习训练秘籍》](https://github.com/deeplearning-ai/machine-learning-yearning-cn) ([在线阅读](https://deeplearning-ai.github.io/machine-learning-yearning-cn/))
 * [ipython-notebooks: A collection of IPython notebooks covering various topics](https://github.com/jdwittenauer/ipython-notebooks)
@@ -11,6 +12,8 @@
 * [AM207 2016](https://github.com/AM207/2016/tree/master)
 * [Python机器学习](https://ljalphabeta.gitbooks.io/python-/content/)
 * [scientific-python-lectures](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/tree/master/)
+* [卷积神经网络中十大拍案叫绝的操作](https://www.toutiao.com/a6741309250070381070)
+
 
 
 ## Python & IPython

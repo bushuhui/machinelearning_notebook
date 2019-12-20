@@ -10,6 +10,8 @@ from torchvision import datasets
 """
     Use pytorch nn.Module to implement logistic regression
     
+    FIXME: too complex, remove complete tips
+    
 """
 
 
@@ -38,7 +40,7 @@ class Logstic_Regression(nn.Module):
         self.logstic = nn.Linear(in_dim, n_class)
 
     def forward(self, x):
-        out = self.logstic(x)
+        out = t.sigmoid(self.logstic(x))
         return out
 
 

@@ -38,12 +38,13 @@ def logistic_regression(x):
 
 # define loss function
 def binary_loss(y_pred, y):
-    logits = (y * y_pred.clamp(1e-12).log() + (1 - y) * (1 - y_pred).clamp(1e-12).log()).mean()
+    logits = (y * y_pred.clamp(1e-12).log() + \
+            (1 - y) * (1 - y_pred).clamp(1e-12).log()).mean()
     return -logits
 
 # upgrade parameters
 eta = 1e-2
-n_epoch = 1000
+n_epoch = 3000
 
 for i in range(n_epoch):
     y_pred = logistic_regression(x_train)
