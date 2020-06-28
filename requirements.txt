@@ -16,18 +16,6 @@
 #       index-url = https://mirrors.aliyun.com/pypi/simple/
 #
 
-#
-# Install virtualenv by apt-get
-#   sudo apt-get install virtualenvwrapper
-#
-# Add following lines to `~/.bashrc`
-#   # virtualenv
-#   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-#   export WORKON_HOME=/home/bushuhui/virtualenv
-#   source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-#
-
-
 # Install virtualenv by pip
 #   pip install setuptools
 #   pip install virtualenv
@@ -36,7 +24,7 @@
 #
 # Add following lines to `~/.bashrc`
 #   # virtualenv
-#   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+#   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 #   export WORKON_HOME=/home/bushuhui/virtualenv
 #   source /usr/local/bin/virtualenvwrapper.sh　
 #
