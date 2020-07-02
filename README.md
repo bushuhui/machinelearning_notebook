@@ -4,6 +4,7 @@
 
 由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真去完成[作业和报告](https://gitee.com/pi-lab/machinelearning_homework)，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
 
+![Machine Learning Cover](images/machine_learning.png)
 
 
 ## 1. 内容
@@ -97,3 +98,14 @@
 * Markdown
   * [Markdown——入门指南](https://www.jianshu.com/p/1e402922ee32)
 
+
+## 4. 相关学习资料参考
+
+在上述内容学习完成之后，可以进行更进一步机器学习、计算机视觉方面的学习与研究，具体的资料可以参考：
+1. [《一步一步学编程》](https://gitee.com/pi-lab/learn_programming)
+2. 智能系统实验室-培训教程与作业
+    - [《智能系统实验室-暑期培训教程》](https://gitee.com/pi-lab/SummerCamp)
+    - [《智能系统实验室-暑期培训作业》](https://gitee.com/pi-lab/SummerCampHomework)
+3. [智能系统实验室研究课题](https://gitee.com/pi-lab/pilab_research_fields3. [智能系统实验室研究课题](https://gitee.com/pi-lab/pilab_research_fields)
+4. [编程代码参考、技巧集合](https://gitee.com/pi-lab/code_cook)
+    - 可以在这个代码、技巧集合中找到某项功能的示例，从而加快自己代码的编写
