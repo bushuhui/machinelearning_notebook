@@ -106,6 +106,6 @@
 2. 智能系统实验室-培训教程与作业
     - [《智能系统实验室-暑期培训教程》](https://gitee.com/pi-lab/SummerCamp)
     - [《智能系统实验室-暑期培训作业》](https://gitee.com/pi-lab/SummerCampHomework)
-3. [智能系统实验室研究课题](https://gitee.com/pi-lab/pilab_research_fields3. [智能系统实验室研究课题](https://gitee.com/pi-lab/pilab_research_fields)
-4. [编程代码参考、技巧集合](https://gitee.com/pi-lab/code_cook)
+3. [《智能系统实验室研究课题》](https://gitee.com/pi-lab/pilab_research_fields)
+4. [《编程代码参考、技巧集合》](https://gitee.com/pi-lab/code_cook)
     - 可以在这个代码、技巧集合中找到某项功能的示例，从而加快自己代码的编写
