@@ -11,7 +11,6 @@
 1. [课程简介](CourseIntroduction.pdf)
 2. [Python](0_python/)
    - [Install Python](tips/InstallPython.md)
-   - [Introduction](0_python/0_Introduction.ipynb)
    - [Python Basics](0_python/1_Basics.ipynb)
    - [Print Statement](0_python/2_Print_Statement.ipynb)
    - [Data Structure 1](0_python/3_Data_Structure_1.ipynb)
