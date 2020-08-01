@@ -11,8 +11,8 @@
 
 
 * Titanic: notebooks/data-science-ipython-notebooks/kaggle/titanic.ipynb
-
 * 使用神经网络解决拼图游戏 https://www.toutiao.com/a6855437347463365133/
+* [Sudoku-Solver](https://github.com/shivaverma/Sudoku-Solver)
 
 
 ## Method
