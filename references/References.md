@@ -8,6 +8,10 @@
 ## Exercise
 * http://sofasofa.io/competitions.php?type=practice
 * https://www.kaggle.com/competitions
+* Machine learning project ideas
+  * https://data-flair.training/blogs/machine-learning-project-ideas/
+  * https://data-flair.training/blogs/deep-learning-project-ideas/
+  * https://www.kdnuggets.com/2020/03/20-machine-learning-datasets-project-ideas.html
 
 
 * Titanic: notebooks/data-science-ipython-notebooks/kaggle/titanic.ipynb
