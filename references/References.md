@@ -8,9 +8,15 @@
 ## Exercise
 * http://sofasofa.io/competitions.php?type=practice
 * https://www.kaggle.com/competitions
+* Machine learning project ideas
+  * https://data-flair.training/blogs/machine-learning-project-ideas/
+  * https://data-flair.training/blogs/deep-learning-project-ideas/
+  * https://www.kdnuggets.com/2020/03/20-machine-learning-datasets-project-ideas.html
 
 
 * Titanic: notebooks/data-science-ipython-notebooks/kaggle/titanic.ipynb
+* 使用神经网络解决拼图游戏 https://www.toutiao.com/a6855437347463365133/
+* [Sudoku-Solver](https://github.com/shivaverma/Sudoku-Solver)
 
 
 ## Method
