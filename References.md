@@ -7,10 +7,14 @@
 
 ## References
 
+* 22 个神经网络结构设计/可视化工具
+	- https://www.toutiao.com/i6836884346155041292/
+	- https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
+
 * CNN 可视化工具 https://m.toutiaocdn.com/group/6822123587156050435
 	- https://poloclub.github.io/cnn-explainer/
 	- https://github.com/poloclub/cnn-explainer
-
+	
 * 一款图像转卡通的Python项目，超级值得你练手
 	- https://www.toutiao.com/a6821299115175969287/
 	- https://github.com/minivision-ai/photo2cartoon
