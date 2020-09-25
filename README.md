@@ -1,6 +1,6 @@
 # 机器学习
 
-机器学习越来越多应用到飞行器、机器人等领域，其目的是利用计算机实现类似人类的智能，从而实现装备的智能化与无人化。本课程旨在引导学生掌握机器学习的基本知识、典型方法与技术，通过具体的应用案例激发学生对该学科的兴趣，鼓励学生能够从人工智能的角度来分析、解决飞行器、机器人所面临的问题和挑战。本课程主要内容包括Python编程基础，机器学习模型，无监督学习、监督学习、深度学习基础知识、实际编程，并学习如何解决实际问题。
+机器学习越来越多应用到飞行器、机器人等领域，其目的是利用计算机实现类似人类的智能，从而实现装备的智能化与无人化。本课程旨在引导学生掌握机器学习的基本知识、典型方法与技术，通过具体的应用案例激发学生对该学科的兴趣，鼓励学生能够从人工智能的角度来分析、解决飞行器、机器人所面临的问题和挑战。本课程主要内容包括Python编程基础，机器学习模型，无监督学习、监督学习、深度学习基础知识与实现，并学习如何利用机器学习解决实际问题。
 
 由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真去完成[《机器学习-作业和报告》](https://gitee.com/pi-lab/machinelearning_homework)，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
 
@@ -19,24 +19,24 @@
    - [Function](0_python/6_Function.ipynb)
    - [Class](0_python/7_Class.ipynb)
 3. [numpy & matplotlib](1_numpy_matplotlib_scipy_sympy/)
-   - [numpy](1_numpy_matplotlib_scipy_sympy/numpy_tutorial.ipynb)
-   - [matplotlib](1_numpy_matplotlib_scipy_sympy/matplotlib_simple_tutorial.ipynb)
-   - [ipython & notebook](1_numpy_matplotlib_scipy_sympy/ipython_notebook.ipynb)
+   - [numpy](1_numpy_matplotlib_scipy_sympy/1-numpy_tutorial.ipynb)
+   - [matplotlib](1_numpy_matplotlib_scipy_sympy/2-matplotlib_tutorial.ipynb)
+   - [ipython & notebook](1_numpy_matplotlib_scipy_sympy/3-ipython_notebook.ipynb)
 4. [knn](2_knn/knn_classification.ipynb)
-5. [kMenas](3_kmeans/k-means.ipynb)
+5. [kMenas](3_kmeans/1-k-means.ipynb)
 6. [Logistic Regression](4_logistic_regression/)
-   - [Least squares](4_logistic_regression/Least_squares.ipynb)
-   - [Logistic regression](4_logistic_regression/Logistic_regression.ipynb)
+   - [Least squares](4_logistic_regression/1-Least_squares.ipynb)
+   - [Logistic regression](4_logistic_regression/2-Logistic_regression.ipynb)
 7. [Neural Network](5_nn/)
-   - [Perceptron](5_nn/Perceptron.ipynb)
-   - [Multi-layer Perceptron & BP](5_nn/mlp_bp.ipynb)
-   - [Softmax & cross-entroy](5_nn/softmax_ce.ipynb)
+   - [Perceptron](5_nn/1-Perceptron.ipynb)
+   - [Multi-layer Perceptron & BP](5_nn/2-mlp_bp.ipynb)
+   - [Softmax & cross-entroy](5_nn/3-softmax_ce.ipynb)
 8. [PyTorch](6_pytorch/)
    - Basic 
       - [short tutorial](6_pytorch/PyTorch_quick_intro.ipynb)
-      - [basic/Tensor-and-Variable](6_pytorch/0_basic/Tensor-and-Variable.ipynb)
-      - [basic/autograd](6_pytorch/0_basic/autograd.ipynb)
-      - [basic/dynamic-graph](6_pytorch/0_basic/dynamic-graph.ipynb)
+      - [basic/Tensor-and-Variable](6_pytorch/0_basic/1-Tensor-and-Variable.ipynb)
+      - [basic/autograd](6_pytorch/0_basic/2-autograd.ipynb)
+      - [basic/dynamic-graph](6_pytorch/0_basic/3-dynamic-graph.ipynb)
    - NN & Optimization
       - [nn/linear-regression-gradient-descend](6_pytorch/1_NN/linear-regression-gradient-descend.ipynb)
       - [nn/logistic-regression](6_pytorch/1_NN/logistic-regression.ipynb)
@@ -99,7 +99,7 @@
   * [Git系统学习 - 廖雪峰的Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 * Markdown
-  * [Markdown——入门指南](https://www.jianshu.com/p/1e402922ee32)
+  * [Markdown—入门指南](https://www.jianshu.com/p/1e402922ee32)
 
 
 
