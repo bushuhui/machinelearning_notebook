@@ -18,3 +18,5 @@
 * 一款图像转卡通的Python项目，超级值得你练手
 	- https://www.toutiao.com/a6821299115175969287/
 	- https://github.com/minivision-ai/photo2cartoon
+
+* [Awesome Deep Learning Project Ideas](https://github.com/NirantK/awesome-project-ideas)
