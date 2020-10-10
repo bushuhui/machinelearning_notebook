@@ -20,3 +20,4 @@
 	- https://github.com/minivision-ai/photo2cartoon
 
 * [Awesome Deep Learning Project Ideas](https://github.com/NirantK/awesome-project-ideas)
+* [Machine Learning From Scratch](https://github.com/eriklindernoren/ML-From-Scratch)
