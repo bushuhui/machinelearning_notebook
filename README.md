@@ -35,7 +35,6 @@
    - [Softmax & cross-entroy](5_nn/3-softmax_ce.ipynb)
 8. [PyTorch](6_pytorch/)
    - Basic 
-      - [short tutorial](6_pytorch/PyTorch_quick_intro.ipynb)
       - [basic/Tensor-and-Variable](6_pytorch/0_basic/1-Tensor-and-Variable.ipynb)
       - [basic/autograd](6_pytorch/0_basic/2-autograd.ipynb)
       - [basic/dynamic-graph](6_pytorch/0_basic/3-dynamic-graph.ipynb)
