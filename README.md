@@ -4,7 +4,7 @@
 
 由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真去完成[《机器学习-作业和报告》](https://gitee.com/pi-lab/machinelearning_homework)，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
 
-为了让大家更好的自学本课程，课程讲座的视频会陆续上传到[b站 - 机器学习](https://www.bilibili.com/video/BV1oZ4y1N7ei/)，欢迎大家观看学习。
+为了让大家更好的自学本课程，课程讲座的视频会陆续上传到[《B站 - 机器学习》](https://www.bilibili.com/video/BV1oZ4y1N7ei/)，欢迎大家观看学习。
 
 ![Machine Learning Cover](images/machine_learning.png)
 
@@ -81,17 +81,17 @@
 ## 3. 参考资料
 * 资料速查
   * [相关学习参考资料汇总](References.md)
-  * [一些速查手册](tips/cheatsheet)
+  * [一些速查手册](references_tips/cheatsheet)
 
 * 机器学习方面技巧等
-  * [Confusion Matrix](tips/confusion_matrix.ipynb)
-  * [Datasets](tips/datasets.ipynb)
-  * [构建深度神经网络的一些实战建议](tips/构建深度神经网络的一些实战建议.md)
-  * [Intro to Deep Learning](tips/Intro_to_Deep_Learning.pdf)
+  * [Confusion Matrix](references_tips/confusion_matrix.ipynb)
+  * [Datasets](references_tips/datasets.ipynb)
+  * [构建深度神经网络的一些实战建议](references_tips/构建深度神经网络的一些实战建议.md)
+  * [Intro to Deep Learning](references_tips/Intro_to_Deep_Learning.pdf)
 
 * Python技巧等
-  * [安装Python环境](tips/InstallPython.md)
-  * [Python tips](tips/python)
+  * [安装Python环境](references_tips/InstallPython.md)
+  * [Python tips](references_tips/python)
 
 * Git
   * [Git Tips - 常用方法速查，快速入门](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/git/git-tips.md)
