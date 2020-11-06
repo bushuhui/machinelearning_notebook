@@ -8,7 +8,7 @@
 ## References
 
 * [形象直观了解谷歌大脑新型优化器LAMB](https://www.toutiao.com/i6687162064395305475/)
-
+* [5种常用的交叉验证技术，保证评估模型的稳定性](https://m.toutiaocdn.com/i6838062457596936718)
 * 22 个神经网络结构设计/可视化工具
 	
 	- https://www.toutiao.com/i6836884346155041292/
