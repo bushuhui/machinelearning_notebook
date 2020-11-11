@@ -74,7 +74,7 @@ for e in range(100):
             c = float(pred.eq(target.data.view_as(pred)).cpu().sum() ) /out.size(0)
 
             print("epoch: %5d, loss: %f, acc: %f" %
-                  ( e +1, loss.data[0], c))
+                  ( e +1, loss.data.item(), c))
 
     # test
     model.eval()
@@ -86,7 +86,7 @@ for e in range(100):
         output = model(data)
 
         # sum up batch loss
-        test_loss += criterion(output, target).data[0]
+        test_loss += criterion(output, target).item()
 
         # get the index of the max
         pred = output.data.max(1, keepdim=True)[1]
