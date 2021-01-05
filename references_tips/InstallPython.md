@@ -1,4 +1,4 @@
-# 按照Python环境
+# 安装Python环境
 
 由于Python的库比较多，并且依赖关系比较复杂，所以请仔细阅读下面的说明，并按下面的说明来操作，减少问题出现的可能。 **但是所列的安装方法说明里有较多的细节，也许和你的系统并不适配，所以会遇到问题。如果遇到问题请通过搜索引擎去查找解决的办法**，通过这个方式锻炼自己解决问题的能力。
 
@@ -12,13 +12,15 @@ pip install -r requirements.txt
 
 ### 安装Anaconda
 
-由于Anaconda集成了大部分的python包，因此能够很方便的开始使用。由于网络下载速度较慢，因此推荐使用镜像来提高下载的速度。镜像的使用方法可以参考[Anaconda镜像的说明文档](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda)
+由于Anaconda集成了大部分的python包，因此能够很方便的开始使用。由于网络下载速度较慢，因此推荐使用镜像来提高下载的速度。镜像的使用方法可以参考：[Anaconda镜像的说明文档](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda)
 
-在这里找到适合自己的安装文件，然后下载
-https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
+1. 在这里找到适合自己的安装文件，然后下载
+   https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
 
+2. 按照说明，把Anaconda安装好。
 
-设置软件源 https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
+3. 设置软件源 https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
+
 ```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
@@ -87,3 +89,4 @@ pip3 install torch torchvision
 - [virtualenv的安装、使用](python/virtualenv.md)
 - [virtualenv便捷管理工具：virtualenv_wrapper](python/virtualenv_wrapper.md)
 
+* Anaconda使用技巧
