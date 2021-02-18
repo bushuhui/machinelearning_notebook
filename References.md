@@ -28,12 +28,8 @@
 
 
 
-## Notebooks
-
-* machineLearning/10_digits_classification.ipynb
-* MachineLearningNotebooks/05.%20Logistic%20Regression.ipynb
-* MachineLearningNotebooks/08.%20Practical_NeuralNets.ipynb
-
+## Course & Code
+* [《统计学习方法》的代码](https://gitee.com/afishoutis/MachineLearning)
 
 ## Exercise
 * http://sofasofa.io/competitions.php?type=practice
