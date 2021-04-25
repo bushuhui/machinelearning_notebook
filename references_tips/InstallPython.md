@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 ## 1. Windows
 
-### 安装Anaconda
+### 1.1 安装Anaconda
 
 由于Anaconda集成了大部分的python包，因此能够很方便的开始使用。由于网络下载速度较慢，因此推荐使用镜像来提高下载的速度。镜像的使用方法可以参考：[Anaconda镜像的说明文档](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda)
 
@@ -27,7 +27,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 conda config --set show_channel_urls yes
 ```
 
-### 安装Pytorch
+### 1.2 安装PyTorch
 ```
 conda install pytorch -c pytorch 
 pip3 install torchvision
@@ -38,14 +38,14 @@ pip3 install torchvision
 
 ## 2. Linux
 
-### 安装pip
+### 2.1 安装pip
 ```
 sudo apt-get install python3-pip
 ```
 
 
 
-### 设置PIP源
+### 2.2 设置PIP源
 
 ```
 pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
@@ -53,7 +53,7 @@ pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
 
 
 
-### 安装常用的包
+### 2.3 安装常用的包
 
 ```
 pip install -r requirements.txt
@@ -72,7 +72,7 @@ sudo pip install jupyter
 
 
 
-### 安装pytorch
+### 2.4 安装pyTorch
 
 到[pytorch 官网](https://pytorch.org)，根据自己的操作系统、CUDA版本，选择合适的安装命令。
 
@@ -83,7 +83,43 @@ pip3 install torch torchvision
 
 
 
-## 3. [Python技巧](python/)
+## 3. Conda使用技巧
+
+### 3.1 Conda创建自己的环境
+```
+conda create -n xueshaocheng_pytorch
+```
+
+### 3.2 Conda怎么激活自己的环境
+```
+conda activate xueshaocheng_pytorch
+```
+
+### 3.3 Conda常用命令
+```
+# 帮助命令
+conda -h
+conda help
+
+# 配置频道(已有)
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/
+
+# 退出当前环境
+conda deactivate
+
+# 查看基本信息
+conda info
+conda info -h
+
+# 查看当前存在环境
+conda env list
+conda info --envs
+
+# 删除环境
+conda remove -n yourname --all
+```
+
+## 4. [Python技巧](python/)
 
 - [pip的安装、使用等](python/pip.md)
 - [virtualenv的安装、使用](python/virtualenv.md)
