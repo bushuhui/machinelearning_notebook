@@ -12,7 +12,7 @@
 1. 在这里找到适合自己的安装文件，然后下载
    https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
 
-例如： https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.11-Windows-x86_64.exe
+例如： https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Windows-x86_64.exe
 
 2. 按照说明，把Anaconda安装好。
 
@@ -22,7 +22,7 @@
 在网站下载最新的conda安装文件，例如
 
 ```
-wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.11-Linux-x86_64.sh
+wget https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Linux-x86_64.sh
 ```
 
 然后运行
