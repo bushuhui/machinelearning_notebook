@@ -25,7 +25,7 @@
    - [matplotlib](1_numpy_matplotlib_scipy_sympy/2-matplotlib_tutorial.ipynb)
    - [ipython & notebook](1_numpy_matplotlib_scipy_sympy/3-ipython_notebook.ipynb)
 4. [knn](2_knn/knn_classification.ipynb)
-5. [kMenas](3_kmeans/1-k-means.ipynb)
+5. [kMeans](3_kmeans/1-k-means.ipynb)
 6. [Logistic Regression](4_logistic_regression/)
    - [Least squares](4_logistic_regression/1-Least_squares.ipynb)
    - [Logistic regression](4_logistic_regression/2-Logistic_regression.ipynb)
