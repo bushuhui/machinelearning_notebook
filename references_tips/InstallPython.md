@@ -54,13 +54,7 @@ pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
 ## 4. 安装常用软件
 打开`conda`的命令行程序，输入下面的命令
 ```
-conda install jupyter
-conda install scipy
-conda install numpy
-conda install sympy
-conda install matplotlib
-conda install pandas
-conda install scikit-learn
+conda install jupyter scipy numpy sympy matplotlib pandas scikit-learn
 ```
 
 ## 5. 安装PyTorch
