@@ -9,22 +9,23 @@ Python 是一门上手简单、功能强大、通用型的脚本编程语言。P
 
 ## 内容
 0. [Install Python](../references_tips/InstallPython.md)
-1. [Basics](1_Basics.ipynb)
+1. [IPython & Jupyter Notebook](0-ipython_notebook.ipynb)
+2. [Basics](1_Basics.ipynb)
     - Why Python, Zen of Python
     - Variables, Operators, Built-in functions
-2. [Print statement](2_Print_Statement.ipynb)
+3. [Print statement](2_Print_Statement.ipynb)
     - Tips of print
-3. [Data structure - 1](3_Data_Structure_1.ipynb)
+4. [Data structure - 1](3_Data_Structure_1.ipynb)
     - Lists, Tuples, Sets
-4. [Data structure - 2](4_Data_Structure_2.ipynb)
+5. [Data structure - 2](4_Data_Structure_2.ipynb)
     - Strings, Dictionaries
-5. [Control flow](5_Control_Flow.ipynb)
+6. [Control flow](5_Control_Flow.ipynb)
     - if, else, elif, for, while, break, continue
-6. [Functions](6_Function.ipynb)
+7. [Functions](6_Function.ipynb)
     - Function define, return, arguments
     - Gloabl and local variables
     - Lambda functions
-7. [Class](7_Class.ipynb)
+8. [Class](7_Class.ipynb)
     - Class define
     - Inheritance
 
