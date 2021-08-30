@@ -1,6 +1,6 @@
 # 机器学习
 
-机器学习越来越多应用到飞行器、机器人等领域，其目的是利用计算机实现类似人类的智能，从而实现装备的智能化与无人化。本课程旨在引导学生掌握机器学习的基本知识、典型方法与技术，通过具体的应用案例激发学生对该学科的兴趣，鼓励学生能够从人工智能的角度来分析、解决飞行器、机器人所面临的问题和挑战。本课程主要内容包括Python编程基础，机器学习模型，无监督学习、监督学习、深度学习基础知识与实现，并学习如何利用机器学习解决实际问题。
+机器学习越来越多应用到飞行器、机器人等领域，其目的是利用计算机实现类似人类的智能，从而实现装备的智能化与无人化。本课程旨在引导学生掌握机器学习的基本知识、典型方法与技术，通过具体的应用案例激发学生对该学科的兴趣，鼓励学生能够从人工智能的角度来分析、解决飞行器、机器人所面临的问题和挑战。本课程主要内容包括Python编程基础，机器学习模型，无监督学习、监督学习、深度学习基础知识与实现，并学习如何利用机器学习解决实际问题，从而全面提升自我的[综合能力](Targets.md)。
 
 由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真去完成[《机器学习-作业和报告》](https://gitee.com/pi-lab/machinelearning_homework)，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
 
@@ -13,6 +13,7 @@
 1. [课程简介](CourseIntroduction.pdf)
 2. [Python](0_python/)
    - [Install Python](references_tips/InstallPython.md)
+   - [ipython & notebook](0_python/0-ipython_notebook.ipynb)
    - [Python Basics](0_python/1_Basics.ipynb)
    - [Print Statement](0_python/2_Print_Statement.ipynb)
    - [Data Structure 1](0_python/3_Data_Structure_1.ipynb)
@@ -23,7 +24,6 @@
 3. [numpy & matplotlib](1_numpy_matplotlib_scipy_sympy/)
    - [numpy](1_numpy_matplotlib_scipy_sympy/1-numpy_tutorial.ipynb)
    - [matplotlib](1_numpy_matplotlib_scipy_sympy/2-matplotlib_tutorial.ipynb)
-   - [ipython & notebook](1_numpy_matplotlib_scipy_sympy/3-ipython_notebook.ipynb)
 4. [knn](2_knn/knn_classification.ipynb)
 5. [kMeans](3_kmeans/1-k-means.ipynb)
 6. [Logistic Regression](4_logistic_regression/)
@@ -74,7 +74,7 @@
 2. 每个课程前半部分是理论基础，后半部分是代码实现。如果想学的更扎实，可以自己把各个方法的代码亲自实现一下。做的过程如果遇到问题尽可能自己想解决办法，因为最重要的目标不是代码本身，而是学会分析问题、解决问题的能力。
 3. **不能直接抄已有的程序，或者抄别人的程序**，如果自己不会要自己去想，去找解决方法，或者去问。如果直接抄别人的代码，这样的练习一点意义都没有。**如果感觉太难，可以做的慢一些，但是坚持自己思考、自己编写练习代码**。。
 4. **请先遍历一遍所有的文件夹，了解有什么内容，资料**。各个目录里有很多说明文档，如果不会先找找有没有文档，如果找不到合适的文档就去网上找找。通过这个过程锻炼自己搜索文献、资料的能力。
-5. 本课程的练习题最好使用[Linux](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/linux)以及Linux下的工具来做。逼迫自己使用[Linux](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/linux)，只有多练、多用才能快速进步。如果实在太难，先在虚拟机（建议VirtualBox）里装一个Linux（例如Ubuntu，或者LinuxMint等），先熟悉一下。但是最终需要学会使用Linux。
+5. 本课程的练习题最好使用[《Linux》](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/linux)以及Linux下的工具来做。逼迫自己使用[《Linux》](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/linux)，只有多练、多用才能快速进步。如果实在太难，先在虚拟机（建议VirtualBox）里装一个Linux（例如Ubuntu，或者LinuxMint等），先熟悉一下。但是最终需要学会使用Linux。
 
 
 
@@ -94,7 +94,7 @@
   * [Python tips](references_tips/python)
 
 * Git
-  * [Git Tips - 常用方法速查，快速入门](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/git/git-tips.md)
+  * [Git Tips - 常用方法速查，快速入门](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/git/README.md)
   * [Git快速入门 - Git初体验](https://my.oschina.net/dxqr/blog/134811)
   * [在win7系统下使用TortoiseGit(乌龟git)简单操作Git](https://my.oschina.net/longxuu/blog/141699)
   * [Git系统学习 - 廖雪峰的Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
@@ -107,7 +107,7 @@
 ## 4. 更进一步学习
 
 在上述内容学习完成之后，可以进行更进一步机器学习、计算机视觉方面的学习与研究，具体的资料可以参考：
-1. 编程是机器学习研究、实现过程非常重要的能力，编程能力弱则无法快速试错，导致研究进度缓慢；如果编程能力强，则可以快速试错，快速编写实验代码等。强烈建议大家在学习本课程之后或之中，好好把数据结构、算法等基本功锻炼一下。具体的教程可以参考[《一步一步学编程》](https://gitee.com/pi-lab/learn_programming)
+1. 编程是机器学习研究、实现过程非常重要的能力，编程能力弱则无法快速试错，导致学习、研究进度缓慢；如果编程能力强，则可以快速试错，快速编写实验代码等。强烈建议大家在学习本课程之后或之中，好好把数据结构、算法等基本功锻炼一下。具体的教程可以参考[《一步一步学编程》](https://gitee.com/pi-lab/learn_programming)
 2. 飞行器智能感知与控制实验室-培训教程与作业：这个教程是实验室积累的机器学习与计算机视觉方面的教程集合，每个课程介绍基本的原理、编程实现、应用方法等资料，可以作为快速入门的学习材料。
     - [《飞行器智能感知与控制实验室-暑期培训教程》](https://gitee.com/pi-lab/SummerCamp)
     - [《飞行器智能感知与控制实验室-暑期培训作业》](https://gitee.com/pi-lab/SummerCampHomework)
