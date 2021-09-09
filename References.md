@@ -10,14 +10,19 @@
 * [形象直观了解谷歌大脑新型优化器LAMB](https://www.toutiao.com/i6687162064395305475/)
 * [5种常用的交叉验证技术，保证评估模型的稳定性](https://m.toutiaocdn.com/i6838062457596936718)
 * 22 个神经网络结构设计/可视化工具
-	
 	- https://www.toutiao.com/i6836884346155041292/
 - https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
 	
 * CNN 可视化工具 https://m.toutiaocdn.com/group/6822123587156050435
 	- https://poloclub.github.io/cnn-explainer/
 	- https://github.com/poloclub/cnn-explainer
-	
+
+* 打标签工具
+	- [Label Studio](https://labelstud.io/)
+		- Demo video https://www.bilibili.com/video/BV1dL41147KE
+		- Documents https://labelstud.io/guide/
+	- [LabelImg](https://github.com/tzutalin/labelImg)
+
 * 一款图像转卡通的Python项目，超级值得你练手
 	- https://www.toutiao.com/a6821299115175969287/
 	- https://github.com/minivision-ai/photo2cartoon
