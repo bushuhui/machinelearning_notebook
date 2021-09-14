@@ -11,6 +11,7 @@
 * [ ] 常用库
 
 ## 2. 第三方库
+* [ ] iPython, Jupyter Notebook
 * [ ] Numpy
 * [ ] Matplotlib
 * [ ] scipy
