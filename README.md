@@ -4,7 +4,7 @@
 
 由于**本课程需要大量的编程练习才能取得比较好的学习效果**，因此需要认真去完成[《机器学习-作业和报告》](https://gitee.com/pi-lab/machinelearning_homework)，写作业的过程可以查阅网上的资料，但是不能直接照抄，需要自己独立思考并独立写出代码。
 
-为了让大家更好的自学本课程，课程讲座的视频会陆续上传到[《B站 - 机器学习》](https://www.bilibili.com/video/BV1oZ4y1N7ei/)，欢迎大家观看学习。
+为了让大家更好的自学本课程，课程讲座的视频在[《B站 - 机器学习》](https://www.bilibili.com/video/BV1oZ4y1N7ei/)，欢迎大家观看学习。
 
 ![Machine Learning Cover](images/machine_learning_1.png)
 
