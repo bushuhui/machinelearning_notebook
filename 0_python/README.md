@@ -34,6 +34,7 @@ Python 是一门上手简单、功能强大、通用型的脚本编程语言。P
 * [安装Python环境](../references_tips/InstallPython.md)
 * [IPython Notebooks to learn Python](https://github.com/rajathkmp/Python-Lectures)
 * [廖雪峰的Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
+* [跟海龟学Python](https://gitee.com/pi-lab/python_turtle)
 * [智能系统实验室入门教程-Python](https://gitee.com/pi-lab/SummerCamp/tree/master/python)
 * [Python Tips](../references_tips/python)
 * [Get Started with Python](Python.pdf)
