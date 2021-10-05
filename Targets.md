@@ -16,6 +16,7 @@
 * [ ] Matplotlib
 * [ ] scipy
 * [ ] scikit-learn
+* [ ] pandas
 * [ ] PyTorch
 
 
@@ -33,6 +34,7 @@
 * [ ] Logistic Regression的原理与实现
 * [ ] 多层神经网络的原理与实现
 * [ ] CNN的原理与实现
+* [ ] 使用PyTorch编写深度神经网络的代码
 
 
 ## 5. 思维、方法论
