@@ -49,9 +49,9 @@
       - [optim/sgd](6_pytorch/1_NN/optimizer/6_1-sgd.ipynb)
       - [optim/adam](6_pytorch/1_NN/optimizer/6_6-adam.ipynb)
    - CNN
+      - [CNN Introduction](6_pytorch/2_CNN/CNN_Introduction.pptx)
       - [CNN simple demo](demo_code/3_CNN_MNIST.py)
       - [cnn/basic_conv](6_pytorch/2_CNN/1-basic_conv.ipynb)
-      - [cnn/minist (demo code)](./demo_code/3_CNN_MNIST.py)
       - [cnn/batch-normalization](6_pytorch/2_CNN/2-batch-normalization.ipynb)
       - [cnn/lr-decay](6_pytorch/2_CNN/3-lr-decay.ipynb)
       - [cnn/regularization](6_pytorch/2_CNN/4-regularization.ipynb)

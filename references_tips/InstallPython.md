@@ -5,6 +5,7 @@
 可以参考后面所列的`1.Winodws`或者`2.Linux`章节所列的将Python环境安装到计算机里。
 
 
+
 ## 1. Windows下安装
 
 由于Anaconda集成了大部分的python包，因此能够很方便的开始使用。由于网络下载速度较慢，因此推荐使用镜像来提高下载的速度。镜像的使用方法可以参考：[Anaconda镜像的说明文档](https://mirrors.bfsu.edu.cn/help/anaconda/)
@@ -30,10 +31,12 @@ wget https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Linux-x86_64
 bash ./Anaconda3-2020.11-Linux-x86_64.sh
 ```
 
-按照提示完成安装（记得需要自动加入环境变量的设置），**然后关闭终端，再打开终端**
+按照提示完成安装（记得需要`自动加入环境变量`的设置），**然后关闭终端，再打开终端**
+
 
 
 ## 3. 设置软件源
+
 ### 3.1 设置conda软件源 
 
 参考这里的[conda安装和软件源设置说明](https://mirrors.bfsu.edu.cn/help/anaconda/)
@@ -51,11 +54,16 @@ conda config --set show_channel_urls yes
 pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
 ```
 
+
+
 ## 4. 安装常用软件
+
 打开`conda`的命令行程序，输入下面的命令
 ```
 conda install jupyter scipy numpy sympy matplotlib pandas scikit-learn
 ```
+
+
 
 ## 5. 安装PyTorch
 
@@ -71,12 +79,18 @@ pip3 install torchvision
 
 ### 6.1 Conda创建自己的环境
 ```
-conda create -n xueshaocheng_pytorch
+conda create -n <your_env>
+
+# example
+conda create -n machinelearning
 ```
 
 ### 6.2 Conda怎么激活自己的环境
 ```
-conda activate xueshaocheng_pytorch
+conda activate <your_env>
+
+# example 
+conda activate machinelearning
 ```
 
 ### 6.3 Conda常用命令
@@ -100,8 +114,10 @@ conda env list
 conda info --envs
 
 # 删除环境
-conda remove -n yourname --all
+conda remove -n <your_env> --all
 ```
+
+
 
 ## 7. [Python技巧](python/)
 
