@@ -42,16 +42,16 @@ bash ./Anaconda3-2020.11-Linux-x86_64.sh
 参考这里的[conda安装和软件源设置说明](https://mirrors.bfsu.edu.cn/help/anaconda/)
 
 ```
+conda config --set show_channel_urls yes
 conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/
 conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/free/
-conda config --set show_channel_urls yes
 ```
 
 
 ### 3.2 设置PIP源
 
 ```
-pip config set global.index-url 'https://mirrors.ustc.edu.cn/pypi/web/simple'
+pip config set global.index-url 'https://mirrors.aliyun.com/pypi/simple/'
 ```
 
 
