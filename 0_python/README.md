@@ -8,6 +8,8 @@ Python 是一门上手简单、功能强大、通用型的脚本编程语言。
 
 关于Python的安装可以参考[《安装Python环境》](../references_tips/InstallPython.md)，或者自行去网络上查找相关的资料。
 
+为方便大家学习本教程，我们提供了[《90分钟学会Python-在线视频》](https://www.bilibili.com/video/BV1Uz4y167xY/)，请观看学习。
+
 ![learn python](images/learn_python.jpg)
 
 ## 内容
