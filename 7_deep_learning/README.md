@@ -11,6 +11,14 @@
 典型的深度学习模型有[卷积神经网络(convolutional neural network)](1_CNN)、深度置信网络(Deep Belief Network, DBN)、堆栈自编码网络(stacked auto-encoder network)、循环神经网络（Recurrent Neural Network）、对抗生成网络（Generative Adversarial Networks，GAN)等。
 
 
+
+## 深度学习的发展历程
+
+下图展示了深度学习常见网络的发展历程
+
+![resnet-development.png](imgs/resnet-development.png)
+
+
 ## 参考资料
 * [深度学习 – Deep learning](https://easyai.tech/ai-definition/deep-learning/)
 * [深度学习](https://www.jiqizhixin.com/graph/technologies/01946acc-d031-4c0e-909c-f062643b7273)
