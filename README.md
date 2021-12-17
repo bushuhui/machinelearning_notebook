@@ -52,14 +52,15 @@
    - CNN
       - [CNN Introduction](7_deep_learning/1_CNN/CNN_Introduction.pptx)
       - [CNN simple demo](demo_code/3_CNN_MNIST.py)
-      - [cnn/basic_conv](7_deep_learning/1_CNN/1-basic_conv.ipynb)
-      - [cnn/batch-normalization](7_deep_learning/1_CNN/2-batch-normalization.ipynb)
-      - [cnn/lr-decay](7_deep_learning/2_CNN/1-lr-decay.ipynb)
-      - [cnn/regularization](7_deep_learning/1_CNN/4-regularization.ipynb)
-      - [cnn/vgg](7_deep_learning/1_CNN/6-vgg.ipynb)
-      - [cnn/googlenet](7_deep_learning/1_CNN/7-googlenet.ipynb)
-      - [cnn/resnet](7_deep_learning/1_CNN/8-resnet.ipynb)
-      - [cnn/densenet](7_deep_learning/1_CNN/9-densenet.ipynb)
+      - [Basic of Conv](7_deep_learning/1_CNN/1-basic_conv.ipynb)
+      - [VGG Network](7_deep_learning/1_CNN/2-vgg.ipynb)
+      - [GoogleNet](7_deep_learning/1_CNN/3-googlenet.ipynb)
+      - [ResNet](7_deep_learning/1_CNN/4-resnet.ipynb)
+      - [DenseNet](7_deep_learning/1_CNN/5-densenet.ipynb)
+      - [Batch Normalization](7_deep_learning/1_CNN/6-batch-normalization.ipynb)
+      - [Learning Rate Decay](7_deep_learning/2_CNN/7-lr-decay.ipynb)
+      - [Regularization](7_deep_learning/1_CNN/8-regularization.ipynb)
+      - [Data Augumentation](7_deep_learning/1_CNN/9-data-augumentation.ipynb)
    - RNN
       - [rnn/pytorch-rnn](7_deep_learning/2_RNN/pytorch-rnn.ipynb)
       - [rnn/rnn-for-image](7_deep_learning/2_RNN/rnn-for-image.ipynb)
@@ -72,7 +73,7 @@
 
 
 ## 2. 学习的建议
-1. 为了更好的学习本课程，需要大家把Python编程能力培养好，通过一定数量的练习题、小项目培养Python编程思维，为后续的机器学习理论与实践打好坚实的基础。
+1. 为了更好的学习本课程，需要大家把[Python编程](0_python)能力培养好，通过一定数量的练习题、小项目培养Python编程思维，为后续的机器学习理论与实践打好坚实的基础。
 2. 每个课程前半部分是理论基础，后半部分是代码实现。如果想学的更扎实，可以自己把各个方法的代码亲自实现一下。做的过程如果遇到问题尽可能自己想解决办法，因为最重要的目标不是代码本身，而是学会分析问题、解决问题的能力。
 3. **不能直接抄已有的程序，或者抄别人的程序**，如果自己不会要自己去想，去找解决方法，或者去问。如果直接抄别人的代码，这样的练习一点意义都没有。**如果感觉太难，可以做的慢一些，但是坚持自己思考、自己编写练习代码**。。
 4. **请先遍历一遍所有的文件夹，了解有什么内容，资料**。各个目录里有很多说明文档，如果不会先找找有没有文档，如果找不到合适的文档就去网上找找。通过这个过程锻炼自己搜索文献、资料的能力。
