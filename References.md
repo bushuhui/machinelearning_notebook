@@ -36,7 +36,18 @@
 
 
 ## Course & Code
-* [《统计学习方法》的代码](https://gitee.com/afishoutis/MachineLearning)
+
+- Course
+  - [《动手学深度学习》 — 动手学深度学习 2.0.0-alpha2 documentation](https://zh-v2.d2l.ai/index.html)
+  - [连接高校和企业 - 蓝桥云课](https://www.lanqiao.cn/)
+  - [Introduction — Neuromatch Academy: Deep Learning](https://deeplearning.neuromatch.io/tutorials/intro.html)
+- code
+  - [《统计学习方法》的代码](https://gitee.com/afishoutis/MachineLearning)
+  - [《统计学习方法》pytorch实现](https://github.com/fengdu78/lihang-code)
+  -  [pytorch-cifar100](https://github.com/weiaicunzai/pytorch-cifar100)  实现ResNet, DenseNet, VGG, GoogleNet, InceptionV3, InceptionV4, Inception-ResNetv2, Xception, Resnet In Resnet, ResNext,ShuffleNet, ShuffleNetv2, MobileNet, MobileNetv2, SqueezeNet, NasNet, Residual Attention Network, SENet, WideResNet
+  - [Attention:  xmu-xiaoma666/External-Attention-pytorch: 🍀 Pytorch implementation of various Attention Mechanisms, MLP, Re-parameter, Convolution, which is helpful to further understand papers.⭐⭐⭐ (github.com)](https://github.com/xmu-xiaoma666/External-Attention-pytorch)   注意力机制，多层神经网络，重参数。
+  - [Python  TheAlgorithms/Python: All Algorithms implemented in Python (github.com)](https://github.com/TheAlgorithms/Python)
+  - PytTorch 训练手册  https://github.com/zergtant/pytorch-handbook 
 
 ## Exercise
 * http://sofasofa.io/competitions.php?type=practice
@@ -50,6 +61,7 @@
 * Titanic: notebooks/data-science-ipython-notebooks/kaggle/titanic.ipynb
 * 使用神经网络解决拼图游戏 https://www.toutiao.com/a6855437347463365133/
 * [Sudoku-Solver](https://github.com/shivaverma/Sudoku-Solver)
+* Python 小项目 https://github.com/kyclark/tiny_python_projects
 
 
 ## Method
