@@ -1,11 +1,27 @@
-# References
+# 参考资料
 可以自行在下属列表找找到适合自己的学习资料，虽然罗列的比较多，但是个人最好选择一个深入阅读、练习。当练习到一定程度，可以再看看其他的资料，这样弥补单一学习资料可能存在的欠缺。
 
 列表等在 https://gitee.com/pi-lab/pilab_research_fields/blob/master/references/ML_References.md
 
 
+## 1. 教程、代码
 
-## References
+### 1.1 教程
+
+* [《动手学深度学习》 — 动手学深度学习 2.0.0-alpha2 documentation](https://zh-v2.d2l.ai/index.html)
+* [Introduction — Neuromatch Academy: Deep Learning](https://deeplearning.neuromatch.io/tutorials/intro.html)
+
+
+### 1.2 代码
+
+* [《统计学习方法》的代码](https://gitee.com/afishoutis/MachineLearning)
+* [《统计学习方法》pytorch实现](https://github.com/fengdu78/lihang-code)
+*  [pytorch-cifar100](https://github.com/weiaicunzai/pytorch-cifar100)  实现ResNet, DenseNet, VGG, GoogleNet, InceptionV3, InceptionV4, Inception-ResNetv2, Xception, Resnet In Resnet, ResNext,ShuffleNet, ShuffleNetv2, MobileNet, MobileNetv2, SqueezeNet, NasNet, Residual Attention Network, SENet, WideResNet
+* [Attention:  xmu-xiaoma666/External-Attention-pytorch: Pytorch implementation of various Attention Mechanisms, MLP, Re-parameter, Convolution, which is helpful to further understand papers.⭐⭐⭐ (github.com)](https://github.com/xmu-xiaoma666/External-Attention-pytorch)   注意力机制，多层神经网络，重参数。
+* [Python  TheAlgorithms/Python: All Algorithms implemented in Python (github.com)](https://github.com/TheAlgorithms/Python)
+* PytTorch 训练手册  https://github.com/zergtant/pytorch-handbook 
+
+## 2. 工具、技巧
 
 * [形象直观了解谷歌大脑新型优化器LAMB](https://www.toutiao.com/i6687162064395305475/)
 * [梯度下降方法的视觉解释（动量，AdaGrad，RMSProp，Adam）](https://www.toutiao.com/i6836422484028293640/)
@@ -35,21 +51,8 @@
 
 
 
-## Course & Code
 
-- Course
-  - [《动手学深度学习》 — 动手学深度学习 2.0.0-alpha2 documentation](https://zh-v2.d2l.ai/index.html)
-  - [连接高校和企业 - 蓝桥云课](https://www.lanqiao.cn/)
-  - [Introduction — Neuromatch Academy: Deep Learning](https://deeplearning.neuromatch.io/tutorials/intro.html)
-- code
-  - [《统计学习方法》的代码](https://gitee.com/afishoutis/MachineLearning)
-  - [《统计学习方法》pytorch实现](https://github.com/fengdu78/lihang-code)
-  -  [pytorch-cifar100](https://github.com/weiaicunzai/pytorch-cifar100)  实现ResNet, DenseNet, VGG, GoogleNet, InceptionV3, InceptionV4, Inception-ResNetv2, Xception, Resnet In Resnet, ResNext,ShuffleNet, ShuffleNetv2, MobileNet, MobileNetv2, SqueezeNet, NasNet, Residual Attention Network, SENet, WideResNet
-  - [Attention:  xmu-xiaoma666/External-Attention-pytorch: 🍀 Pytorch implementation of various Attention Mechanisms, MLP, Re-parameter, Convolution, which is helpful to further understand papers.⭐⭐⭐ (github.com)](https://github.com/xmu-xiaoma666/External-Attention-pytorch)   注意力机制，多层神经网络，重参数。
-  - [Python  TheAlgorithms/Python: All Algorithms implemented in Python (github.com)](https://github.com/TheAlgorithms/Python)
-  - PytTorch 训练手册  https://github.com/zergtant/pytorch-handbook 
-
-## Exercise
+## 3. 练习
 * http://sofasofa.io/competitions.php?type=practice
 * https://www.kaggle.com/competitions
 * Machine learning project ideas
@@ -64,8 +67,9 @@
 * Python 小项目 https://github.com/kyclark/tiny_python_projects
 
 
-## Method
+## 4. 机器学习方法
 
+### 4.1 经典机器学习方法
 * Programming Multiclass Logistic Regression
 notebooks/MachineLearningNotebooks/05.%20Logistic%20Regression.ipynb
 
@@ -86,7 +90,7 @@ http://localhost:8889/notebooks/machineLearning/10_digits_classification.ipynb
 http://localhost:8889/notebooks/machineLearning/notebooks/01%20-%20Model%20Selection%20and%20Assessment.ipynb
 
 
-## NN
+### 4.2 NN
 * 神经网络——梯度下降&反向传播 https://blog.csdn.net/skullfang/article/details/78634317
 * 零基础入门深度学习(3) - 神经网络和反向传播算法 https://www.zybuluo.com/hanbingtao/note/476663
 * 如何直观地解释 backpropagation 算法？ https://www.zhihu.com/question/27239198
@@ -97,10 +101,10 @@ http://localhost:8889/notebooks/machineLearning/notebooks/01%20-%20Model%20Selec
 * https://www.python-course.eu/neural_networks_with_python_numpy.php
 
 
-## k-Means
+### 4.3 k-Means
 * [如何使用 Keras 实现无监督聚类](http://m.sohu.com/a/236221126_717210)
 
-## AutoEncoder (自编码/非监督学习)
+### 4.4 AutoEncoder (自编码/非监督学习)
 * https://morvanzhou.github.io/tutorials/machine-learning/torch/4-04-autoencoder/
 * https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/404_autoencoder.py
 * pytorch AutoEncoder 自编码 https://www.jianshu.com/p/f0929f427d03
