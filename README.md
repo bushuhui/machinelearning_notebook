@@ -58,7 +58,7 @@
       - [ResNet](7_deep_learning/1_CNN/4-resnet.ipynb)
       - [DenseNet](7_deep_learning/1_CNN/5-densenet.ipynb)
       - [Batch Normalization](7_deep_learning/1_CNN/6-batch-normalization.ipynb)
-      - [Learning Rate Decay](7_deep_learning/2_CNN/7-lr-decay.ipynb)
+      - [Learning Rate Decay](7_deep_learning/1_CNN/7-lr-decay.ipynb)
       - [Regularization](7_deep_learning/1_CNN/8-regularization.ipynb)
       - [Data Augumentation](7_deep_learning/1_CNN/9-data-augumentation.ipynb)
    - RNN

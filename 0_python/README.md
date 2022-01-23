@@ -36,6 +36,11 @@ Python 是一门上手简单、功能强大、通用型的脚本编程语言。
 
 
 ## 参考资料
+### 视频教程
+* [《90分钟学会Python》](https://www.bilibili.com/video/BV1Uz4y167xY)
+* [《零基础入门学习Python》教学视频](https://www.bilibili.com/video/BV1c4411e77t)
+
+### 教程
 * [安装Python环境](../references_tips/InstallPython.md)
 * [IPython Notebooks to learn Python](https://github.com/rajathkmp/Python-Lectures)
 * [廖雪峰的Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
