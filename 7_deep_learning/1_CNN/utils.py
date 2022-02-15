@@ -13,16 +13,22 @@ def get_acc(output, label):
     return num_correct / total
 
 
-def train(net, train_data, valid_data, num_epochs, optimizer, criterion):
-    if torch.cuda.is_available():
+def train(net, train_data, valid_data, num_epochs, optimizer, criterion, use_cuda=True):
+    if use_cuda and torch.cuda.is_available():
         net = net.cuda()
+        
+    l_train_loss = []
+    l_train_acc  = []
+    l_valid_loss = []
+    l_valid_acc  = []
+    
     prev_time = datetime.now()
     for epoch in range(num_epochs):
         train_loss = 0
         train_acc = 0
         net = net.train()
         for im, label in train_data:
-            if torch.cuda.is_available():
+            if use_cuda and torch.cuda.is_available():
                 im = Variable(im.cuda())  # (bs, 3, h, w)
                 label = Variable(label.cuda())  # (bs, h, w)
             else:
@@ -50,7 +56,7 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion):
             valid_acc = 0
             net = net.eval()
             for im, label in valid_data:
-                if torch.cuda.is_available():
+                if use_cuda and torch.cuda.is_available():
                     im = Variable(im.cuda(), volatile=True)
                     label = Variable(label.cuda(), volatile=True)
                 else:
@@ -65,13 +71,21 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion):
                 % (epoch, train_loss / len(train_data),
                    train_acc / len(train_data), valid_loss / len(valid_data),
                    valid_acc / len(valid_data)))
+                   
+            l_valid_acc.append(valid_acc / len(valid_data))
+            l_valid_loss.append(valid_loss / len(valid_data))
         else:
             epoch_str = ("Epoch %d. Train Loss: %f, Train Acc: %f, " %
                          (epoch, train_loss / len(train_data),
                           train_acc / len(train_data)))
+
+        l_train_acc.append(train_acc / len(train_data))
+        l_train_loss.append(train_loss / len(train_data))
+            
         prev_time = cur_time
         print(epoch_str + time_str)
-
+    
+    return (l_train_loss, l_train_acc, l_valid_loss, l_valid_acc)
 
 def conv3x3(in_channel, out_channel, stride=1):
     return nn.Conv2d(

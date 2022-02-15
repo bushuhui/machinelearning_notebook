@@ -52,15 +52,17 @@
    - CNN
       - [CNN Introduction](7_deep_learning/1_CNN/CNN_Introduction.pptx)
       - [CNN simple demo](demo_code/3_CNN_MNIST.py)
-      - [Basic of Conv](7_deep_learning/1_CNN/1-basic_conv.ipynb)
-      - [VGG Network](7_deep_learning/1_CNN/2-vgg.ipynb)
-      - [GoogleNet](7_deep_learning/1_CNN/3-googlenet.ipynb)
-      - [ResNet](7_deep_learning/1_CNN/4-resnet.ipynb)
-      - [DenseNet](7_deep_learning/1_CNN/5-densenet.ipynb)
-      - [Batch Normalization](7_deep_learning/1_CNN/6-batch-normalization.ipynb)
-      - [Learning Rate Decay](7_deep_learning/2_CNN/7-lr-decay.ipynb)
-      - [Regularization](7_deep_learning/1_CNN/8-regularization.ipynb)
-      - [Data Augumentation](7_deep_learning/1_CNN/9-data-augumentation.ipynb)
+      - [Basic of Conv](7_deep_learning/1_CNN/01-basic_conv.ipynb)
+      - [LeNet5](7_deep_learning/1_CNN/02-LeNet5.ipynb)
+      - [AlexNet](7_deep_learning/1_CNN/03-AlexNet.ipynb)
+      - [VGG Network](7_deep_learning/1_CNN/04-vgg.ipynb)
+      - [GoogleNet](7_deep_learning/1_CNN/05-googlenet.ipynb)
+      - [ResNet](7_deep_learning/1_CNN/06-resnet.ipynb)
+      - [DenseNet](7_deep_learning/1_CNN/07-densenet.ipynb)
+      - [Batch Normalization](7_deep_learning/1_CNN/08-batch-normalization.ipynb)
+      - [Learning Rate Decay](7_deep_learning/1_CNN/09-lr-decay.ipynb)
+      - [Regularization](7_deep_learning/1_CNN/10-regularization.ipynb)
+      - [Data Augumentation](7_deep_learning/1_CNN/11-data-augumentation.ipynb)
    - RNN
       - [rnn/pytorch-rnn](7_deep_learning/2_RNN/pytorch-rnn.ipynb)
       - [rnn/rnn-for-image](7_deep_learning/2_RNN/rnn-for-image.ipynb)
@@ -81,21 +83,19 @@
 
 
 
-## 3. 参考资料
+## 3. [参考资料](References.md)
+* [教程、代码](References.md)
 * 资料速查
   * [相关学习参考资料汇总](References.md)
   * [一些速查手册](references_tips/cheatsheet)
-
 * 机器学习方面技巧等
   * [Confusion Matrix](references_tips/confusion_matrix.ipynb)
   * [Datasets](references_tips/datasets.ipynb)
   * [构建深度神经网络的一些实战建议](references_tips/构建深度神经网络的一些实战建议.md)
   * [Intro to Deep Learning](references_tips/Intro_to_Deep_Learning.pdf)
-
 * Python技巧等
   * [安装Python环境](references_tips/InstallPython.md)
   * [Python tips](references_tips/python)
-
 * [Git教程](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/git/README.md)
 * [Markdown教程](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/markdown/README.md)
 

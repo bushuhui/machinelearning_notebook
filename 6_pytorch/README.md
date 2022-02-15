@@ -11,8 +11,20 @@ PyTorch的简洁设计使得它入门很简单，本部分内容在深入介绍P
 
 ![PyTorch Demo](imgs/PyTorch.png)
 
+## 内容
+
+- [Tensor](1-tensor.ipynb)
+- [autograd](2-autograd.ipynb)
+- [linear-regression](3-linear-regression.ipynb)
+- [logistic-regression](4-logistic-regression.ipynb)
+- [nn-sequential-module](5-nn-sequential-module.ipynb)
+- [deep-nn](6-deep-nn.ipynb)
+- [param_initialize](7-param_initialize.ipynb)
+- [optim/sgd](optimizer/6_1-sgd.ipynb)
+- [optim/adam](optimizer/6_6-adam.ipynb)
 
 ## References
+
 * [code of book "Learn Deep Learning with PyTorch"](https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch)
 * [PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation](https://github.com/chenyuntc/pytorch-book)
 * [Awesome-Pytorch-list](https://github.com/bharathgs/Awesome-pytorch-list)

@@ -1,4 +1,4 @@
-# numpy, matplotlib, scipy等常用库
+# Numpy, Matplotlib, Scipy等常用库
 
 ## 内容
 * [numpy教程](1-numpy_tutorial.ipynb)

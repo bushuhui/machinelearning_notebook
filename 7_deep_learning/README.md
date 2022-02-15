@@ -19,7 +19,36 @@
 ![resnet-development.png](imgs/resnet-development.png)
 
 
+
+## 内容
+
+   - CNN
+      - [CNN Introduction](1_CNN/CNN_Introduction.pptx)
+      - [CNN simple demo](../demo_code/3_CNN_MNIST.py)
+      - [Basic of Conv](1_CNN/01-basic_conv.ipynb)
+      - [LeNet5](1_CNN/02-LeNet5.ipynb)
+      - [AlexNet](1_CNN/03-AlexNet.ipynb)
+      - [VGG Network](1_CNN/04-vgg.ipynb)
+      - [GoogleNet](1_CNN/05-googlenet.ipynb)
+      - [ResNet](1_CNN/06-resnet.ipynb)
+      - [DenseNet](1_CNN/07-densenet.ipynb)
+      - [Batch Normalization](1_CNN/08-batch-normalization.ipynb)
+      - [Learning Rate Decay](1_CNN/09-lr-decay.ipynb)
+      - [Regularization](1_CNN/10-regularization.ipynb)
+      - [Data Augumentation](1_CNN/11-data-augumentation.ipynb)
+   - RNN
+      - [rnn/pytorch-rnn](2_RNN/pytorch-rnn.ipynb)
+      - [rnn/rnn-for-image](2_RNN/rnn-for-image.ipynb)
+      - [rnn/lstm-time-series](2_RNN/time-series/lstm-time-series.ipynb)
+   - GAN
+      - [gan/autoencoder](3_GAN/autoencoder.ipynb)
+      - [gan/vae](3_GAN/vae.ipynb)
+      - [gan/gan](3_GAN/gan.ipynb)
+
+
+
 ## 参考资料
+
 * [深度学习 – Deep learning](https://easyai.tech/ai-definition/deep-learning/)
 * [深度学习](https://www.jiqizhixin.com/graph/technologies/01946acc-d031-4c0e-909c-f062643b7273)
 
