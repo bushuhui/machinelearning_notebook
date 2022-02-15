@@ -28,9 +28,11 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion):
             else:
                 im = Variable(im)
                 label = Variable(label)
+            
             # forward
             output = net(im)
             loss = criterion(output, label)
+            
             # backward
             optimizer.zero_grad()
             loss.backward()
