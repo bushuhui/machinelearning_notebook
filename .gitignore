@@ -3,4 +3,4 @@
 *.tar.gz
 *.pth
 __pycache__
-fig-res
+fig-res*

@@ -57,11 +57,11 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion, use_cud
             net = net.eval()
             for im, label in valid_data:
                 if use_cuda and torch.cuda.is_available():
-                    im = Variable(im.cuda(), volatile=True)
-                    label = Variable(label.cuda(), volatile=True)
+                    im = Variable(im.cuda())
+                    label = Variable(label.cuda())
                 else:
-                    im = Variable(im, volatile=True)
-                    label = Variable(label, volatile=True)
+                    im = Variable(im)
+                    label = Variable(label)
                 output = net(im)
                 loss = criterion(output, label)
                 valid_loss += loss.item()
