@@ -47,10 +47,7 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion, use_cud
             train_loss += loss.item()
             train_acc += get_acc(output, label)
 
-        cur_time = datetime.now()
-        h, remainder = divmod((cur_time - prev_time).seconds, 3600)
-        m, s = divmod(remainder, 60)
-        time_str = "Time %02d:%02d:%02d" % (h, m, s)
+
         if valid_data is not None:
             valid_loss = 0
             valid_acc = 0
@@ -67,7 +64,7 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion, use_cud
                 valid_loss += loss.item()
                 valid_acc += get_acc(output, label)
             epoch_str = (
-                "Epoch %d. Train Loss: %f, Train Acc: %f, Valid Loss: %f, Valid Acc: %f, "
+                "[%2d] Train:(L=%f, Acc=%f), Valid:(L=%f, Acc=%f), "
                 % (epoch, train_loss / len(train_data),
                    train_acc / len(train_data), valid_loss / len(valid_data),
                    valid_acc / len(valid_data)))
@@ -75,13 +72,18 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion, use_cud
             l_valid_acc.append(valid_acc / len(valid_data))
             l_valid_loss.append(valid_loss / len(valid_data))
         else:
-            epoch_str = ("Epoch %d. Train Loss: %f, Train Acc: %f, " %
+            epoch_str = ("[%2d] Train:(L=%f, Acc=%f), " %
                          (epoch, train_loss / len(train_data),
                           train_acc / len(train_data)))
 
         l_train_acc.append(train_acc / len(train_data))
         l_train_loss.append(train_loss / len(train_data))
-            
+        
+        cur_time = datetime.now()
+        h, remainder = divmod((cur_time - prev_time).seconds, 3600)
+        m, s = divmod(remainder, 60)
+        time_str = "T: %02d:%02d:%02d" % (h, m, s)
+        
         prev_time = cur_time
         print(epoch_str + time_str)
     
