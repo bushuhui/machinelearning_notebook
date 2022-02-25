@@ -90,7 +90,7 @@ def train(epoch):
         if batch_idx % 100 == 0:
             print("Train epoch: %6d [%6d/%6d (%.0f %%)] \t Loss: %.6f" % (
                 epoch, batch_idx * len(data), len(train_loader.dataset),
-                100. * batch_idx / len(train_loader), loss.data[0]) )
+                100. * batch_idx / len(train_loader), loss.item()) )
 
 
 def test():
@@ -103,7 +103,7 @@ def test():
         output = model(data)
 
         # sum up batch loss
-        test_loss += criterion(output, target).data[0]
+        test_loss += criterion(output, target).item()
 
         # get the index of the max
         pred = output.data.max(1, keepdim=True)[1]
