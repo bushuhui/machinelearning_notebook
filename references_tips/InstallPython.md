@@ -133,9 +133,36 @@ conda info --envs
 conda remove -n <your_env> --all
 ```
 
+## 7. 安装nvidia驱动
+
+### 7.1 查看已有的nvidia驱动
+```
+dpkg -l | grep -i nvidia
+```
+
+### 7.2 卸载驱动
+```
+sudo apt-get purge nvidia-driver-xxx
+```
+
+### 7.3 搜索并安装的驱动
+
+```
+apt-cache search nvidia | grep 460
+sudo apt-get install nvidia-driver-460
+```
+
+根据自己的需要可以安装更高的版本。
+
+#### 7.4 Conda使用cuda
+```
+conda install cudatoolkit=8.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/linux-64/
+```
+**根据自己的需要安装更高的版本**
 
 
-## 7. [Python技巧](python/)
+
+## 8. [Python技巧](python/)
 
 - [pip的安装、使用等](python/pip.md)
 - [virtualenv的安装、使用](python/virtualenv.md)
