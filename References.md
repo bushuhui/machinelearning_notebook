@@ -10,7 +10,20 @@
 
 * [《动手学深度学习》- PyTorch版本](https://tangshusen.me/Dive-into-DL-PyTorch/#/)
 * [Introduction — Neuromatch Academy: Deep Learning](https://deeplearning.neuromatch.io/tutorials/intro.html)
-
+* [Pytorch 常用代码合集](https://mp.weixin.qq.com/s/wqhpwShaW26CIF9K9_QD0g)
+	* 主要包括如下功能：
+	* 导入包和版本查询
+	* 单张显卡设置以及多张显卡设置
+	* 清除显存
+	* 张量处理
+	* 计算两组数据之间的欧式距离
+	* 模型的定义
+	* 模型参数量的计算
+	* 模型的可视化
+	* 将GPU的数据加载到CPU
+	* 数据集均方和标准差的处理
+	* 模型的训练与测试demo
+	* 模型的保存与断点加载
 
 ### 1.2 代码
 
