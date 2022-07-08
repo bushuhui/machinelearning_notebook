@@ -67,7 +67,7 @@ custom_channels:
 ### 3.2 设置PIP源
 
 ```
-pip config set global.index-url 'https://mirrors.aliyun.com/pypi/simple/'
+pip config set global.index-url 'https://pypi.mirrors.ustc.edu.cn/simple/'
 ```
 
 
