@@ -4,3 +4,5 @@
 *.pth
 __pycache__
 fig-res*
+Thumbs.db
+Thumbs.db:encryptable
