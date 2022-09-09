@@ -10,8 +10,11 @@
 
 由于Anaconda集成了大部分的python包，因此能够很方便的开始使用。由于网络下载速度较慢，因此推荐使用镜像来提高下载的速度。镜像的使用方法可以参考：[Anaconda镜像的说明文档](https://mirrors.bfsu.edu.cn/help/anaconda/)
 
-1. 在这里找到适合自己的安装文件，然后下载
-   https://mirrors.bfsu.edu.cn/anaconda/archive/
+1. 在下列镜像网站找到适合自己的安装文件，然后下载
+* https://mirrors.bfsu.edu.cn/anaconda/archive/
+* https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
+* https://mirrors.aliyun.com/anaconda/archive/
+* https://mirrors.hit.edu.cn/anaconda/archive/
 
 例如： https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Windows-x86_64.exe
 
