@@ -98,11 +98,13 @@ pip3 install torchvision
 
 ### 6.1 Conda创建自己的环境
 ```
-conda create -n <your_env>
+conda create -n <your_env> python=x.x
 
 # example
-conda create -n machinelearning
+conda create -n machinelearning python=3.8
 ```
+
+上面的`python=x.x`中的`x.x`对应自己系统中的Python版本
 
 ### 6.2 Conda怎么激活自己的环境
 ```
