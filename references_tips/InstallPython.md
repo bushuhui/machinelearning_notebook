@@ -45,7 +45,9 @@ bash ./Anaconda3-2020.11-Linux-x86_64.sh
 参考这里的[conda安装和软件源设置说明](https://mirrors.bfsu.edu.cn/help/anaconda/)
 
 
-各系统都可以通过修改用户目录下的 `.condarc` 文件。Windows 用户无法直接创建名为 `.condarc` 的文件，可先执行 `conda config --set show_channel_urls yes` 生成该文件之后再修改。
+各系统都可以通过修改用户目录下的 `.condarc` 文件。
+
+Windows 用户无法直接创建名为 `.condarc` 的文件，可先执行 `conda config --set show_channel_urls yes` 生成该文件之后再修改。然后在命令行输入 `notepad .condarc`将下面的内容拷贝到文本编辑器里面。
 
 Linux下，打开文件编辑器 `gedit ~/.condarc`，然后把下面的内容拷贝到这个文件中：
 ```
