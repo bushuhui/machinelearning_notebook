@@ -79,6 +79,11 @@ pip config set global.index-url 'https://pypi.mirrors.ustc.edu.cn/simple/'
 
 ## 4. 安装常用软件
 
+新建conda环境
+```
+conda create -n machinelearning python=3.9
+```
+
 打开`conda`的命令行程序，输入下面的命令
 ```
 conda install jupyter scipy numpy sympy matplotlib pandas scikit-learn
