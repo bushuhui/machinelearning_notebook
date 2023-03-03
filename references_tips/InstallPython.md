@@ -137,6 +137,9 @@ conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/
 # 退出当前环境
 conda deactivate
 
+# 克隆环境
+conda create -n BBB --clone AAA
+
 # 查看基本信息
 conda info
 conda info -h
