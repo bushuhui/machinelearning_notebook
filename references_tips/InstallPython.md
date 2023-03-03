@@ -88,6 +88,15 @@ conda install jupyter scipy numpy sympy matplotlib pandas scikit-learn
 
 ## 5. 安装PyTorch
 
+GPU 版本
+```
+# 访问 https://pytorch.org/，查最新的安装命令
+# 例如 pytorch-cuda=11.6
+
+conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+```
+
+CPU 版本
 ```
 conda install pytorch -c pytorch 
 pip3 install torchvision
