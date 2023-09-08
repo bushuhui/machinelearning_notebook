@@ -57,10 +57,6 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
     - 模块基础，模块机制
     - 异常处理
     - 常用科学计算模块
-* [Python技巧](python/tips)
-    - PIP
-    - Conda
-    - VirtualEnv
 
 
 
