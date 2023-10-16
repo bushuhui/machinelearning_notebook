@@ -122,3 +122,10 @@ http://localhost:8889/notebooks/machineLearning/notebooks/01%20-%20Model%20Selec
 * https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/404_autoencoder.py
 * pytorch AutoEncoder 自编码 https://www.jianshu.com/p/f0929f427d03
 * Adversarial Autoencoders (with Pytorch) https://blog.paperspace.com/adversarial-autoencoders-with-pytorch/
+
+
+### 4.4 损失函数，交叉熵
+* 简单的交叉熵，你真的懂了吗？ https://zhuanlan.zhihu.com/p/61944055
+* 损失函数：交叉熵详解 https://zhuanlan.zhihu.com/p/115277553
+* 一文搞懂交叉熵在机器学习中的使用，透彻理解交叉熵背后的直觉 https://blog.csdn.net/tsyccnh/article/details/79163834
+* 一文搞懂熵(Entropy),交叉熵(Cross-Entropy) https://zhuanlan.zhihu.com/p/149186719
