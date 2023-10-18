@@ -98,13 +98,29 @@ GPU 版本
 # 访问 https://pytorch.org/，查最新的安装命令
 # 例如 pytorch-cuda=11.6
 
-conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+# 安装cudatoolkit
+conda install cudatoolkit 
+
+# 安装最新版本
+conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
+
+# 安装特定版本
+#conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 ```
 
 CPU 版本
 ```
 conda install pytorch -c pytorch 
 pip3 install torchvision
+```
+
+
+
+检测GPU是否在PyTorch中可用：
+
+```
+>>> import torch
+>>> torch.cuda.is_available()
 ```
 
 
@@ -173,7 +189,7 @@ sudo apt-get purge nvidia-driver-xxx
 
 ```
 apt-cache search nvidia | grep 460
-sudo apt-get install nvidia-driver-460
+sudo apt-get install nvidia-driverp -460
 ```
 
 根据自己的需要可以安装更高的版本。
