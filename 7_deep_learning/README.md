@@ -49,7 +49,7 @@
       - [gan/vae](3_GAN/vae.ipynb)
       - [gan/gan](3_GAN/gan.ipynb)
 
-
+* [构建深度神经网络的一些实战建议](../references_tips/构建深度神经网络的一些实战建议.md)
 
 ## 参考资料
 

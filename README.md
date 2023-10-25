@@ -73,6 +73,7 @@
       - [gan/autoencoder](7_deep_learning/3_GAN/autoencoder.ipynb)
       - [gan/vae](7_deep_learning/3_GAN/vae.ipynb)
       - [gan/gan](7_deep_learning/3_GAN/gan.ipynb)
+   - [构建深度神经网络的一些实战建议](references_tips/构建深度神经网络的一些实战建议.md)
 
 
 
@@ -105,5 +106,4 @@
   * [Python tips](references_tips/python)
 * [Git教程](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/git/README.md)
 * [Markdown教程](https://gitee.com/pi-lab/learn_programming/blob/master/6_tools/markdown/README.md)
-
 
