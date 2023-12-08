@@ -7,9 +7,7 @@ PyTorch是基于Python的科学计算包，其旨在服务两类场合：
 
 PyTorch的简洁设计使得它入门很简单，本部分内容在深入介绍PyTorch之前，先介绍一些PyTorch的基础知识，让大家能够对PyTorch有一个大致的了解，并能够用PyTorch搭建一个简单的神经网络，然后在深入学习如何使用PyTorch实现各类网络结构。在学习过程，可能部分内容暂时不太理解，可先不予以深究，后续的课程将会对此进行深入讲解。
 
-
-
-![PyTorch Demo](imgs/PyTorch.png)
+![PyTorch Demo](imgs/pytorch_features.jpg)
 
 ## 内容
 
