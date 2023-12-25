@@ -1,4 +1,8 @@
 # Python/module 模块
+
+* 更详细资料请访问： [Python 模块化开发](https://gitee.com/pi-lab/code_cook/tree/master/python/modules)
+
+
 ## 1.  概述
 ### 1.1 what
 在计算机程序的开发过程中，随着程序代码越写越多，在一个文件里代码就会越来越长，越来越不容易维护。为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少，很多编程语言都采用这种组织代码的方式。在Python中，一个.py文件就称之为一个模块（Module）。
@@ -357,6 +361,9 @@ export PATH=<你要加入的路径>:$PATH
 就可以了.
 echo $PATH查看环境变量。
 
+
+## 参考资料
+* [Python 模块化开发](https://gitee.com/pi-lab/code_cook/tree/master/python/modules)
 
 
 
