@@ -200,9 +200,15 @@ conda install cudatoolkit=8.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/p
 ```
 **根据自己的需要安装更高的版本**
 
+## 8. pip使用技巧
+指定给定的源来安装，可以在pip后面加上 `--extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/`，例如：
+
+```
+sudo pip3 install conan==1.61.0 --extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/
+```
 
 
-## 8. [Python技巧](python/)
+## 9. [Python技巧](python/)
 
 - [pip的安装、使用等](python/pip.md)
 - [virtualenv的安装、使用](python/virtualenv.md)
