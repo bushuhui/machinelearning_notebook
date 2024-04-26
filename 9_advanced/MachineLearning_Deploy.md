@@ -24,3 +24,11 @@ TensorRT能够加快所设计的机器学习模型在CUDA设备上的推理速�
 
 * [ROS](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv)
 * [ZeroMQ](https://zeromq.org/)
+
+## ONNX & OpenCV DNN
+* https://docs.opencv.org/4.x/dd/d55/pytorch_cls_c_tutorial_dnn_conversion.html
+* https://github.com/takmin/PyTorch2OpenCV_sample
+* https://github.com/zihaomu/opencv_lite
+* https://github.com/ultralytics/ultralytics/tree/main/examples/YOLOv8-OpenCV-ONNX-Python
+* https://pytorch.org/tutorials/advanced/super_resolution_with_onnxruntime.html
+* https://pytorch.org/tutorials/beginner/onnx/export_simple_model_to_onnx_tutorial.html
