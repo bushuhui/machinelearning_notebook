@@ -73,8 +73,13 @@
       - [gan/autoencoder](7_deep_learning/3_GAN/autoencoder.ipynb)
       - [gan/vae](7_deep_learning/3_GAN/vae.ipynb)
       - [gan/gan](7_deep_learning/3_GAN/gan.ipynb)
+   - [Transformer](7_deep_learning/5_Transformer)
    - [构建深度神经网络的一些实战建议](references_tips/构建深度神经网络的一些实战建议.md)
-
+10. [机器学习的应用](8_app）
+   - [目标识别](8_app/app_1_object-detection)
+   - [强化学习](8_app/app_2_dqn)
+   - [大语言模型](8_app/app_3_llm)
+11. [机器学习的高级技巧](9_advanced)
 
 
 ## 2. 学习的建议
