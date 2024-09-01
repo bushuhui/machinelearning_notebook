@@ -13,7 +13,7 @@
 ![Machine Learning Cover](images/machine_learning_1.jpg)
 
 
-## 1. 内容
+## 一、 内容
 1. [课程简介](CourseIntroduction.pdf)
 2. [Python](0_python/README.md)
    - [Install Python](references_tips/InstallPython.md)
@@ -75,14 +75,14 @@
       - [gan/gan](7_deep_learning/3_GAN/gan.ipynb)
    - [Transformer](7_deep_learning/5_Transformer)
    - [构建深度神经网络的一些实战建议](references_tips/构建深度神经网络的一些实战建议.md)
-10. [机器学习的应用](8_app）
+10. [机器学习的应用](8_app)
    - [目标识别](8_app/app_1_object-detection)
    - [强化学习](8_app/app_2_dqn)
    - [大语言模型](8_app/app_3_llm)
 11. [机器学习的高级技巧](9_advanced)
 
 
-## 2. 学习的建议
+## 二、学习的建议
 1. 为了更好的学习本课程，需要大家把[Python编程](0_python)能力培养好，通过一定数量的练习题、小项目培养Python编程思维，为后续的机器学习理论与实践打好坚实的基础。
 2. 机器学习是一门应用、实践性质很强的学科，需要理论结合实践并在实际应用中进行学习。学习一门知识最好的办法就是使用它，因此建议读者一定要自己动手实操，不要嫌麻烦，尽可能把本书中的代码全部自己敲一下这样才能对内容有更加深刻的理解。
 3. 本课程各个章节都有[作业](https://gitee.com/pi-lab/machinelearning_homework)，此外还有[综合练习项目](https://gitee.com/pi-lab/machinelearning_homework)，通过完成作业和练习项目来加深对所学知识的理解。
@@ -96,7 +96,7 @@
 
 
 
-## 3. [参考资料](References.md)
+## 三、[参考资料](References.md)
 * [教程、代码](References.md)
 * 资料速查
   * [相关学习参考资料汇总](References.md)
