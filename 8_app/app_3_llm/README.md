@@ -10,7 +10,9 @@
 
 ## 参考资料
 
+* [Implementing a ChatGPT-like LLM in PyTorch from scratch, step by step](https://github.com/rasbt/LLMs-from-scratch)
 * [一文读懂：大语言模型的实现与原理](https://zhuanlan.zhihu.com/p/669245797)
+* [Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.](https://github.com/mlabonne/llm-course)
 
 
 ### 视频教程
