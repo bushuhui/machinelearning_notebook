@@ -13,8 +13,7 @@
 1. 在下列镜像网站找到适合自己的安装文件，然后下载
 * https://mirrors.bfsu.edu.cn/anaconda/archive/
 * https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
-* https://mirrors.aliyun.com/anaconda/archive/
-* https://mirrors.hit.edu.cn/anaconda/archive/
+* https://mirrors.ustc.edu.cn/anaconda/archive/
 
 例如： https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Windows-x86_64.exe
 
