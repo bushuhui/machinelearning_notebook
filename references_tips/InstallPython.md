@@ -81,7 +81,9 @@ pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
 新建conda环境
 ```
 conda create -n machinelearning python=3.9
+conda activate machinelearning
 ```
+其中 `machinelearning` 是新建的conda环境的名字
 
 打开`conda`的命令行程序，输入下面的命令
 ```
