@@ -15,7 +15,7 @@
 * https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
 * https://mirrors.ustc.edu.cn/anaconda/archive/
 
-例如： https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Windows-x86_64.exe
+例如： https://mirrors.ustc.edu.cn/anaconda/archive/Anaconda3-2024.06-1-Windows-x86_64.exe
 
 2. 按照说明，把Anaconda安装好。
 
@@ -25,12 +25,12 @@
 在网站下载最新的conda安装文件，例如
 
 ```
-wget https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Linux-x86_64.sh
+wget https://mirrors.ustc.edu.cn/anaconda/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
 然后运行
 ```
-bash ./Anaconda3-2020.11-Linux-x86_64.sh
+bash ./Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
 按照提示完成安装（记得需要`自动加入环境变量`的设置），**然后关闭终端，再打开终端**
