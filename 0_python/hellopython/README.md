@@ -1,4 +1,4 @@
-## hellopython
+## Hello Python
 
 > 学习目的：掌握Python的使用以及文件读取、画图等实际操作
 >
@@ -22,61 +22,14 @@ Python，读作`['paɪθɑn]`，翻译成汉语是蟒蛇的意思，并且Python
 <img src="./images/Pythonfather2.jpeg"/>
 </p>
 
-1. [Python 3.9.6](https://www.python.org/downloads/release/python-396/) June 28, 2021 [ Download](https://www.python.org/downloads/release/python-396/) [Release Notes](https://docs.python.org/release/3.9.6/whatsnew/changelog.html#changelog)
-2. [Python 3.8.11](https://www.python.org/downloads/release/python-3811/) June 28, 2021 [ Download](https://www.python.org/downloads/release/python-3811/) [Release Notes](https://docs.python.org/release/3.8.11/whatsnew/changelog.html#changelog)
-3. [Python 3.7.11](https://www.python.org/downloads/release/python-3711/) June 28, 2021 [ Download](https://www.python.org/downloads/release/python-3711/) [Release Notes](https://docs.python.org/release/3.7.11/whatsnew/changelog.html#changelog)
-4. [Python 3.6.14](https://www.python.org/downloads/release/python-3614/) June 28, 2021 [ Download](https://www.python.org/downloads/release/python-3614/) [Release Notes](https://docs.python.org/release/3.6.14/whatsnew/changelog.html#changelog)
-5. [Python 3.9.5](https://www.python.org/downloads/release/python-395/) May 3, 2021 [ Download](https://www.python.org/downloads/release/python-395/) [Release Notes](https://docs.python.org/release/3.9.5/whatsnew/changelog.html)
-6. [Python 3.8.10](https://www.python.org/downloads/release/python-3810/) May 3, 2021 [ Download](https://www.python.org/downloads/release/python-3810/) [Release Notes](https://docs.python.org/release/3.8.10/whatsnew/changelog.html)
-7. [Python 3.9.4](https://www.python.org/downloads/release/python-394/) April 4, 2021 [ Download](https://www.python.org/downloads/release/python-394/) [Release Notes](https://docs.python.org/release/3.9.4/whatsnew/changelog.html#changelog)
-8. [Python 3.8.9](https://www.python.org/downloads/release/python-389/) April 2, 2021 [ Download](https://www.python.org/downloads/release/python-389/) [Release Notes](https://docs.python.org/release/3.8.9/whatsnew/changelog.html#python-3-8-9)
-9. [Python 3.9.2](https://www.python.org/downloads/release/python-392/) Feb. 19, 2021 [ Download](https://www.python.org/downloads/release/python-392/) [Release Notes](https://docs.python.org/release/3.9.2/whatsnew/changelog.html#changelog)
-10. [Python 3.8.8](https://www.python.org/downloads/release/python-388/) Feb. 19, 2021 [ Download](https://www.python.org/downloads/release/python-388/) [Release Notes](https://docs.python.org/release/3.8.8/whatsnew/changelog.html#changelog)
-11. [Python 3.6.13](https://www.python.org/downloads/release/python-3613/) Feb. 15, 2021 [ Download](https://www.python.org/downloads/release/python-3613/) [Release Notes](https://docs.python.org/release/3.6.13/whatsnew/changelog.html#changelog)
-12. [Python 3.7.10](https://www.python.org/downloads/release/python-3710/) Feb. 15, 2021 [ Download](https://www.python.org/downloads/release/python-3710/) [Release Notes](https://docs.python.org/release/3.7.10/whatsnew/changelog.html#changelog)
-13. [Python 3.8.7](https://www.python.org/downloads/release/python-387/) Dec. 21, 2020 [ Download](https://www.python.org/downloads/release/python-387/) [Release Notes](https://docs.python.org/release/3.8.7/whatsnew/changelog.html)
-14. [Python 3.9.1](https://www.python.org/downloads/release/python-391/) Dec. 7, 2020 [ Download](https://www.python.org/downloads/release/python-391/) [Release Notes](https://docs.python.org/release/3.9.1/whatsnew/changelog.html#changelog)
-15. [Python 3.9.0](https://www.python.org/downloads/release/python-390/) Oct. 5, 2020 [ Download](https://www.python.org/downloads/release/python-390/) [Release Notes](https://docs.python.org/release/3.9.0/whatsnew/changelog.html#changelog)
-16. [Python 3.8.6](https://www.python.org/downloads/release/python-386/) Sept. 24, 2020 [ Download](https://www.python.org/downloads/release/python-386/) [Release Notes](https://docs.python.org/release/3.8.6/whatsnew/changelog.html#changelog)
-17. [Python 3.5.10](https://www.python.org/downloads/release/python-3510/) Sept. 5, 2020 [ Download](https://www.python.org/downloads/release/python-3510/) [Release Notes](https://docs.python.org/3.5/whatsnew/changelog.html#python-3-5-10)
-18. [Python 3.7.9](https://www.python.org/downloads/release/python-379/) Aug. 17, 2020 [ Download](https://www.python.org/downloads/release/python-379/) [Release Notes](https://docs.python.org/release/3.7.9/whatsnew/changelog.html#changelog)
-19. [Python 3.6.12](https://www.python.org/downloads/release/python-3612/) Aug. 17, 2020 [ Download](https://www.python.org/downloads/release/python-3612/) [Release Notes](https://docs.python.org/release/3.6.12/whatsnew/changelog.html#changelog)
-20. [Python 3.8.5](https://www.python.org/downloads/release/python-385/) July 20, 2020 [ Download](https://www.python.org/downloads/release/python-385/) [Release Notes](https://docs.python.org/release/3.8.5/whatsnew/changelog.html#changelog)
-21. [Python 3.8.4](https://www.python.org/downloads/release/python-384/) July 13, 2020 [ Download](https://www.python.org/downloads/release/python-384/) [Release Notes](https://docs.python.org/release/3.8.4/whatsnew/changelog.html#changelog)
-22. [Python 3.7.8](https://www.python.org/downloads/release/python-378/) June 27, 2020 [ Download](https://www.python.org/downloads/release/python-378/) [Release Notes](https://docs.python.org/release/3.7.8/whatsnew/changelog.html#changelog)
-23. [Python 3.6.11](https://www.python.org/downloads/release/python-3611/) June 27, 2020 [ Download](https://www.python.org/downloads/release/python-3611/) [Release Notes](https://docs.python.org/release/3.6.11/whatsnew/changelog.html#changelog)
-24. [Python 3.8.3](https://www.python.org/downloads/release/python-383/) May 13, 2020 [ Download](https://www.python.org/downloads/release/python-383/) [Release Notes](https://docs.python.org/release/3.8.3/whatsnew/changelog.html#changelog)
-25. [Python 2.7.18](https://www.python.org/downloads/release/python-2718/) April 20, 2020 [ Download](https://www.python.org/downloads/release/python-2718/) [Release Notes](https://www.python.org/getit/)
-26. [Python 3.7.7](https://www.python.org/downloads/release/python-377/) March 10, 2020 [ Download](https://www.python.org/downloads/release/python-377/) [Release Notes](https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-7-final)
-27. [Python 3.8.2](https://www.python.org/downloads/release/python-382/) Feb. 24, 2020 [ Download](https://www.python.org/downloads/release/python-382/) [Release Notes](https://docs.python.org/release/3.8.2/whatsnew/changelog.html#python-3-8-2-final)
-28. [Python 3.8.1](https://www.python.org/downloads/release/python-381/) Dec. 18, 2019 [ Download](https://www.python.org/downloads/release/python-381/) [Release Notes](https://docs.python.org/3.8/whatsnew/changelog.html#python-3-8-1)
-29. [Python 3.7.6](https://www.python.org/downloads/release/python-376/) Dec. 18, 2019 [ Download](https://www.python.org/downloads/release/python-376/) [Release Notes](https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-6-final)
-30. [Python 3.6.10](https://www.python.org/downloads/release/python-3610/) Dec. 18, 2019 [ Download](https://www.python.org/downloads/release/python-3610/) [Release Notes](https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-10-final)
-31. [Python 3.5.9](https://www.python.org/downloads/release/python-359/) Nov. 2, 2019 [ Download](https://www.python.org/downloads/release/python-359/) [Release Notes](https://docs.python.org/3.5/whatsnew/changelog.html#python-3-5-9)
-32. [Python 3.5.8](https://www.python.org/downloads/release/python-358/) Oct. 29, 2019 [ Download](https://www.python.org/downloads/release/python-358/) [Release Notes](https://docs.python.org/3.5/whatsnew/changelog.html#python-3-5-8)
-33. [Python 2.7.17](https://www.python.org/downloads/release/python-2717/) Oct. 19, 2019 [ Download](https://www.python.org/downloads/release/python-2717/) [Release Notes](https://raw.githubusercontent.com/python/cpython/c2f86d86e6c8f5fd1ef602128b537a48f3f5c063/Misc/NEWS.d/2.7.17rc1.rst)
-34. [Python 3.7.5](https://www.python.org/downloads/release/python-375/) Oct. 15, 2019 [ Download](https://www.python.org/downloads/release/python-375/) [Release Notes](https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-5-final)
-35. [Python 3.8.0](https://www.python.org/downloads/release/python-380/) Oct. 14, 2019 [ Download](https://www.python.org/downloads/release/python-380/) [Release Notes](https://docs.python.org/3.8/whatsnew/changelog.html#python-3-8-0-final)
-36. [Python 3.7.4](https://www.python.org/downloads/release/python-374/) July 8, 2019 [ Download](https://www.python.org/downloads/release/python-374/) [Release Notes](https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-4-final)
-37. [Python 3.6.9](https://www.python.org/downloads/release/python-369/) July 2, 2019 [ Download](https://www.python.org/downloads/release/python-369/) [Release Notes](https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-9-final)
-38. [Python 3.7.3](https://www.python.org/downloads/release/python-373/) March 25, 2019 [ Download](https://www.python.org/downloads/release/python-373/) [Release Notes](https://docs.python.org/3.7/whatsnew/changelog.html#python-3-7-3-final)
-39. [Python 3.4.10](https://www.python.org/downloads/release/python-3410/) March 18, 2019 [ Download](https://www.python.org/downloads/release/python-3410/) [Release Notes](https://docs.python.org/3.4/whatsnew/changelog.html#python-3-4-10)
-40. [Python 3.5.7](https://www.python.org/downloads/release/python-357/) March 18, 2019
-41. Python 3.5 - September 13, 2015
-42. Python 3.4 - March 16, 2014
-43. Python 3.3 - September 29, 2012
-44. Python 3.2 - February 20, 2011
-45. Python 3.1 - June 27, 2009
-46. Python 3.0 - December 3, 2008
-47. Python 2.7 - July 3, 2010
-48. Python 2.6 - October 1, 2008
-49. Python 2.5 - September 19, 2006
-50. Python 2.4 - November 30, 2004, 同年目前最流行的WEB框架Django 诞生
-51. Python 2.0 - October 16, 2000，加入了内存回收机制，构成了现在Python语言框架的基础
-52. Python 1.0 - January 1994 增加了 lambda, map, filter and reduce.
-53. 1992年，Python之父发布了Python的web框架Zope1.
+* Python 3.0 - December 3, 2008
+* Python 2.0 - October 16, 2000，加入了内存回收机制，构成了现在Python语言框架的基础
+* Python 1.0 - January 1994 增加了 lambda, map, filter and reduce.
+* 1992年，Python之父发布了Python的web框架Zope1.
 
-[Python官网](https://www.python.org/getit/) [Python官方文档](https://docs.python.org/3/) [TIOBE编程语言排行榜](https://www.tiobe.com/tiobe-index/)
+* [Python官网](https://www.python.org/getit/)
+* [Python官方文档](https://docs.python.org/3/)
+* [TIOBE编程语言排行榜](https://www.tiobe.com/tiobe-index/)
 
 <p align="center">
 <img src="./images/sort1.jpg"/>
