@@ -1,6 +1,6 @@
 # 深度学习
 
-深度学习（Deep Learning）是机器学习的分支，是一种试图使用包含复杂结构或由多重非线性变换构成的多个处理层对数据进行高层抽象的算法。 深度学习是机器学习中一种基于对数据进行表征学习的算法，至今已有数种深度学习框架，如卷积神经网络、深度置信网络、递归神经网络等已被应用在计算机视觉、语音识别、自然语言处理、音频识别与生物信息学等领域并获取了极好的效果。 
+深度学习（Deep Learning）是机器学习的分支，是一种试图使用包含复杂结构或由多重非线性变换构成的多个处理层对数据进行高层抽象的算法。 深度学习是机器学习中一种基于对数据进行表征学习的算法，至今已有数种深度学习框架，如卷积神经网络、深度置信网络、递归神经网络、Transformer等已被应用在计算机视觉、语音识别、自然语言处理、音频识别与生物信息学等领域并获取了极好的效果。
 
 ![dl](imgs/deep-learning.jpg)
 
@@ -12,7 +12,7 @@
 
 通过设计建立适量的神经元计算节点和多层运算层次结构，选择合适的输人层和输出层，通过网络的学习和调优，建立起从输入到输出的函数关系，虽然不能100%找到输入与输出的函数关系，但是可以尽可能的逼近现实的关联关系。使用训练成功的网络模型，就可以实现我们对复杂事务处理的自动化要求。 
 
-典型的深度学习模型有[卷积神经网络(convolutional neural network)](1_CNN)、深度置信网络(Deep Belief Network, DBN)、堆栈自编码网络(stacked auto-encoder network)、[循环神经网络（Recurrent Neural Network）](2_RNN)、[对抗生成网络（Generative Adversarial Networks，GAN)](3_GAN)等。
+典型的深度学习模型有[卷积神经网络(convolutional neural network)](1_CNN)、深度置信网络(Deep Belief Network, DBN)、堆栈自编码网络(stacked auto-encoder network)、[循环神经网络（Recurrent Neural Network）](2_RNN)、[对抗生成网络（Generative Adversarial Networks，GAN)](3_GAN)，[Transformer](5_Transformer)等。
 
 
 
