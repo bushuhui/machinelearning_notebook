@@ -14,7 +14,7 @@
 
 
 ## 一、 内容
-1. [课程简介](CourseIntroduction.pdf)
+1. [课程简介](CourseIntroduction.pdf) ([PPT文件下载](https://pan.baidu.com/s/10zreXtK_d5rZTh6Hw08x4w?pwd=yvm4))
 2. [Python](0_python/README.md)
    - [Install Python](references_tips/InstallPython.md)
    - [ipython & notebook](0_python/0-ipython_notebook.ipynb)
