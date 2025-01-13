@@ -77,7 +77,7 @@
    - [构建深度神经网络的一些实战建议](references_tips/构建深度神经网络的一些实战建议.md)
 10. [机器学习的应用](8_app)
    - [目标识别](8_app/app_1_object-detection)
-   - [强化学习](8_app/app_2_dqn)
+   - [强化学习](8_app/app_2_drl)
    - [大语言模型](8_app/app_3_llm)
 11. [机器学习的高级技巧](9_advanced)
 

@@ -8,5 +8,5 @@
 ## 内容
 
 * [目标检测](app_1_object-detection/README.md)
-* [深度强化学习](app_2_dqn/README.md)
+* [深度强化学习](app_2_drl/README.md)
 
