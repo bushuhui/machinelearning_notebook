@@ -10,10 +10,12 @@
 
 由于Anaconda集成了大部分的python包，因此能够很方便的开始使用。由于网络下载速度较慢，因此推荐使用镜像来提高下载的速度。镜像的使用方法可以参考：[Anaconda镜像的说明文档](https://mirrors.bfsu.edu.cn/help/anaconda/)
 
-1. 在这里找到适合自己的安装文件，然后下载
-   https://mirrors.bfsu.edu.cn/anaconda/archive/
+1. 在下列镜像网站找到适合自己的安装文件，然后下载
+* https://mirrors.bfsu.edu.cn/anaconda/archive/
+* https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
+* https://mirrors.ustc.edu.cn/anaconda/archive/
 
-例如： https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Windows-x86_64.exe
+例如： https://mirrors.ustc.edu.cn/anaconda/archive/Anaconda3-2024.06-1-Windows-x86_64.exe
 
 2. 按照说明，把Anaconda安装好。
 
@@ -23,12 +25,12 @@
 在网站下载最新的conda安装文件，例如
 
 ```
-wget https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2020.11-Linux-x86_64.sh
+wget https://mirrors.ustc.edu.cn/anaconda/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
 然后运行
 ```
-bash ./Anaconda3-2020.11-Linux-x86_64.sh
+bash ./Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
 按照提示完成安装（记得需要`自动加入环境变量`的设置），**然后关闭终端，再打开终端**
@@ -42,7 +44,9 @@ bash ./Anaconda3-2020.11-Linux-x86_64.sh
 参考这里的[conda安装和软件源设置说明](https://mirrors.bfsu.edu.cn/help/anaconda/)
 
 
-各系统都可以通过修改用户目录下的 `.condarc` 文件。Windows 用户无法直接创建名为 `.condarc` 的文件，可先执行 `conda config --set show_channel_urls yes` 生成该文件之后再修改。
+各系统都可以通过修改用户目录下的 `.condarc` 文件。
+
+Windows 用户无法直接创建名为 `.condarc` 的文件，可先执行 `conda config --set show_channel_urls yes` 生成该文件之后再修改。然后在命令行输入 `notepad .condarc`将下面的内容拷贝到文本编辑器里面。
 
 Linux下，打开文件编辑器 `gedit ~/.condarc`，然后把下面的内容拷贝到这个文件中：
 ```
@@ -67,12 +71,19 @@ custom_channels:
 ### 3.2 设置PIP源
 
 ```
-pip config set global.index-url 'https://mirrors.aliyun.com/pypi/simple/'
+pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
 ```
 
 
 
 ## 4. 安装常用软件
+
+新建conda环境
+```
+conda create -n machinelearning python=3.9
+conda activate machinelearning
+```
+其中 `machinelearning` 是新建的conda环境的名字
 
 打开`conda`的命令行程序，输入下面的命令
 ```
@@ -83,9 +94,34 @@ conda install jupyter scipy numpy sympy matplotlib pandas scikit-learn
 
 ## 5. 安装PyTorch
 
+GPU 版本
+```
+# 访问 https://pytorch.org/，查最新的安装命令
+# 例如 pytorch-cuda=11.6
+
+# 安装cudatoolkit
+conda install cudatoolkit 
+
+# 安装最新版本
+conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
+
+# 安装特定版本
+#conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+```
+
+CPU 版本
 ```
 conda install pytorch -c pytorch 
 pip3 install torchvision
+```
+
+
+
+检测GPU是否在PyTorch中可用：
+
+```
+>>> import torch
+>>> torch.cuda.is_available()
 ```
 
 
@@ -95,11 +131,13 @@ pip3 install torchvision
 
 ### 6.1 Conda创建自己的环境
 ```
-conda create -n <your_env>
+conda create -n <your_env> python=x.x
 
 # example
-conda create -n machinelearning
+conda create -n machinelearning python=3.8
 ```
+
+上面的`python=x.x`中的`x.x`对应自己系统中的Python版本
 
 ### 6.2 Conda怎么激活自己的环境
 ```
@@ -121,6 +159,9 @@ conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/
 # 退出当前环境
 conda deactivate
 
+# 克隆环境
+conda create -n BBB --clone AAA
+
 # 查看基本信息
 conda info
 conda info -h
@@ -133,9 +174,42 @@ conda info --envs
 conda remove -n <your_env> --all
 ```
 
+## 7. 安装nvidia驱动
+
+### 7.1 查看已有的nvidia驱动
+```
+dpkg -l | grep -i nvidia
+```
+
+### 7.2 卸载驱动
+```
+sudo apt-get purge nvidia-driver-xxx
+```
+
+### 7.3 搜索并安装的驱动
+
+```
+apt-cache search nvidia | grep 460
+sudo apt-get install nvidia-driverp -460
+```
+
+根据自己的需要可以安装更高的版本。
+
+#### 7.4 Conda使用cuda
+```
+conda install cudatoolkit=8.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/linux-64/
+```
+**根据自己的需要安装更高的版本**
+
+## 8. pip使用技巧
+指定给定的源来安装，可以在pip后面加上 `--extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/`，例如：
+
+```
+sudo pip3 install conan==1.61.0 --extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/
+```
 
 
-## 7. [Python技巧](python/)
+## 9. [Python技巧](python/)
 
 - [pip的安装、使用等](python/pip.md)
 - [virtualenv的安装、使用](python/virtualenv.md)

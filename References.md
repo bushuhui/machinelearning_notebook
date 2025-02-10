@@ -1,8 +1,13 @@
 # 参考资料
 可以自行在下属列表找找到适合自己的学习资料，虽然罗列的比较多，但是个人最好选择一个深入阅读、练习。当练习到一定程度，可以再看看其他的资料，这样弥补单一学习资料可能存在的欠缺。
 
-列表等在 https://gitee.com/pi-lab/pilab_research_fields/blob/master/references/ML_References.md
+## 0. Index
 
+### 0.1. 课程相关
+
+* [课程教材 - 《机器学习算法与实现》](http://www.adv-ci.com/blog/mlai)
+* 课程讲义： https://gitee.com/pi-lab/machinelearning_notebook
+* 课程作业和报告：https://gitee.com/pi-lab/machinelearning_homework
 
 ## 1. 教程、代码
 
@@ -10,7 +15,20 @@
 
 * [《动手学深度学习》- PyTorch版本](https://tangshusen.me/Dive-into-DL-PyTorch/#/)
 * [Introduction — Neuromatch Academy: Deep Learning](https://deeplearning.neuromatch.io/tutorials/intro.html)
-
+* [Pytorch 常用代码合集](https://mp.weixin.qq.com/s/wqhpwShaW26CIF9K9_QD0g)
+	* 主要包括如下功能：
+	* 导入包和版本查询
+	* 单张显卡设置以及多张显卡设置
+	* 清除显存
+	* 张量处理
+	* 计算两组数据之间的欧式距离
+	* 模型的定义
+	* 模型参数量的计算
+	* 模型的可视化
+	* 将GPU的数据加载到CPU
+	* 数据集均方和标准差的处理
+	* 模型的训练与测试demo
+	* 模型的保存与断点加载
 
 ### 1.2 代码
 
@@ -109,3 +127,10 @@ http://localhost:8889/notebooks/machineLearning/notebooks/01%20-%20Model%20Selec
 * https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/404_autoencoder.py
 * pytorch AutoEncoder 自编码 https://www.jianshu.com/p/f0929f427d03
 * Adversarial Autoencoders (with Pytorch) https://blog.paperspace.com/adversarial-autoencoders-with-pytorch/
+
+
+### 4.4 损失函数，交叉熵
+* 简单的交叉熵，你真的懂了吗？ https://zhuanlan.zhihu.com/p/61944055
+* 损失函数：交叉熵详解 https://zhuanlan.zhihu.com/p/115277553
+* 一文搞懂交叉熵在机器学习中的使用，透彻理解交叉熵背后的直觉 https://blog.csdn.net/tsyccnh/article/details/79163834
+* 一文搞懂熵(Entropy),交叉熵(Cross-Entropy) https://zhuanlan.zhihu.com/p/149186719

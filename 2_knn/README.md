@@ -10,5 +10,5 @@ kNN算法不仅可以用于分类，还可以用于回归。通过找出一个�
 
 ## 内容
 
-* [knn_classification]([knn_classification.ipynb])
+* [knn_classification](knn_classification.ipynb)
 
