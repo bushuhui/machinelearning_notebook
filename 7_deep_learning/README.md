@@ -48,7 +48,8 @@
       - [gan/autoencoder](3_GAN/autoencoder.ipynb)
       - [gan/vae](3_GAN/vae.ipynb)
       - [gan/gan](3_GAN/gan.ipynb)
-
+   - [NLP](4_NLP)
+   - [Transformer](5_Transformer)
 * [构建深度神经网络的一些实战建议](../references_tips/构建深度神经网络的一些实战建议.md)
 
 ## 参考资料
