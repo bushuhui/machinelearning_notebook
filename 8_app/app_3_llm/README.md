@@ -7,6 +7,15 @@
 ![llm history](images/LLM_history.jpg)
 
 
+内容：
+* GPT
+* BERT
+* DeepSeek-V3， DeepSeek-R1
+* RAG
+* CoT
+* Agent
+* Workflow
+
 
 ## 参考资料
 
