@@ -26,7 +26,7 @@ Transformer是一种基于自注意力机制（self-attention mechanism）的模
 * 10分钟学会Transformer | Pytorch代码讲解  https://zhuanlan.zhihu.com/p/403433120
 * Pytorch中 nn.Transformer的使用详解与Transformer的黑盒讲解 https://blog.csdn.net/zhaohongfei_358/article/details/126019181
 * 搞懂Transformer结构，看这篇PyTorch实现就够了（上）https://zhuanlan.zhihu.com/p/48731949
-
+* [QKV详细解释](https://mp.weixin.qq.com/s/umEwoVOdTJxb6rAlNmuPQw)
 
 ### 视频、教程
 * [台大李宏毅自注意力机制和Transformer详解！](https://www.bilibili.com/video/BV1v3411r78R)
