@@ -23,5 +23,8 @@ MADDPG算法具有以下三点技巧：
 * [多智能体强化学习——超详细的MADDPG原理及代码实现](https://juejin.cn/post/7243413799348518968v)
 * [多智能体深度确定性策略梯度(MADDPG)算法介绍及代码实现](https://zhuanlan.zhihu.com/p/691363204)
 * [MADDPG 核心思想介绍](https://zhuanlan.zhihu.com/p/645518155)
+
+DDPG:
 * [DDPG 核心思想介绍](https://zhuanlan.zhihu.com/p/644773034)
+* [深度确定性策略梯度算法(DDPG)详解（附代码）](https://blog.csdn.net/qq_51399582/article/details/144651290)
 
