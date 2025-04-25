@@ -29,8 +29,16 @@ Transformer是一种基于自注意力机制（self-attention mechanism）的模
 * [QKV详细解释](https://mp.weixin.qq.com/s/umEwoVOdTJxb6rAlNmuPQw)
 
 ### 视频、教程
+中文综合教程：
+* [白话transformer](https://www.bilibili.com/video/BV1bu4m137W1)
 * [台大李宏毅自注意力机制和Transformer详解！](https://www.bilibili.com/video/BV1v3411r78R)
+* [一步一步深入浅出解释Transformer原理](https://www.bilibili.com/video/BV14yQgY5EwJ)
+
+注意力机制：
 * [直观解释注意力机制，Transformer的核心](https://www.bilibili.com/video/BV1TZ421j7Ke)
+* [Transformer模型的多头注意力机制](https://www.bilibili.com/video/BV12DzfYnErS)
+
+英文教程：
 * [Transformers, explained: Understand the model behind GPT, BERT, and T5](https://www.youtube.com/watch?v=SZorAJ4I-sA)
 * [Transformer Neural Networks, ChatGPT's foundation, Clearly Explained!!!](https://www.youtube.com/watch?v=zxQyTK8quyY)
 * [What are Transformers (Machine Learning Model)?](https://www.youtube.com/watch?v=ZXiruGOCn9s)
