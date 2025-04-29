@@ -1,4 +1,4 @@
-import gymnasium
+import gymnasium as gym
 import numpy as np
 import argparse
 from DDPG import DDPG
@@ -13,11 +13,13 @@ args = parser.parse_args()
 
 
 def main():
-    env = gymnasium.make('LunarLanderContinuous-v3')
+    env = gym.make('LunarLanderContinuous-v3')
 
     print(f"state_dim = {env.observation_space.shape[0]}")
     print(f"action_dim= {env.action_space.shape[0]}")
 
+    # alpha - actor network learning rate
+    # beta - critic network learning rate
     agent = DDPG(alpha=0.0003, beta=0.0003, 
                  state_dim=env.observation_space.shape[0],
                  action_dim=env.action_space.shape[0], 
@@ -30,6 +32,7 @@ def main():
 
     reward_history = []
     avg_reward_history = []
+    step = 0
     for episode in range(args.max_episodes):
         done = False
         total_reward = 0
@@ -41,9 +44,14 @@ def main():
 
             observation_, reward, done, _, _ = env.step(action_)
             agent.remember(observation, action, reward, observation_, done)
-            agent.learn()
+
             total_reward += reward
             observation = observation_
+
+            # learn every n step (why every 1 step train?)
+            step += 1
+            if step % 1 == 0:
+                agent.learn()
 
         reward_history.append(total_reward)
         avg_reward = np.mean(reward_history[-100:])
