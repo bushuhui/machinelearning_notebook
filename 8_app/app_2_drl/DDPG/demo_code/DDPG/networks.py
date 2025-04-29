@@ -39,7 +39,7 @@ class ActorNetwork(nn.Module):
         T.save(self.state_dict(), checkpoint_file)
 
     def load_checkpoint(self, checkpoint_file):
-        self.load_state_dict(T.load(checkpoint_file))
+        self.load_state_dict(T.load(checkpoint_file, weights_only=True))
 
 
 class CriticNetwork(nn.Module):
@@ -69,4 +69,4 @@ class CriticNetwork(nn.Module):
         T.save(self.state_dict(), checkpoint_file)
 
     def load_checkpoint(self, checkpoint_file):
-        self.load_state_dict(T.load(checkpoint_file))
+        self.load_state_dict(T.load(checkpoint_file, weights_only=True))

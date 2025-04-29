@@ -61,8 +61,8 @@ class DDPG:
                              dtype=T.float).to(device)
             action = T.clamp(action+noise, -1, 1)
 
-            # back to train mode
-            self.actor.train()
+        # back to train mode
+        self.actor.train()
 
         return action.detach().cpu().numpy()
 

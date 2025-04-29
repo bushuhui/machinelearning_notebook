@@ -36,7 +36,7 @@ def main():
         observation = env.reset()[0]
 
         while not done:
-            action = agent.choose_action(observation, train=True)           
+            action = agent.choose_action(observation, train=True)
             action_ = scale_action(action.copy(), env.action_space.high, env.action_space.low)
 
             observation_, reward, done, _, _ = env.step(action_)
@@ -48,7 +48,7 @@ def main():
         reward_history.append(total_reward)
         avg_reward = np.mean(reward_history[-100:])
         avg_reward_history.append(avg_reward)
-        print('Ep: {:8d} Reward: {:12.1f} AvgReward: {:12.1f}'.format(episode+1, total_reward, avg_reward))
+        print('Ep: {:8d}, Reward: {:12.1f}, AvgReward: {:12.1f}'.format(episode+1, total_reward, avg_reward))
 
         if (episode + 1) % 200 == 0:
             agent.save_models(episode+1)
