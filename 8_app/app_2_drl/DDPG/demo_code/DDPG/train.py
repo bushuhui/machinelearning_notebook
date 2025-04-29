@@ -13,6 +13,7 @@ args = parser.parse_args()
 
 
 def main():
+    # https://gymnasium.org.cn/environments/box2d/lunar_lander/
     env = gym.make('LunarLanderContinuous-v3')
 
     print(f"state_dim = {env.observation_space.shape[0]}")
@@ -37,6 +38,7 @@ def main():
         done = False
         total_reward = 0
         observation = env.reset()[0]
+        eps_step = 0
 
         while not done:
             action = agent.choose_action(observation, train=True)
@@ -52,6 +54,10 @@ def main():
             step += 1
             if step % 1 == 0:
                 agent.learn()
+
+            # exit if total_reward is extreamly low
+            if total_reward < -5000:
+                break
 
         reward_history.append(total_reward)
         avg_reward = np.mean(reward_history[-100:])
