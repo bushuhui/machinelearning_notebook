@@ -44,7 +44,7 @@ def plot_learning_curve(episodes, records, title, ylabel, figure_file):
 
 
 def scale_action(action, high, low):
-    action = np.clip(action, -1, 1)
+    action = np.clip(np.array(action, dtype=np.float32), -1, 1)
     weight = (high - low) / 2
     bias = (high + low) / 2
     action_ = action * weight + bias

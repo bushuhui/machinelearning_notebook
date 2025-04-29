@@ -1,4 +1,4 @@
-import gym
+import gymnasium
 import numpy as np
 import argparse
 from DDPG import DDPG
@@ -13,10 +13,17 @@ args = parser.parse_args()
 
 
 def main():
-    env = gym.make('LunarLanderContinuous-v2')
-    agent = DDPG(alpha=0.0003, beta=0.0003, state_dim=env.observation_space.shape[0],
-                 action_dim=env.action_space.shape[0], actor_fc1_dim=400, actor_fc2_dim=300,
-                 critic_fc1_dim=400, critic_fc2_dim=300, ckpt_dir=args.checkpoint_dir,
+    env = gymnasium.make('LunarLanderContinuous-v3')
+
+    print(f"state_dim = {env.observation_space.shape[0]}")
+    print(f"action_dim= {env.action_space.shape[0]}")
+
+    agent = DDPG(alpha=0.0003, beta=0.0003, 
+                 state_dim=env.observation_space.shape[0],
+                 action_dim=env.action_space.shape[0], 
+                 actor_fc1_dim=400, actor_fc2_dim=300,
+                 critic_fc1_dim=400, critic_fc2_dim=300, 
+                 ckpt_dir=args.checkpoint_dir,
                  batch_size=256)
     create_directory(args.checkpoint_dir,
                      sub_paths=['Actor', 'Target_actor', 'Critic', 'Target_critic'])
@@ -26,11 +33,13 @@ def main():
     for episode in range(args.max_episodes):
         done = False
         total_reward = 0
-        observation = env.reset()
+        observation = env.reset()[0]
+
         while not done:
-            action = agent.choose_action(observation, train=True)
+            action = agent.choose_action(observation, train=True)           
             action_ = scale_action(action.copy(), env.action_space.high, env.action_space.low)
-            observation_, reward, done, info = env.step(action_)
+
+            observation_, reward, done, _, _ = env.step(action_)
             agent.remember(observation, action, reward, observation_, done)
             agent.learn()
             total_reward += reward
@@ -39,7 +48,7 @@ def main():
         reward_history.append(total_reward)
         avg_reward = np.mean(reward_history[-100:])
         avg_reward_history.append(avg_reward)
-        print('Ep: {} Reward: {:.1f} AvgReward: {:.1f}'.format(episode+1, total_reward, avg_reward))
+        print('Ep: {:8d} Reward: {:12.1f} AvgReward: {:12.1f}'.format(episode+1, total_reward, avg_reward))
 
         if (episode + 1) % 200 == 0:
             agent.save_models(episode+1)

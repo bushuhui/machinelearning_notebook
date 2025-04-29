@@ -8,8 +8,11 @@ device = T.device("cuda:0" if T.cuda.is_available() else "cpu")
 
 
 class DDPG:
-    def __init__(self, alpha, beta, state_dim, action_dim, actor_fc1_dim,
-                 actor_fc2_dim, critic_fc1_dim, critic_fc2_dim, ckpt_dir,
+    def __init__(self, alpha, beta, 
+                 state_dim, action_dim, 
+                 actor_fc1_dim, actor_fc2_dim, 
+                 critic_fc1_dim, critic_fc2_dim, 
+                 ckpt_dir,
                  gamma=0.99, tau=0.005, action_noise=0.1, max_size=1000000,
                  batch_size=256):
         self.gamma = gamma
@@ -47,15 +50,19 @@ class DDPG:
         self.memory.store_transition(state, action, reward, state_, done)
 
     def choose_action(self, observation, train=True):
+        # change network to eval mode
         self.actor.eval()
-        state = T.tensor([observation], dtype=T.float).to(device)
+
+        state = T.tensor(np.array(observation), dtype=T.float).to(device)
         action = self.actor.forward(state).squeeze()
 
         if train:
             noise = T.tensor(np.random.normal(loc=0.0, scale=self.action_noise),
                              dtype=T.float).to(device)
             action = T.clamp(action+noise, -1, 1)
-        self.actor.train()
+
+            # back to train mode
+            self.actor.train()
 
         return action.detach().cpu().numpy()
 
