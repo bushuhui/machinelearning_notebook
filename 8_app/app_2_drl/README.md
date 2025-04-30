@@ -10,13 +10,13 @@
 
 
 内容
-
-* [DQN](DQN)
-* [DDPG](DDPG)
+* [Q-Learning](1-Q-Learning)
+* [DQN](2-DQN)
+* [DDPG](3-DDPG)
     * MADDPG
-* [PPO](PPO)
+* [PPO](4-PPO)
     * MAPPO
-* SAC
+* [SAC](5-SAC)
 
 
 
