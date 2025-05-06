@@ -7,6 +7,7 @@
 
 ## 内容
 
-* [目标检测](app_1_object-detection/README.md)
-* [深度强化学习](app_2_drl/README.md)
+* [目标检测与语义分割](1_object-detection_segmentation/README.md)
+* [深度强化学习](2_drl/README.md)
+* [大语言模型](3_llm)
 

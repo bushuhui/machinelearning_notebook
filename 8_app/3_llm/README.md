@@ -8,8 +8,8 @@
 
 
 内容：
-* GPT
 * BERT
+* GPT
 * DeepSeek-V3， DeepSeek-R1
 * RAG
 * CoT
