@@ -94,7 +94,14 @@
       - [CoT](8_app/3_llm/5_CoT)
       - [Agent](8_app/3_llm/6_Agent)
       - [Workflow](8_app/3_llm/7_Workflow)
+   - [机器视觉与3D重建](8_app/4_cv_3d)
+      - [NeRF](8_app/4_cv_3d/1_NeRF)
+      - [Gaussian Splatting](8_app/4_cv_3d/2_3DGS)
+      - [VGGT](8_app/4_cv_3d/3_VGGT)
 11. [机器学习的高级技巧](9_advanced)
+      - [应用部署](9_advanced/1_deploy)
+      - [蒸馏](9_advanced/2_distillation)
+      - [模型微调](9_advanced/3_fine-tuning)
 
 
 ## 二、学习的建议
