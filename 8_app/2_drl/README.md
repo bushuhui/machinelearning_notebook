@@ -180,3 +180,4 @@ SAC在一些**复杂的连续控制任务**中表现出色，如机器人控制�
 ## 参考资料
 
 * [Spinning Up - Reinforcement Learning Introduction](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html)
+* [【Mathematical Foundations of Reinforcement Learning】](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning)
