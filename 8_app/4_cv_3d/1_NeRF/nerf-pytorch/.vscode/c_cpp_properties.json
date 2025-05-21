@@ -1,0 +1,47 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/slash/ccmslam_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/slash/catkin_ws/devel/include/**",
+        "/home/slash/match_ws/src/bar_detect/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/bspline_opt/include/**",
+        "/home/slash/vio_ws/src/VINS-Mono/camera_model/include/**",
+        "/home/slash/catkin_ws/src/VINS-Fusion/camera_models/include/**",
+        "/home/slash/ccmslam_ws/src/cluster-slam/cslam/include/**",
+        "/home/slash/catkin_ws/src/crosssing_circle/include/**",
+        "/home/slash/catkin_ws/src/ddynamic_reconfigure/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/drone_detect/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/plan_manage/include/**",
+        "/home/slash/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/**",
+        "/home/slash/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros/include/**",
+        "/home/slash/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include/**",
+        "/home/slash/path_catkin_ws/src/grid_path_searcher/include/**",
+        "/home/slash/catkin_ws/src/marker/include/**",
+        "/home/slash/PX4_Firmware/Tools/sitl_gazebo/include/**",
+        "/home/slash/catkin_ws/src/mavros_study/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/Utils/multi_map_server/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/path_searching/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/plan_env/include/**",
+        "/home/slash/catkin_ws/src/pointcloud_mapping/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/Utils/pose_utils/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/Utils/quadrotor_msgs/include/**",
+        "/home/slash/catkin_ws/src/realsense-ros-2.3.2/realsense2_camera/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/traj_utils/include/**",
+        "/home/slash/catkin_ws/src/ego_planner/Utils/uav_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
