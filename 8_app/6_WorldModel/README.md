@@ -9,3 +9,4 @@
 
 ## Reference
 * [什么是world models/世界模型](https://zhuanlan.zhihu.com/p/661768957)
+* [世界模型(World Models)是什么？](https://www.zhihu.com/question/644725384/answer/1926294341401416360)
