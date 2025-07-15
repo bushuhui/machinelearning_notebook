@@ -68,7 +68,7 @@
    - [RNN](7_deep_learning/2_RNN)
       - [RNN基础](7_deep_learning/2_RNN/RNN.ipynb)
       - [RNN应用于图像](7_deep_learning/2_RNN/rnn-for-image.ipynb)
-      - [LSTM与GRU](LSTM_GRU.ipynb)
+      - [LSTM与GRU](7_deep_learning/2_RNN/LSTM_GRU.ipynb)
       - [LSTM与时序列数据分析](7_deep_learning/2_RNN/lstm-time-series.ipynb)
    - [GAN](7_deep_learning/3_GAN)
       - [AutoEncoder](7_deep_learning/3_GAN/autoencoder.ipynb)
