@@ -90,15 +90,6 @@ conda activate machinelearning
 conda install jupyter scipy numpy sympy matplotlib pandas scikit-learn
 ```
 
-复制一个环境到一个新的环境
-```
-conda create --name newenv --clone oldenv
-```
-
-删除一个环境
-```
-conda env remove --name envname
-```
 
 ## 5. 安装PyTorch
 
@@ -169,6 +160,9 @@ conda deactivate
 
 # 克隆环境
 conda create -n BBB --clone AAA
+
+# 删除一个环境
+conda env remove --name envname
 
 # 查看基本信息
 conda info
