@@ -6,7 +6,7 @@ filelock==3.16.1
 fonttools==4.54.1
 fsspec==2024.9.0
 gymnasium==0.29.1
-Jinja2==3.1.4
+Jinja2==3.1.6
 kiwisolver==1.4.7
 MarkupSafe==2.1.5
 matplotlib==3.9.2
