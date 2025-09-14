@@ -279,15 +279,21 @@ source .venv/bin/activate
 
 # 激活环境（Windows）
 .venv\Scripts\activate
+
+# 强制安装基础包（如pip, setuptools, wheel）
+uv venv --seed
+
+# 在创建venv的时候指定Python版本
+uv venv --python 3.13.2
 ```
 
 在项目中指定 Python 版本：
 ```bash
-# 为当前项目固定 Python 3.11
+# 为当前项目固定 Python 3.11，但是venv还是创建设定的Python版本
 uv python pin 3.11
 ```
 
-这会创建 .python-version 文件，标识项目所需的 Python 版本。
+这会创建 `.python-version` 文件，标识项目所需的 Python 版本。
 
 
 ### 9.5. 包管理
