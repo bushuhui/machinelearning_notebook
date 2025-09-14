@@ -74,7 +74,11 @@ custom_channels:
 pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
 ```
 
+指定给定的源来安装，可以在pip后面加上 `--extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/`，例如：
 
+```bash
+sudo pip3 install conan==1.61.0 --extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/
+```
 
 ## 4. 安装常用软件
 
@@ -204,15 +208,8 @@ conda install cudatoolkit=8.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/p
 **根据自己的需要安装更高的版本**
 
 
-## 8. pip使用技巧
-指定给定的源来安装，可以在pip后面加上 `--extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/`，例如：
 
-```bash
-sudo pip3 install conan==1.61.0 --extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/
-```
-
-
-## 9. uv
+## 8. uv
 
 在 Python 开发中，包管理和环境隔离是每个开发者都会遇到的问题。无论是 pip 的缓慢、virtualenv 的繁琐，还是 conda 的臃肿，uv 都让开发者们期待一个更高效的解决方案。
 
@@ -226,14 +223,14 @@ uv 可以替代 pip、virtualenv、pip-tools 等工具，提供依赖管理、�
 * [一招配置uv国内镜像](https://zhuanlan.zhihu.com/p/1930714592423703026)
 
 
-### 9.1. 安装uv
+### 8.1. 安装uv
 使用pip安装
 ```bash
 pip install uv
 ```
 
 
-### 9.2. 设置源
+### 8.2. 设置源
 Linux下设置临时的源：
 ```bash
 # 阿里源示例
@@ -257,7 +254,7 @@ export UV_PYTHON_INSTALL_MIRROR="https://gh-proxy.com/github.com/indygreg/python
 uv python install 3.13.2
 ```
 
-### 9.3. 管理Python版本
+### 8.3. 管理Python版本
 ```bash
 # 列出所有的Python版本
 uv python list
@@ -266,7 +263,7 @@ uv python list
 uv python install 3.13.2
 ```
 
-### 9.4. 管理虚拟环境
+### 8.4. 管理虚拟环境
 
 #### 创建并激活虚拟环境：
 
@@ -296,7 +293,7 @@ uv python pin 3.11
 这会创建 `.python-version` 文件，标识项目所需的 Python 版本。
 
 
-### 9.5. 包管理
+### 8.5. 包管理
 安装包：
 ```bash
 # 安装最新版本
@@ -335,7 +332,7 @@ uv pip freeze --production > requirements.txt
 ```
 
 
-### 9.5. 项目管理
+### 8.6. 项目管理
 uv 支持 pyproject.toml 格式的项目管理，这是现代 Python 项目的标准配置文件。
 
 初始化一个新项目：
@@ -352,5 +349,4 @@ uv sync
 ```
 
 这个命令会根据 `pyproject.toml` 和 `requirements.txt` 安装所有依赖，类似于 `pip install -e .` 但更高效。
-
 
