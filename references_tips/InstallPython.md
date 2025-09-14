@@ -24,12 +24,12 @@
 ## 2. Linux下安装
 在网站下载最新的conda安装文件，例如
 
-```
+```bash
 wget https://mirrors.ustc.edu.cn/anaconda/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
 然后运行
-```
+```bash
 bash ./Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
@@ -70,7 +70,7 @@ custom_channels:
 
 ### 3.2 设置PIP源
 
-```
+```bash
 pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
 ```
 
@@ -79,14 +79,14 @@ pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
 ## 4. 安装常用软件
 
 新建conda环境
-```
+```bash
 conda create -n machinelearning python=3.9
 conda activate machinelearning
 ```
 其中 `machinelearning` 是新建的conda环境的名字
 
 打开`conda`的命令行程序，输入下面的命令
-```
+```bash
 conda install jupyter scipy numpy sympy matplotlib pandas scikit-learn
 ```
 
@@ -94,7 +94,7 @@ conda install jupyter scipy numpy sympy matplotlib pandas scikit-learn
 ## 5. 安装PyTorch
 
 GPU 版本
-```
+```bash
 # 访问 https://pytorch.org/，查最新的安装命令
 # 例如 pytorch-cuda=11.6
 
@@ -109,7 +109,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
 ```
 
 CPU 版本
-```
+```bash
 conda install pytorch -c pytorch 
 pip3 install torchvision
 ```
@@ -118,7 +118,7 @@ pip3 install torchvision
 
 检测GPU是否在PyTorch中可用：
 
-```
+```bash
 >>> import torch
 >>> torch.cuda.is_available()
 ```
@@ -129,7 +129,7 @@ pip3 install torchvision
 ## 6. Conda使用技巧
 
 ### 6.1 Conda创建自己的环境
-```
+```bash
 conda create -n <your_env> python=x.x
 
 # example
@@ -139,7 +139,7 @@ conda create -n machinelearning python=3.8
 上面的`python=x.x`中的`x.x`对应自己系统中的Python版本
 
 ### 6.2 Conda怎么激活自己的环境
-```
+```bash
 conda activate <your_env>
 
 # example 
@@ -147,7 +147,7 @@ conda activate machinelearning
 ```
 
 ### 6.3 Conda常用命令
-```
+```bash
 # 帮助命令
 conda -h
 conda help
@@ -179,18 +179,18 @@ conda remove -n <your_env> --all
 ## 7. 安装nvidia驱动
 
 ### 7.1 查看已有的nvidia驱动
-```
+```bash
 dpkg -l | grep -i nvidia
 ```
 
 ### 7.2 卸载驱动
-```
+```bash
 sudo apt-get purge nvidia-driver-xxx
 ```
 
 ### 7.3 搜索并安装的驱动
 
-```
+```bash
 apt-cache search nvidia | grep 460
 sudo apt-get install nvidia-driverp -460
 ```
@@ -198,21 +198,153 @@ sudo apt-get install nvidia-driverp -460
 根据自己的需要可以安装更高的版本。
 
 #### 7.4 Conda使用cuda
-```
+```bash
 conda install cudatoolkit=8.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/linux-64/
 ```
 **根据自己的需要安装更高的版本**
 
+
 ## 8. pip使用技巧
 指定给定的源来安装，可以在pip后面加上 `--extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/`，例如：
 
-```
+```bash
 sudo pip3 install conan==1.61.0 --extra-index-url https://pypi.mirrors.ustc.edu.cn/simple/
 ```
 
 
-## 9. [Python技巧](python/)
+## 9. uv
 
-- [pip的安装、使用等](python/pip.md)
-- [virtualenv的安装、使用](python/virtualenv.md)
-- [virtualenv便捷管理工具：virtualenv_wrapper](python/virtualenv_wrapper.md)
+在 Python 开发中，包管理和环境隔离是每个开发者都会遇到的问题。无论是 pip 的缓慢、virtualenv 的繁琐，还是 conda 的臃肿，uv 都让开发者们期待一个更高效的解决方案。
+
+uv 是由 Astral 公司开发的一款 Rust 编写的 Python 包管理器和环境管理器，它的主要目标是提供比现有工具快 10-100 倍的性能，同时保持简单直观的用户体验。
+
+uv 可以替代 pip、virtualenv、pip-tools 等工具，提供依赖管理、虚拟环境创建、Python 版本管理等一站式服务。
+
+参考资料：
+* [Python 包管理工具 uv 使用教程](https://zhuanlan.zhihu.com/p/1888904532131575259)
+* [uv 入门教程 -- Python 包与环境管理工具](https://www.runoob.com/python3/uv-tutorial.html)
+* [一招配置uv国内镜像](https://zhuanlan.zhihu.com/p/1930714592423703026)
+
+
+### 9.1. 安装uv
+使用pip安装
+```bash
+pip install uv
+```
+
+
+### 9.2. 设置源
+Linux下设置临时的源：
+```bash
+# 阿里源示例
+export UV_DEFAULT_INDEX=https://mirrors.aliyun.com/pypi/simple/
+uv pip install -U numpy
+```
+
+修改 `~/.config/uv/uv.toml`，镜像一直起作用
+```bash
+mkdir -p ~/.config/uv
+cat >> ~/.config/uv/uv.toml <<'EOF'
+[[index]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
+EOF
+```
+
+设置Python安装文件的镜像
+```bash
+export UV_PYTHON_INSTALL_MIRROR="https://gh-proxy.com/github.com/indygreg/python-build-standalone/releases/download"
+uv python install 3.13.2
+```
+
+### 9.3. 管理Python版本
+```bash
+# 列出所有的Python版本
+uv python list
+
+# 安装特点版本的Python
+uv python install 3.13.2
+```
+
+### 9.4. 管理虚拟环境
+
+#### 创建并激活虚拟环境：
+
+```bash
+# 创建名为 .venv 的虚拟环境（默认）
+uv venv
+
+# 激活环境（macOS/Linux）
+source .venv/bin/activate
+
+# 激活环境（Windows）
+.venv\Scripts\activate
+```
+
+在项目中指定 Python 版本：
+```bash
+# 为当前项目固定 Python 3.11
+uv python pin 3.11
+```
+
+这会创建 .python-version 文件，标识项目所需的 Python 版本。
+
+
+### 9.5. 包管理
+安装包：
+```bash
+# 安装最新版本
+uv pip install requests
+
+# 安装特定版本
+uv pip install requests==2.31.0
+
+# 从 requirements.txt 安装
+uv pip install -r requirements.txt
+```
+
+安装包到开发环境：
+```bash
+uv pip install --dev pytest
+```
+
+
+升级包：
+```bash
+uv pip upgrade requests
+```
+
+卸载包：
+```bash
+uv pip uninstall requests
+```
+
+导出依赖：
+```bash
+# 导出当前环境的依赖
+uv pip freeze > requirements.txt
+
+# 导出生产环境依赖（排除开发依赖）
+uv pip freeze --production > requirements.txt
+```
+
+
+### 9.5. 项目管理
+uv 支持 pyproject.toml 格式的项目管理，这是现代 Python 项目的标准配置文件。
+
+初始化一个新项目：
+```bash
+uv init my_project
+cd my_project
+```
+
+这会创建基本的项目结构和 pyproject.toml 文件。
+
+安装项目的依赖：
+```bash
+uv sync
+```
+
+这个命令会根据 `pyproject.toml` 和 `requirements.txt` 安装所有依赖，类似于 `pip install -e .` 但更高效。
+
+
