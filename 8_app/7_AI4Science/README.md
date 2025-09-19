@@ -27,5 +27,14 @@ AI4Science 简单来说，是科学发现的第5范式，是使用AI能力加速
 
 ![ai4s_overview.jpeg](images/ai4s_overview.jpeg)
 
+
+
+## 最新研究成果
+
+* [2025 An AI system to help scientists write expert-level empirical software](https://arxiv.org/abs/2509.06503)
+  * 科学发现的周期常常因缓慢且手动创建用于支持计算实验的软件而受到瓶颈限制。为了解决这个问题，我们提出了一个人工智能系统，该系统可以创建专家级的科学软件，其目标是最大化质量指标。该系统使用大型语言模型 (LLM) 和树搜索 (TS) 来系统地改进质量指标，并智能地在大量可能的解决方案中导航。当系统探索并整合来自外部来源的复杂研究思路时，它能够获得专家级的结果。树搜索的有效性已在广泛的基准测试中得到证实。在生物信息学领域，它发现了 40 种用于单细胞数据分析的新颖方法，其性能优于公共排行榜上人类开发的顶级方法。在流行病学领域，它生成了 14 个模型，其性能优于美国疾病控制与预防中心 (CDC) 集成模型和所有其他用于预测 COVID-19 住院人数的独立模型。我们的方法还开发了用于地理空间分析、斑马鱼神经活动预测、时间序列预测和积分数值解的最先进的软件。通过设计和实施针对各种任务的新颖解决方案，该系统代表着加速科学进步的重要一步。
+
+
 ## References
+
 * [Artificial Intelligence for Science in Quantum, Atomistic, and Continuum Systems](https://www.air4.science/)
