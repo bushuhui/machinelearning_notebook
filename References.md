@@ -15,6 +15,7 @@
 
 * [《动手学深度学习》- PyTorch版本](https://tangshusen.me/Dive-into-DL-PyTorch/#/)
 * [Introduction — Neuromatch Academy: Deep Learning](https://deeplearning.neuromatch.io/tutorials/intro.html)
+* [AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners)
 * [Pytorch 常用代码合集](https://mp.weixin.qq.com/s/wqhpwShaW26CIF9K9_QD0g)
 	* 主要包括如下功能：
 	* 导入包和版本查询
