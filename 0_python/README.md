@@ -38,7 +38,7 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
 
 ## 其他教学材料
 
-* [Python基础](python/hellopython)
+* [Python基础](hellopython)
     - 编程语言特性
     - 程序结构
     - 基础技术框架
@@ -46,14 +46,14 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
     - 对象特性
     - 核心数据类型，字符串，列表，元祖，字典
     - 表达式与运算符
-* [Python进阶](python/more)
+* [Python进阶](more)
     - if,while,for
     - 迭代器，生成器
     - 文件对象
     - os模块，os模块常用接口
     - 函数
     - 类，继承，重载 
-* [Python模块化编程](python/module)
+* [Python模块化编程](module)
     - 模块基础，模块机制
     - 异常处理
     - 常用科学计算模块
@@ -61,8 +61,6 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
 
 
 除了学习内容之外，本教程还包括一些[例子程序](demo_codes)
-
-
 
 
 
@@ -89,5 +87,4 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
 ### 练习题
 
 * [Python编程练习题](https://gitee.com/pi-lab/machinelearning_homework/tree/master/homework_01_python)
-
 * [Python 练习册，每天一个小程序 show-me-the-code](https://github.com/Yixiaohan/show-me-the-code)
