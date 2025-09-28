@@ -36,32 +36,6 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
     - Class define
     - Inheritance
 
-## 其他教学材料
-
-* [Python基础](hellopython)
-    - 编程语言特性
-    - 程序结构
-    - 基础技术框架
-    - 编程风格
-    - 对象特性
-    - 核心数据类型，字符串，列表，元祖，字典
-    - 表达式与运算符
-* [Python进阶](more)
-    - if,while,for
-    - 迭代器，生成器
-    - 文件对象
-    - os模块，os模块常用接口
-    - 函数
-    - 类，继承，重载 
-* [Python模块化编程](module)
-    - 模块基础，模块机制
-    - 异常处理
-    - 常用科学计算模块
-
-
-
-除了学习内容之外，本教程还包括一些[例子程序](demo_codes)
-
 
 
 ## 参考资料
@@ -75,8 +49,8 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
 * [IPython Notebooks to learn Python](https://github.com/rajathkmp/Python-Lectures)
 * [廖雪峰的Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
 * [跟海龟学Python](https://gitee.com/pi-lab/python_turtle)
-* [智能系统实验室入门教程-Python](https://gitee.com/pi-lab/SummerCamp/tree/master/python)
 * [Python Tips](../references_tips/python)
+* [Hello Python](hellopython)
 * [Get Started with Python](Python.pdf)
 * [Python - 100天从新手到大师](https://github.com/jackfrued/Python-100-Days)
 * [Python Tutorial essential Training](https://github.com/hussien89aa/PythonTutorial)
@@ -85,6 +59,6 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
 * [Useful functions, tutorials, and other Python-related things](https://github.com/rasbt/python_reference)
 
 ### 练习题
-
+* [Python示例程序](demo_codes)
 * [Python编程练习题](https://gitee.com/pi-lab/machinelearning_homework/tree/master/homework_01_python)
 * [Python 练习册，每天一个小程序 show-me-the-code](https://github.com/Yixiaohan/show-me-the-code)
