@@ -32,6 +32,7 @@
 
 
 ### 视频教程
+* [Agentic AI](https://www.deeplearning.ai/courses/agentic-ai/)
 * [How large language models work, a visual intro to transformers | Chapter 5, Deep Learning](https://www.youtube.com/watch?v=wjZofJX0v4M)
 * [LLM大模型教程](https://www.bilibili.com/video/BV1XS411w7qr)
 * [54个大模型实战项目](https://www.bilibili.com/video/BV1kDpme9EwU)
