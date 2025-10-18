@@ -30,8 +30,13 @@
 * [一文读懂：大语言模型的实现与原理](https://zhuanlan.zhihu.com/p/669245797)
 * [Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.](https://github.com/mlabonne/llm-course)
 
+### 学习代码
+
+* [nanochat - 教你从零开始，以 100 美元的成本自建 ChatGPT。它覆盖 LLM 的训练和推理，只要跟着学就可以了解构建大模型的所有步骤了](https://github.com/karpathy/nanochat)
+* [minimind - 2小时完全从0训练26M的小参数GPT](https://github.com/jingyaogong/minimind)
 
 ### 视频教程
+
 * [Agentic AI](https://www.deeplearning.ai/courses/agentic-ai/)
 * [How large language models work, a visual intro to transformers | Chapter 5, Deep Learning](https://www.youtube.com/watch?v=wjZofJX0v4M)
 * [LLM大模型教程](https://www.bilibili.com/video/BV1XS411w7qr)
