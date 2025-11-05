@@ -10,4 +10,10 @@
 * [目标检测与语义分割](1_object-detection_segmentation/README.md)
 * [深度强化学习](2_drl/README.md)
 * [大语言模型](3_llm)
+* [计算机视觉、3D](4_cv_3d)
+* [Vision-Language-Action (VLA)](5_VLA)
+* [世界模型 (World Model)](6_WorldModel)
+* [AI4Science](7_AI4Science)
+* [AI4Research](8_AI4Research)
+
 

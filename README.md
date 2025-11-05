@@ -103,6 +103,7 @@
    - [视觉-语言-动作 VLA](8_app/5_VLA)
    - [世界模型](8_app/6_WorldModel)
    - [AI4Science](8_app/7_AI4Science)
+   - [AI4Research](8_app/8_AI4Research)
 11. [机器学习的高级技巧](9_advanced)
       - [应用部署](9_advanced/1_deploy)
       - [蒸馏](9_advanced/2_distillation)
