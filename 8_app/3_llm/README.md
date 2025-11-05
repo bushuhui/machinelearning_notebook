@@ -34,6 +34,7 @@
 
 * [nanochat - 教你从零开始，以 100 美元的成本自建 ChatGPT。它覆盖 LLM 的训练和推理，只要跟着学就可以了解构建大模型的所有步骤了](https://github.com/karpathy/nanochat)
 * [minimind - 2小时完全从0训练26M的小参数GPT](https://github.com/jingyaogong/minimind)
+* [ai-engineering-hub - In-depth tutorials on LLMs, RAGs and real-world AI agent applications](https://github.com/patchy631/ai-engineering-hub) 有比较多的LLM，RAG，Agent的示例、教程
 
 ### 视频教程
 
