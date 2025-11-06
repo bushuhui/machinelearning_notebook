@@ -36,5 +36,5 @@ AI4Science 简单来说，是科学发现的第5范式，是使用AI能力加速
 
 
 ## References
-
+* [2025 - 沙漠取水、基因编辑、设计蛋白质，诺奖得主们最近都在做些啥？｜AIAS 2025峰会](https://www.bilibili.com/video/BV1fc2FByE4t)
 * [Artificial Intelligence for Science in Quantum, Atomistic, and Continuum Systems](https://www.air4.science/)
