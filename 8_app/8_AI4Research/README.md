@@ -32,6 +32,12 @@
 * [DeepResearchAgent - a hierarchical multi-agent system designed not only for deep research tasks but also for general-purpose task solving](https://github.com/SkyworkAI/DeepResearchAgent)
 * [AI-Researcher: Autonomous Scientific Innovation](https://github.com/HKUDS/AI-Researcher)
     - https://arxiv.org/abs/2505.18705
+* [DeepScientist - Advancing Frontier-Pushing Scientific Findings Progressively](https://github.com/ResearAI/DeepScientist)
+    - https://arxiv.org/abs/2509.26603
+* [AI-Scientist - Towards Fully Automated Open-Ended Scientific Discovery](https://github.com/SakanaAI/AI-Scientist)
+    - https://github.com/SakanaAI/AI-Scientist-v2
+    - https://arxiv.org/abs/2408.06292
+ 
     
 ### Tools / libs
 
