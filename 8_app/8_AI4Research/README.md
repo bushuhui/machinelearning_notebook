@@ -37,10 +37,17 @@
 * [AI-Scientist - Towards Fully Automated Open-Ended Scientific Discovery](https://github.com/SakanaAI/AI-Scientist)
     - https://github.com/SakanaAI/AI-Scientist-v2
     - https://arxiv.org/abs/2408.06292
- 
+
     
 ### Tools / libs
 
 #### data/doc collection
 * https://github.com/xgzlucario/githubhunt 基于 AI Agent 的自然语言 Github 仓库搜索工具
 * https://github.com/4everWZ/DailyPaper/tree/main grab everyday new paper from arxiv
+
+#### Programming / Video / PPT
+* https://github.com/HKUDS/AI-Researcher
+* https://github.com/HKUDS/DeepCode
+* https://github.com/jmiao24/Paper2Agent
+* https://github.com/ResearAI/DeepScientist
+* https://github.com/showlab/Paper2Video
