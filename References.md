@@ -43,12 +43,16 @@
 
 ## 2. 工具、技巧
 
+* https://poloclub.github.io/ **scalable, interactive, and interpretable** tools that amplify human's ability to understand and interact with billion-scale data and machine learning models
+    * https://poloclub.github.io/cnn-explainer/
+    * https://poloclub.github.io/transformer-explainer/
+* https://playground.tensorflow.org/ Neural Network Visualized Explainer
 * [形象直观了解谷歌大脑新型优化器LAMB](https://www.toutiao.com/i6687162064395305475/)
 * [梯度下降方法的视觉解释（动量，AdaGrad，RMSProp，Adam）](https://www.toutiao.com/i6836422484028293640/)
 * [5种常用的交叉验证技术，保证评估模型的稳定性](https://m.toutiaocdn.com/i6838062457596936718)
 * [The Neural network zoo](https://www.asimovinstitute.org/neural-network-zoo/) : 各种神经网络架构的解释、图示
 * 22 个神经网络结构设计/可视化工具
-	- https://www.toutiao.com/i6836884346155041292/
+  - https://www.toutiao.com/i6836884346155041292/
 - https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
 	
 * CNN 可视化工具 https://m.toutiaocdn.com/group/6822123587156050435
