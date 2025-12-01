@@ -21,8 +21,18 @@ PyTorch的简洁设计使得它入门很简单，本部分内容在深入介绍P
 - [optim/sgd](optimizer/6_1-sgd.ipynb)
 - [optim/adam](optimizer/6_6-adam.ipynb)
 
+
+
+
+
 ## References
 
+视频讲解 
+* [一个视频讲清楚pytorch onnx cuda都是什么东西](https://www.bilibili.com/video/BV1CPG2zJEAP)
+
+
+
+教程：
 * [code of book "Learn Deep Learning with PyTorch"](https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch)
 * [PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation](https://github.com/chenyuntc/pytorch-book)
 * [Awesome-Pytorch-list](https://github.com/bharathgs/Awesome-pytorch-list)
