@@ -78,5 +78,5 @@ typing_extensions==4.5.0
 tzdata==2023.3
 urllib3==1.26.16
 wandb==0.15.5
-Werkzeug==2.3.6
+Werkzeug==3.1.4
 wrapt==1.15.0
