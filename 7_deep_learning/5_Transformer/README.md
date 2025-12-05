@@ -108,6 +108,9 @@ visualize_attention_weights(attention_weights, tokens=['Hello', 'World'])
 
 ### 视频、教程
 中文综合教程：
+* [为什么Transformer正在取代CNN - Julia Turc](https://www.bilibili.com/video/BV16z2eB2EPw)
+* [白话Transformer01 (飞天闪客)](https://www.bilibili.com/video/BV1kiyHBVEtq)
+* [Transformer 其实是个简单到令人困惑的模型 (飞天闪客)](https://www.bilibili.com/video/BV1C3dqYxE3q)
 * [白话transformer](https://www.bilibili.com/video/BV1bu4m137W1)
 * [台大李宏毅自注意力机制和Transformer详解！](https://www.bilibili.com/video/BV1v3411r78R)
 * [一步一步深入浅出解释Transformer原理](https://www.bilibili.com/video/BV14yQgY5EwJ)

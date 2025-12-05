@@ -19,4 +19,10 @@
     * [卷积究竟卷了啥？](https://www.bilibili.com/video/BV1JX4y1K7Dr)
     * [什么是卷积](https://www.bilibili.com/video/BV1Vd4y1e7pj)
 * 卷积神经网络
+    * [神经网络中永远也搞不明白的矩阵和CNN【白话DeepSeek04】](https://www.bilibili.com/video/BV1wXQhY8EJ6)
     * [Video : The moment we stopped understanding AI - AlexNet](https://www.youtube.com/watch?v=UZDiGooFs54)
+    * [VGG16 Neural Network Visualization](https://www.youtube.com/watch?v=RNnKtNrsrmg)
+
+网络结构演示：
+* https://tensorspace.org/html/playground/lenet.html - LeNet
+* https://tensorspace.org/html/playground/resnet50.html - ResNet
