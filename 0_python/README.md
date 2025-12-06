@@ -44,11 +44,19 @@ Python 是一门上手简单、功能强大、通用型的**脚本**编程语言
 * [《90分钟学会Python》](https://www.bilibili.com/video/BV1oZ4y1N7ei?p=9) （推荐）
 * [《零基础入门学习Python》教学视频](https://www.bilibili.com/video/BV1c4411e77t)
 
+### 视频讲解
+
+* [Animation vs. Coding](https://www.youtube.com/watch?v=EFmxPMdBqmU)， [火柴人vs编程详细解析](https://www.youtube.com/watch?v=h_nytkSJv3I)
+* [Python in 100 Seconds](https://www.youtube.com/watch?v=x7X9w_GIm1s)
+* [10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
+* [Learn Python in Only 30 Minutes (Beginner Tutorial)](https://www.youtube.com/watch?v=Ro_MScTDfU4)
+
 ### 教程
+
 * [安装Python环境](../references_tips/InstallPython.md)
-* [IPython Notebooks to learn Python](https://github.com/rajathkmp/Python-Lectures)
 * [廖雪峰的Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
 * [跟海龟学Python](https://gitee.com/pi-lab/python_turtle)
+* [IPython Notebooks to learn Python](https://github.com/rajathkmp/Python-Lectures)
 * [Python Tips](../references_tips/python)
 * [Hello Python](hellopython)
 * [Get Started with Python](Python.pdf)
