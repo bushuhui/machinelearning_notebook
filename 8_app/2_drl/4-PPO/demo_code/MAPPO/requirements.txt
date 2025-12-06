@@ -137,7 +137,7 @@ urllib3==2.6.0
 wandb==0.10.5
 watchdog==0.10.3
 websocket-client==0.53.0
-Werkzeug==0.16.1
+Werkzeug==3.1.4
 whichcraft==0.5.2
 wrapt==1.12.1
 xmltodict==0.12.0
