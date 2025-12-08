@@ -31,13 +31,8 @@ x_train = torch.from_numpy(x_train).float()
 y_train = torch.from_numpy(y_train).float()
 
 # define model parameters
-w = Variable(torch.randn(1).float(), requires_grad=True)
-b = Variable(torch.zeros(1).float(), requires_grad=True)
-
-# construct the linear model
-x_train = Variable(x_train)
-y_train = Variable(y_train)
-
+w = torch.randn(1, requires_grad=True) # 随机初始化
+b = torch.zeros(1, requires_grad=True) # 使用 0 进行初始化
 
 # define model's function
 def linear_model(x):
@@ -64,7 +59,7 @@ for i in range(n_epoch):
     b.grad.zero_()
 
     if i % 10 == 0:
-        print("epoch: %3d, loss: %f" % (i, loss.data[0]))
+        print("epoch: %3d, loss: %f" % (i, loss.item()))
 
 # draw the results
 plt.plot(x_train.data.numpy(), y_train.data.numpy(), 'bo', label="Real")
