@@ -11,7 +11,7 @@
 * [大模型基础](0_basic)
 * [BERT](1_BERT)
 * [GPT](2_GPT)
-* [DeepSeek-V3， DeepSeek-R1](3_DeepSeek)
+* [DeepSeek](3_DeepSeek)
 * [RAG](4_RAG)
 * [CoT](5_CoT)
 * [Agent](6_Agent)

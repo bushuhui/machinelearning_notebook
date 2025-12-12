@@ -93,7 +93,7 @@
    - [大语言模型](8_app/3_llm)
       - [BERT](8_app/3_llm/1_BERT)
       - [GPT](8_app/3_llm/2_GPT)
-      - [DeepSeek-V3， DeepSeek-R1](8_app/3_llm/3_DeepSeek)
+      - [DeepSeek](8_app/3_llm/3_DeepSeek)
       - [RAG](8_app/3_llm/4_RAG)
       - [CoT](8_app/3_llm/5_CoT)
       - [Agent](8_app/3_llm/6_Agent)
