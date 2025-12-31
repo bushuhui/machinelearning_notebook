@@ -9,7 +9,11 @@ Transformer的提出解决了上面两个问题，首先它使用了Attention机
 
 ### Transformer模型组成
 
-Transformer是一种基于自注意力机制（self-attention mechanism）的模型架构，Transformer模型通常由以下几个关键部分组成：
+Transformer是一种基于自注意力机制（self-attention mechanism）的模型架构。Transformer 是 seq2seq 模型，分为Encoder和Decoder两大部分，如下图，Encoder部分是由6个相同的encoder组成，Decoder部分也是由6个相同的decoder组成，与encoder不同的是，每一个decoder都会接受最后一个encoder的输出。
+
+![transformer-arch.jpg](images/transformer-arch.jpg)
+
+Transformer模型通常由以下几个关键部分组成：
 
 * **嵌入层（Embedding Layer）**： 将输入序列中的词或字符转换为连续的向量表示。通常会有两种嵌入层，分别是词嵌入层（Word Embedding）和位置嵌入层（Positional Embedding）。
 * **编码器（Encoder）**： 由多个编码器层堆叠而成。每个编码器层都包含了多头自注意力机制（Multi-Head Self-Attention）和全连接前馈网络（Feed-Forward Neural Network）两部分。编码器用于将输入序列转换为上下文感知的编码表示。
@@ -27,7 +31,7 @@ Transformer通过自注意力机制实现了：
 - 长距离依赖建模
 - 可扩展架构设计
 
-## 🎯 学习路径
+## 学习路径
 
 ### 基础阶段
 1. [注意力机制基础](01-attention-mechanism.ipynb)
@@ -68,7 +72,7 @@ Transformer通过自注意力机制实现了：
    - Vision Transformer
    - 效率优化变体
 
-## 🛠️ 工具和资源
+## 工具和资源
 
 - [utils.py](utils.py) - 完整的工具函数库
   - 核心组件实现（注意力、位置编码等）
@@ -78,7 +82,7 @@ Transformer通过自注意力机制实现了：
 
 
 
-## 🚀 快速开始
+## 快速开始
 
 ```python
 # 导入工具函数
@@ -102,9 +106,17 @@ visualize_attention_weights(attention_weights, tokens=['Hello', 'World'])
 ## 参考
 
 * 10分钟学会Transformer | Pytorch代码讲解  https://zhuanlan.zhihu.com/p/403433120
-* Pytorch中 nn.Transformer的使用详解与Transformer的黑盒讲解 https://blog.csdn.net/zhaohongfei_358/article/details/126019181
+
 * 搞懂Transformer结构，看这篇PyTorch实现就够了（上）https://zhuanlan.zhihu.com/p/48731949
+
 * [QKV详细解释](https://mp.weixin.qq.com/s/umEwoVOdTJxb6rAlNmuPQw)
+
+* [Build a transformer model from scratch using pytorch to understand its inner workings and gain hands-on experience with deep learning models in PyTorch](https://github.com/SirawitC/Transformer_from_scratch_pytorch)
+    * https://blog.gopenai.com/build-a-transformer-model-from-scratch-using-pytorch-99b06408003e
+* [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
+* [Transformer from scratch using pytorch](https://www.kaggle.com/code/arunmohan003/transformer-from-scratch-using-pytorch/notebook)
+* [Transformer Model Tutorial in PyTorch: From Theory to Code](https://www.datacamp.com/tutorial/building-a-transformer-with-py-torch)
+
 
 ### 视频、教程
 中文综合教程：

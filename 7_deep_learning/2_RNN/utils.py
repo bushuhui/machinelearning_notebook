@@ -9,7 +9,7 @@ from torch.autograd import Variable
 def get_acc(output, label):
     total = output.shape[0]
     _, pred_label = output.max(1)
-    num_correct = (pred_label == label).sum().data[0]
+    num_correct = (pred_label == label).sum().item()
     return num_correct / total
 
 
@@ -36,7 +36,7 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion):
             loss.backward()
             optimizer.step()
 
-            train_loss += loss.data[0]
+            train_loss += loss.item()
             train_acc += get_acc(output, label)
 
         cur_time = datetime.now()
@@ -47,17 +47,18 @@ def train(net, train_data, valid_data, num_epochs, optimizer, criterion):
             valid_loss = 0
             valid_acc = 0
             net = net.eval()
-            for im, label in valid_data:
-                if torch.cuda.is_available():
-                    im = Variable(im.cuda(), volatile=True)
-                    label = Variable(label.cuda(), volatile=True)
-                else:
-                    im = Variable(im, volatile=True)
-                    label = Variable(label, volatile=True)
-                output = net(im)
-                loss = criterion(output, label)
-                valid_loss += loss.data[0]
-                valid_acc += get_acc(output, label)
+            with torch.no_grad():
+                for im, label in valid_data:
+                    if torch.cuda.is_available():
+                        im = Variable(im.cuda())
+                        label = Variable(label.cuda())
+                    else:
+                        im = Variable(im)
+                        label = Variable(label)
+                    output = net(im)
+                    loss = criterion(output, label)
+                    valid_loss += loss.item()
+                    valid_acc += get_acc(output, label)
             epoch_str = (
                 "Epoch %d. Train Loss: %f, Train Acc: %f, Valid Loss: %f, Valid Acc: %f, "
                 % (epoch, train_loss / len(train_data),
