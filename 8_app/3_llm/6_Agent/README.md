@@ -18,6 +18,7 @@
 
 ### Course
 
+* [Hugging Face Learn - Agent Course](https://huggingface.co/learn/agents-course/unit0/introduction)
 * [Agentic AI](https://www.deeplearning.ai/courses/agentic-ai/)
 * [从零开始的智能体原理与实践教程](https://github.com/datawhalechina/hello-agents)
 * [《Agentic Design Patterns》中文翻译版](https://github.com/ginobefun/agentic-design-patterns-cn)

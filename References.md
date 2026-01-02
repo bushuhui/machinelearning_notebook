@@ -17,20 +17,29 @@
 * [Introduction — Neuromatch Academy: Deep Learning](https://deeplearning.neuromatch.io/tutorials/intro.html)
 * [AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners)
 * [Agentic AI](https://www.deeplearning.ai/courses/agentic-ai/)
+* [Hugging Face - Learn](https://huggingface.co/learn)
+    * [LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
+    * [Robtoics Course](https://huggingface.co/learn/robotics-course/unit0/1)
+    * [MCP Course](https://huggingface.co/learn/mcp-course/unit0/introduction)
+    * [a smol course](https://huggingface.co/learn/smol-course/unit0/1)
+    * [Agent Course](https://huggingface.co/learn/agents-course/unit0/introduction)
+    * [Deep RL Course](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
+    * 
+
 * [Pytorch 常用代码合集](https://mp.weixin.qq.com/s/wqhpwShaW26CIF9K9_QD0g)
-	* 主要包括如下功能：
-	* 导入包和版本查询
-	* 单张显卡设置以及多张显卡设置
-	* 清除显存
-	* 张量处理
-	* 计算两组数据之间的欧式距离
-	* 模型的定义
-	* 模型参数量的计算
-	* 模型的可视化
-	* 将GPU的数据加载到CPU
-	* 数据集均方和标准差的处理
-	* 模型的训练与测试demo
-	* 模型的保存与断点加载
+  * 主要包括如下功能：
+  * 导入包和版本查询
+  * 单张显卡设置以及多张显卡设置
+  * 清除显存
+  * 张量处理
+  * 计算两组数据之间的欧式距离
+  * 模型的定义
+  * 模型参数量的计算
+  * 模型的可视化
+  * 将GPU的数据加载到CPU
+  * 数据集均方和标准差的处理
+  * 模型的训练与测试demo
+  * 模型的保存与断点加载
 
 ### 1.2 代码
 
