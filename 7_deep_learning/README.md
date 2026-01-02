@@ -44,10 +44,11 @@
       - [rnn/pytorch-rnn](2_RNN/pytorch-rnn.ipynb)
       - [rnn/rnn-for-image](2_RNN/rnn-for-image.ipynb)
       - [rnn/lstm-time-series](2_RNN/time-series/lstm-time-series.ipynb)
-   - GAN
-      - [gan/autoencoder](3_GAN/autoencoder.ipynb)
-      - [gan/vae](3_GAN/vae.ipynb)
-      - [gan/gan](3_GAN/gan.ipynb)
+   - GAN & Diffusion
+      - [AutoEncoder](3_GAN_Diffusion/autoencoder.ipynb)
+      - [VAE](3_GAN_Diffusion/vae.ipynb)
+      - [GAN](3_GAN_Diffusion/gan.ipynb)
+      - [StableDiffusion](3_GAN_Diffusion/StableDiffusion.md)
    - [NLP](4_NLP)
    - [Transformer](5_Transformer)
 * [构建深度神经网络的一些实战建议](../references_tips/构建深度神经网络的一些实战建议.md)
