@@ -23,6 +23,7 @@
 ### 图书
 * [【大模型基础】](https://github.com/ZJU-LLMs/Foundations-of-LLMs)
 * [【Hands-On Large Language Models】](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
+    * [动手学习大模型](https://github.com/bbruceyuan/Hands-On-Large-Language-Models-CN)
 * [【大模型基础: 一文了解大模型基础知识】](https://github.com/datawhalechina/so-large-lm)
 
 ### 教程
