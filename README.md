@@ -114,6 +114,7 @@
 
 ## 二、学习的建议
 1. AI技术发展很快，可以充分[利用ChatGPT、DeepSeek、Kimi等工具提高学习的效率](references_tips/AI_help_Learning.md)。
+1. [充分使用AI帮助自己学习，主动提问，多主动思考。](references_tips/AI4Learn.md)
 2. 为了更好的学习本课程，需要大家把[Python编程](0_python)能力培养好，通过一定数量的练习题、小项目培养Python编程思维，为后续的机器学习理论与实践打好坚实的基础。
 3. 有精力、学习能力比较强的同学可以尝试建立"Python+AI工具链"能力
     - 60% Python核心语法
