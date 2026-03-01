@@ -195,8 +195,8 @@ sudo apt-get purge nvidia-driver-xxx
 ### 7.3 搜索并安装的驱动
 
 ```bash
-apt-cache search nvidia | grep 460
-sudo apt-get install nvidia-driverp -460
+apt-cache search nvidia | grep 570
+sudo apt-get install nvidia-driver-570 nvidia-utils-570
 ```
 
 根据自己的需要可以安装更高的版本。
