@@ -9,7 +9,7 @@
 为了让大家更好的自学本课程，课程提供视频：[《B站 - 机器学习与人工智能》](https://www.bilibili.com/video/BV1oZ4y1N7ei/)，欢迎大家观看学习。
 
 
->>> ** 本课程配有[AI问答系统](https://gitee.com/login?redirect_to_url=https%3A%2F%2Fchat.gitee.com%3Frepo_owner%3Dpi-lab%26repo_path%3Dmachinelearning_notebook%26deep_research%3Dtrue&from=chatbot)，大家如果有什么不清楚的，可以问问，让AI帮你答疑 ** <<<
+** 本课程配有[AI问答系统](https://gitee.com/login?redirect_to_url=https%3A%2F%2Fchat.gitee.com%3Frepo_owner%3Dpi-lab%26repo_path%3Dmachinelearning_notebook%26deep_research%3Dtrue&from=chatbot)，大家如果有什么不清楚的，可以问问，让AI帮你答疑 ** 
 
 
 ![Machine Learning Cover](images/machine_learning_1.jpg)
